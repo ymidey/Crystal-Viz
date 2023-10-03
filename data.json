@@ -1,0 +1,512 @@
+[
+    {
+        "Année": 2023,
+        "Nom du film": "Linda veut du poulet !",
+        "Studio": "DOLCE VITA FILMS",
+        "Réalisateur(s)": [
+            "Chiara MALTA",
+            "Sébastien LAUDENBACH"
+        ],
+        "Durée": "01 h 15 mn",
+        "Technique": [
+            "Ordinateur 2D"
+        ],
+        "Pays": [
+            "France",
+            "Italie"
+        ],
+        "Public visé": [
+            "Enfants",
+            "Famille"
+        ]
+    },
+    {
+        "Année": 2022,
+        "Nom du film": "Le Petit Nicolas - Qu'est-ce qu'on attend pour être heureux ?",
+        "Studio": "ON CLASSICS",
+        "Réalisateur(s)": [
+            "Amandine FREDON",
+            "Benjamin MASSOUBRE"
+        ],
+        "Durée": "01 h 22 mn",
+        "Technique": [
+            "ordinateur 2D",
+            "techniques diverses"
+        ],
+        "Pays": [
+            "France",
+            "Luxembourg"
+        ],
+        "Public visé": "Famille"
+    },
+    {
+        "Année": 2021,
+        "Nom du film": "Flee",
+        "Studio": "SUN CREATURE",
+        "Réalisateur(s)": "Jonas POHER RASMUSSEN",
+        "Durée": "01 h 23 mn",
+        "Technique": [
+            "ordinateur 2D",
+            "vues réelles"
+        ],
+        "Pays": [
+            "Danemark",
+            "France",
+            "Norvège",
+            "Suède"
+        ],
+        "Public visé": [
+            "Adultes",
+            "Jeunes adultes"
+        ]
+    },
+    {
+        "Année": 2020,
+        "Nom du film": "Calamity, une enfance de Martha Jane Cannary",
+        "Studio": [
+            "MAYBE MOVIES",
+            "NORLUM"
+        ],
+        "Réalisateur(s)": "Rémi CHAYÉ",
+        "Durée": "01 h 22 mn 12 s",
+        "Technique": "ordinateur 2D/3D",
+        "Pays": [
+            "France",
+            "Danemark"
+        ],
+        "Public visé": [
+            "Adolescents",
+            "Enfants, Famille"
+        ]
+    },
+    {
+        "Année": 2019,
+        "Nom du film": "J'ai perdu mon corps",
+        "Studio": "XILAM ANIMATION",
+        "Réalisateur(s)": "Jérémy CLAPIN",
+        "Durée": "01 h 21 mn",
+        "Technique": "ordinateur 2D/3D",
+        "Pays": "France",
+        "Public visé": [
+            "Adultes",
+            "Jeunes adultes"
+        ]
+    },
+    {
+        "Année": 2018,
+        "Nom du film": "Funan",
+        "Studio": [
+            "LES FILMS D'ICI",
+            "LUNANIME BVBA",
+            "BAC FILMS",
+            "WEBSPIDER PRODUCTIONS",
+            "ITHINKASIA"
+        ],
+        "Réalisateur(s)": "Denis DO",
+        "Durée": "01 h 24 mn",
+        "Technique": "ordinateur 2D",
+        "Pays": [
+            "Belgique",
+            "Cambodge",
+            "France",
+            "Luxembourg"
+        ],
+        "Public visé": [
+            "Adolescents",
+            "Adultes",
+            "Jeunes adultes"
+        ]
+    },
+    {
+        "Année": 2017,
+        "Nom du film": "Lu Over the Wall",
+        "Studio": [
+            "ANIME LTD.",
+            "EUROZOOM"
+        ],
+        "Réalisateur(s)": "Masaaki YUASA",
+        "Durée": "01 h 52 mn",
+        "Technique": "ordinateur 2D",
+        "Pays": "Japon",
+        "Public visé": [
+            "Adolescents",
+            "Adultes",
+            "Enfants",
+            "Famille",
+            "Jeunes adultes"
+        ]
+    },
+    {
+        "Année": 2016,
+        "Nom du film": "Ma vie de Courgette",
+        "Studio": [
+            "BLUE SPIRIT",
+            "RITA PRODUCTIONS",
+            "GEBEKA FILMS"
+        ],
+        "Réalisateur(s)": "Claude BARRAS",
+        "Durée": "01 h 05 mn",
+        "Technique": "marionnettes",
+        "Pays": [
+            "France",
+            "Suisse"
+        ],
+        "Public visé": "Famille"
+    },
+    {
+        "Année": 2015,
+        "Nom du film": "Avril et le Monde truqué",
+        "Studio": [
+            "JE SUIS BIEN CONTENT",
+            "STUDIOCANAL",
+            "ARTE FRANCE CINÉMA",
+            "JOUROR DISTRIBUTION",
+            "TCHACK",
+            "KAIBOU PRODUCTION INC",
+            "NEED PRODUCTIONS",
+            "RTBF - RADIO TELEVISION BELGE FRANCOPHONE",
+            "PROXIMUS",
+            "WALLIMAGE"
+        ],
+        "Réalisateur(s)": [
+            "Franck EKINCI",
+            "Christian DESMARES"
+        ],
+        "Durée": "01 h 43 mn 11 s",
+        "Technique": "Ordinateur 2D",
+        "Pays": [
+            "France",
+            "Canada",
+            "Belgique"
+        ],
+        "Public visé": "Famille"
+    },
+    {
+        "Année": 2014,
+        "Nom du film": "O menino e o mundo",
+        "Studio": "FILME DE PAPEL",
+        "Réalisateur(s)": "Alê ABREU",
+        "Durée": "01 h 20 mn",
+        "Technique": [
+            "dessin sur papier",
+            "ordinateur 2D",
+            "techniques diverses",
+            "vues réelles"
+        ],
+        "Pays": "Brésil",
+        "Public visé": [
+            "Adolescents",
+            "Adultes",
+            "Famille",
+            "Jeunes adultes"
+        ]
+    },
+    {
+        "Année": 2013,
+        "Nom du film": "Uma história de amor e fúria",
+        "Studio": [
+            "BURITI FILMES",
+            "GULLANE"
+        ],
+        "Réalisateur(s)": "Luiz BOLOGNESI",
+        "Durée": "01 h 15 mn",
+        "Technique": "dessin sur papier",
+        "Pays": "Brésil",
+        "Public visé": "Famille"
+    },
+    {
+        "Année": 2012,
+        "Nom du film": "Crulic - drumul spre dincolo",
+        "Studio": "APARTE FILM",
+        "Réalisateur(s)": "Anca DAMIAN",
+        "Durée": "01 h 13 mn",
+        "Technique": "techniques diverses",
+        "Pays": [
+            "Roumanie",
+            "Pologne"
+        ],
+        "Public visé": [
+            "Adultes",
+            "Jeunes adultes"
+        ]
+    },
+    {
+        "Année": 2011,
+        "Nom du film": "Le Chat du Rabbin",
+        "Studio": [
+            "AUTOCHENILLE PRODUCTION",
+            "FRANCE 3 CINÉMA",
+            "TF1 INTERNATIONAL"
+        ],
+        "Réalisateur(s)": [
+            "Joann SFAR",
+            "Antoine DELESVAUX"
+        ],
+        "Durée": "01 h 30 mn",
+        "Technique": [
+            "dessin sur papier",
+            "ordinateur 2D"
+        ],
+        "Pays": "France",
+        "Public visé": "Tous publics"
+    },
+    {
+        "Année": 2010,
+        "Nom du film": "Fantastic Mr. Fox",
+        "Studio": [
+            "Allison ABBATE",
+            "Scott RUDIN",
+            "Jeremy DAWSON",
+            "Wes ANDERSON"
+        ],
+        "Réalisateur(s)": "Wes ANDERSON",
+        "Durée": "01 h 27 mn",
+        "Technique": "marionnettes",
+        "Pays": "États-Unis",
+        "Public visé": "?"
+    },
+    {
+        "Année": 2009,
+        "Nom du film": "Coraline / Mary and Max",
+        "Studio": [
+            "UNIVERSAL PICTURES INTERNATIONAL UK",
+            "LAIKA ENTERTAINMENT",
+            "PANDEMONIUM"
+        ],
+        "Réalisateur(s)": "Henry SELICK",
+        "Durée": "01 h 40 mn",
+        "Technique": [
+            "marionnettes",
+            "ordinateur 3D"
+        ],
+        "Pays": "États-Unis",
+        "Public visé": "?"
+    },
+    {
+        "Année": 2008,
+        "Nom du film": "Sita Sings the Blues",
+        "Studio": [
+            "NINA PALEY PRODUCTIONS",
+            "LLC"
+        ],
+        "Réalisateur(s)": "Nina PALEY",
+        "Durée": "01 h 22 mn",
+        "Technique": [
+            "dessin sur papier",
+            "éléments découpés",
+            "ordinateur 2D",
+            "rotoscopie"
+        ],
+        "Pays": "États-Unis",
+        "Public visé": [
+            "Jeunes adultes",
+            "Adultes"
+        ]
+    },
+    {
+        "Année": 2007,
+        "Nom du film": "Slipp Jimmy Fri",
+        "Studio": "STORM STUDIO",
+        "Réalisateur(s)": "Christopher NIELSEN",
+        "Durée": "01 h 22 mn",
+        "Technique": "ordinateur 3D",
+        "Pays": [
+            "Norvège",
+            "Royaume-Uni"
+        ],
+        "Public visé": [
+            "Jeunes adultes",
+            "Adultes"
+        ]
+    },
+    {
+        "Année": 2006,
+        "Nom du film": "Renaissance",
+        "Studio": [
+            "ONYX FILMS",
+            "MILLIMAGES",
+            "LUXANIMATION S.A.",
+            "TIMEFIRM LTD.",
+            "FRANCE 2 CINÉMA"
+        ],
+        "Réalisateur(s)": "Christian VOLCKMAN",
+        "Durée": "01 h 45 mn",
+        "Technique": "ordinateur 3D",
+        "Pays": [
+            "France",
+            "Royaume-Uni",
+            "Luxembourg"
+        ],
+        "Public visé": [
+            "Jeunes adultes",
+            "Adultes"
+        ]
+    },
+    {
+        "Année": 2005,
+        "Nom du film": "Nyócker !",
+        "Studio": "LICHTHOF PRODUCTIONS LTD",
+        "Réalisateur(s)": "Áron GAUDER",
+        "Durée": "01 h 22 mn",
+        "Technique": "ordinateur 2D/3D",
+        "Pays": "Hongrie",
+        "Public visé": "Non renseigné"
+    },
+    {
+        "Année": 2004,
+        "Nom du film": "Oseam",
+        "Studio": "MAGO21 CO., LTD",
+        "Réalisateur(s)": "Baek-yeop SUNG",
+        "Durée": "01 h 15 mn",
+        "Technique": "ordinateur 2D",
+        "Pays": "Corée du Sud",
+        "Public visé": "Non renseigné"
+    },
+    {
+        "Année": 2003,
+        "Nom du film": "My Life as McDull",
+        "Studio": "LUNCHTIME PRODUCTIONS",
+        "Réalisateur(s)": "Toe YUEN",
+        "Durée": "01 h 15 mn",
+        "Technique": [
+            "dessin sur cellulos",
+            "photos",
+            "éléments découpés",
+            "ordinateur 3D",
+            "vues réelles"
+        ],
+        "Pays": "Hong Kong",
+        "Public visé": "Non renseigné"
+    },
+    {
+        "Année": 2002,
+        "Nom du film": "Mari Iyagi",
+        "Studio": "SIZ ENTERTAINMENT",
+        "Réalisateur(s)": "Sung-gang LEE",
+        "Durée": "01 h 20 mn",
+        "Technique": "ordinateur 2D/3D",
+        "Pays": "Corée du Sud",
+        "Public visé": "Tous publics"
+    },
+    {
+        "Année": 2001,
+        "Nom du film": "Mutant Aliens",
+        "Studio": "PLYMPTOONS STUDIO",
+        "Réalisateur(s)": "Bill PLYMPTON",
+        "Durée": "1 h 20 mn",
+        "Technique": "dessin sur cellulos",
+        "Pays": "États-Unis",
+        "Public visé": "Non renseigné"
+    },
+    {
+        "Année": 1999,
+        "Nom du film": "Kirikou et la sorcière",
+        "Studio": [
+            "LES ARMATEURS",
+            "ODEC - KID CARTOONS",
+            "MONIPOLY PRODUCTIONS"
+        ],
+        "Réalisateur(s)": "Michel OCELOT",
+        "Durée": "1 h 11 mn",
+        "Technique": [
+            "dessin sur papier (crayon)",
+            "ordinateur 2D"
+        ],
+        "Pays": [
+            "France",
+            "Belgique",
+            "Luxembourg"
+        ],
+        "Public visé": "Tous publics"
+    },
+    {
+        "Année": 1998,
+        "Nom du film": "I Married A Strange Person!",
+        "Studio": "PLYMPTOONS STUDIO",
+        "Réalisateur(s)": "Bill PLYMPTON",
+        "Durée": "1 h 15 mn",
+        "Technique": "dessin sur cellulos",
+        "Pays": "États-Unis",
+        "Public visé": "Non renseigné"
+    },
+    {
+        "Année": 1997,
+        "Nom du film": "James and the Giant Peach",
+        "Studio": "Denise DI NOVI",
+        "Réalisateur(s)": "Henry SELICK",
+        "Durée": "1 h 20 mn",
+        "Technique": [
+            "marionnettes",
+            "vues réelles"
+        ],
+        "Pays": "États-Unis",
+        "Public visé": "Non renseigné"
+    },
+    {
+        "Année": 1995,
+        "Nom du film": "Heisei tanuki gassen Pompoko",
+        "Studio": "STUDIO GHIBLI",
+        "Réalisateur(s)": "Isao TAKAHATA",
+        "Durée": "1 h 50 mn",
+        "Technique": "dessin sur cellulos",
+        "Pays": "Japon",
+        "Public visé": "Non renseigné"
+    },
+    {
+        "Année": 1993,
+        "Nom du film": "Kurenai no buta",
+        "Studio": "TOKUMA SHOTEN PUBLISHING CO., LTD.",
+        "Réalisateur(s)": "Hayao MIYAZAKI",
+        "Durée": "1 h 33 mn",
+        "Technique": "dessin sur cellulos",
+        "Pays": "Japon",
+        "Public visé": "Non renseigné"
+    },
+    {
+        "Année": 1991,
+        "Nom du film": "Robinson & Cie",
+        "Studio": "BAT PRODUCTIONS",
+        "Réalisateur(s)": "Jacques COLOMBAT",
+        "Durée": "1 h 10 mn",
+        "Technique": "dessin sur cellulos",
+        "Pays": "France",
+        "Public visé": "Tous publics"
+    },
+    {
+        "Année": 1889,
+        "Nom du film": "Neco z alenk",
+        "Studio": "CONDOR FILMS",
+        "Réalisateur(s)": "Jan SVANKMAJER",
+        "Durée": "1 h 24 mn",
+        "Technique": [
+            "marionnettes",
+            "animation d'objets",
+            "vues réelles"
+        ],
+        "Pays": "Suisse",
+        "Public visé": "Tous publics"
+    },
+    {
+        "Année": 1887,
+        "Nom du film": "When the Wind Blows",
+        "Studio": "TVC LONDON",
+        "Réalisateur(s)": "Jimmy T. MURAKAMI",
+        "Durée": "01 h 24 mn",
+        "Technique": [
+            "dessin sur cellulos",
+            "vues réelles"
+        ],
+        "Pays": "Royaume-Uni",
+        "Public visé": "Non renseigné"
+    },
+    {
+        "Année": 1885,
+        "Nom du film": "Dalias idok",
+        "Studio": "PANNONIA FILM STUDIO",
+        "Réalisateur(s)": "József GÉMES",
+        "Durée": "01 h 25 mn",
+        "Technique": "dessin sur papier (peinture)",
+        "Pays": "Hongrie",
+        "Public visé": "Non renseigné"
+    }
+]
