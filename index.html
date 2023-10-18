@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dataviz - Nom à trouvé</title>
+    <title>Crystal'viz - Annecy Festival</title>
+    <script src="script.js" defer></script>
+    <script src="d3.js" defer></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="films"></div>
-    <script src="script.js"></script>
+    <div id="fullpage">
+        <section class="header">
+            <div class="logo-container">
+                <img src="images/Logo.svg" alt="">
+            </div>
+        </section>
+        <section class="main">
+            <!-- <div id="films"></div> -->
+            <svg width="90vmin" height="calc(90vmin * 420 / 620)" viewBox="-10 -110 520 320">
+                <rect x=0 y=-100 width=500 height=300 fill="#ddd" />
+
+            </svg>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="animation.js"></script>
+
 </body>
 
 </html>

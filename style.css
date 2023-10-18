@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #263C5F;
+}
+
+.header {
+    height: 100vh;
+}
+
+#fullpage {
+    position: relative;
+    background-image: url('./images/backgroundCompress.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-container {
+    position: relative;
+    left: 55%;
+    width: 35%;
+    top: 15%;
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+}
