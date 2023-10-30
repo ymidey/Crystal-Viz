@@ -27,3 +27,11 @@ body {
     width: 100%;
     height: auto;
 }
+
+/* centrage svg*/ 
+
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

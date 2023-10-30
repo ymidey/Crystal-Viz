@@ -14,6 +14,7 @@ fetch('./data.json')
         console.log(pays);
 
 
+
         //     // Boucle à travers les objets du tableau JSON
         //     filmdata.forEach(film => {
         //         // Créer des éléments HTML pour afficher les informations du film
@@ -34,6 +35,30 @@ fetch('./data.json')
         //     });
     })
     .catch(error => console.error('Erreur lors du chargement du fichier JSON :', error));
+
+// Couleur du svg
+let svg = d3.select("svg")
+
+svg.style("background-color","grey")
+
+// Graduation de l'échelle des y 
+const yScale = d3
+  .scaleLinear()
+  .domain([0, 10]) 
+  .range([0, -470]);  
+
+d3.select("#graph")
+    .append("g")
+    .call(d3.axisLeft(yScale).ticks(10))
+    .style("stroke-width", 6)
+    .append("text")
+    .text("IMDB rating")
+    .attr("fill", "white")
+    .style("text-anchor", "start")
+    .attr("x", -45)
+    .attr("y", -480)
+    
+
 
 
 
