@@ -267,7 +267,24 @@
     },
     {
         "Année": 2009,
-        "Nom du film": "Coraline / Mary and Max",
+        "Nom du film": "Coraline",
+        "Studio": [
+            "UNIVERSAL PICTURES INTERNATIONAL UK",
+            "LAIKA ENTERTAINMENT",
+            "PANDEMONIUM"
+        ],
+        "Réalisateur(s)": "Henry SELICK",
+        "Durée": "01 h 40 mn",
+        "Technique": [
+            "marionnettes",
+            "ordinateur 3D"
+        ],
+        "Pays": "États-Unis",
+        "Public visé": "?"
+    },
+    {
+        "Année": 2009,
+        "Nom du film": "Mary and Max",
         "Studio": [
             "UNIVERSAL PICTURES INTERNATIONAL UK",
             "LAIKA ENTERTAINMENT",

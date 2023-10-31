@@ -5,16 +5,16 @@ body {
     background-color: #263C5F;
 }
 
-.header {
-    height: 100vh;
-}
-
 #fullpage {
     position: relative;
     width: 100%;
     background-image: url('./images/backgroundCompress.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+header {
+    height: 100vh;
 }
 
 .logo-container {
@@ -28,6 +28,13 @@ body {
     opacity: 1;
     width: 100%;
     height: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.main {
+    height: 100vh;
+    align-content: center;
+    padding-top: 15%;
 }
 
 footer {
@@ -41,12 +48,14 @@ footer>* {
     width: 100%;
 }
 
-footer div h3 {
-    font-size: larger;
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 svg {
     overflow: visible;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }

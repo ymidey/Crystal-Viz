@@ -2,43 +2,55 @@
 fetch('./data.json')
     .then(response => response.json())
     .then(filmdata => {
-        // Sélectionner la div où nous afficherons les données
-        const filmsDiv = document.getElementById('films');
+        // Collecte des années pour les utiliser dans l'axe des abscisses
+        const annees = filmdata.map(movie => movie.Année);
+        const anneesReverse = annees.reverse();
+        console.log(anneesReverse);
 
-        // Collecte des années pour les utiliser dans l'axe des ab6 
-        const annees = [...new Set(filmdata.map(movie => movie.Année))];
-        console.log(annees);
+        // Selection du svg
+        let svg = d3.select("svg");
 
-        // Collecte des pays pour les utiliser dans l'axe des ab6 
-        const pays = [...new Set(filmdata.map(movie => movie.Pays))];
-        console.log(pays);
+        // Graduation de l'échelle des y
+        const yScale = d3
+            .scaleLinear()
+            .domain([0, 10])
+            .range([0, -470]);
 
 
-        //     // Boucle à travers les objets du tableau JSON
-        //     filmdata.forEach(film => {
-        //         // Créer des éléments HTML pour afficher les informations du film
-        //         const filmElement = document.createElement('div');
-        //         filmElement.innerHTML = `
-        //     <h2>${film["Nom du film"]}</h2>
-        //     <p>Année : ${film.Année}</p>
-        //     <p>Studio : ${film.Studio}</p>
-        //     <p>Réalisateur(s) : ${Array.isArray(film["Réalisateur(s)"]) ? film["Réalisateur(s)"].join(", ") : film["Réalisateur(s)"]}</p>
-        //     <p>Durée : ${film.Durée}</p>
-        //     <p>Technique : ${Array.isArray(film["Technique"]) ? film["Technique"].join(", ") : film["Technique"]}</p>
-        //     <p>Pays : ${Array.isArray(film["Pays"]) ? film["Pays"].join(", ") : film["Pays"]}</p>
-        //     <p>Public visé : ${Array.isArray(film["Public visé"]) ? film["Public visé"].join(", ") : film["Public visé"]}</p>
-        //   `;
 
-        //         // Ajouter l'élément du film à la div des films
-        //         filmsDiv.appendChild(filmElement);
-        //     });
+        // Graduation de l'échelle des x
+        const xScale = d3
+            .scaleBand()
+            .domain(anneesReverse)
+            .range([0, 900])
+            .padding(0.1);
+
+        // Ajout de l'axe y
+        d3.select("#graph")
+        svg.append("g")
+            .call(d3.axisLeft(yScale).ticks(10))
+            .style("stroke-width", 2);
+
+        // Ajout de l'axe X
+        const xAxis = svg.append("g")
+            .call(d3.axisBottom(xScale))
+            .style("stroke-width", 2);
+
+        // Stylisation des années sur l'axe x
+        xAxis.selectAll("text")
+            .attr("transform", "rotate(-45)")
+            .style("text-anchor", "end")
+            .data(anneesReverse)
+            .append("text")
+            .attr("x", d => xScale(d) + xScale.bandwidth() / 2)
+            .attr("y", 10) // Ajustez la position verticale selon vos besoins
+            .text(d => d);
+
+        // Ajout d'un titre à l'axe y
+        svg.append("text")
+            .text("IMDB rating")
+            .attr("fill", "white")
+            .attr("x", -45)
+            .attr("y", -480);
     })
     .catch(error => console.error('Erreur lors du chargement du fichier JSON :', error));
-
-
-
-
-
-
-
-
