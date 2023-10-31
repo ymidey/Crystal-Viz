@@ -1,14 +1,12 @@
 // Charger le fichier JSON
-fetch('./data.json')
+fetch('./FilmData.json')
     .then(response => response.json())
     .then(filmdata => {
         // Collecte des années pour les utiliser dans l'axe des abscisses
         let filmPrime = filmdata.filter(o =>
-            o.primé == 1);
-
-        const annees = filmPrime.map(movie => movie.Année);
-        const anneesReverse = annees.reverse();
-        console.log(anneesReverse);
+            o.Primé == 1);
+        console.log(filmPrime);
+        const annees = filmPrime.map(movie => movie.AnnéeNomination);
 
         // Selection du svg
         let svg = d3.select("svg");
@@ -23,7 +21,7 @@ fetch('./data.json')
         // Graduation de l'échelle des x
         const xScale = d3
             .scaleBand()
-            .domain(anneesReverse)
+            .domain(annees)
             .range([0, 900])
             .padding(0.1);
 
@@ -42,7 +40,7 @@ fetch('./data.json')
         xAxis.selectAll("text")
             .attr("transform", "rotate(-45)")
             .style("text-anchor", "end")
-            .data(anneesReverse)
+            .data(annees)
             .append("text")
             .attr("x", d => xScale(d) + xScale.bandwidth() / 2)
             .attr("y", 10) // Ajustez la position verticale selon vos besoins
