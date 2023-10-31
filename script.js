@@ -3,7 +3,10 @@ fetch('./data.json')
     .then(response => response.json())
     .then(filmdata => {
         // Collecte des années pour les utiliser dans l'axe des abscisses
-        const annees = filmdata.map(movie => movie.Année);
+        let filmPrime = filmdata.filter(o =>
+            o.primé == 1);
+
+        const annees = filmPrime.map(movie => movie.Année);
         const anneesReverse = annees.reverse();
         console.log(anneesReverse);
 
@@ -15,7 +18,6 @@ fetch('./data.json')
             .scaleLinear()
             .domain([0, 10])
             .range([0, -470]);
-
 
 
         // Graduation de l'échelle des x

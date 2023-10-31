@@ -13,16 +13,4 @@ document.addEventListener("DOMContentLoaded", function () {
         ease: "ease-out", // Type d'animation (facultatif)
     });
 
-    gsap.from(".div-footer", {
-        x: -200,
-        opacity: 0,
-        scrollTrigger: {
-            trigger: div, // L'élément déclencheur
-            start: "top 100%", // L'animation commence lorsque 80% de l'élément est visible
-            end: "top 70%", // L'animation se termine lorsque 30% de l'élément est visible
-            scrub: true, // Permet d'ajuster l'animation en fonction du défilement
-        },
-    })
-
-
 });
