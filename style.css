@@ -5,15 +5,16 @@ body {
     background-color: #263C5F;
 }
 
-.header {
-    height: 100vh;
-}
-
 #fullpage {
     position: relative;
+    width: 100%;
     background-image: url('./images/backgroundCompress.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+header {
+    height: 100vh;
 }
 
 .logo-container {
@@ -24,14 +25,38 @@ body {
 }
 
 .logo-container img {
+    opacity: 1;
     width: 100%;
     height: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-/* centrage svg*/ 
+.main {
+    height: 100vh;
+    align-content: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+footer {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+footer>* {
+    padding: 3%;
+    width: 100%;
+}
 
 .svg-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+svg {
+    overflow: visible;
+    width: 100%;
+    height: 100vh;
 }

@@ -3,6 +3,7 @@
         "Année": 2023,
         "Nom du film": "Linda veut du poulet !",
         "Studio": "DOLCE VITA FILMS",
+        "primé": 1,
         "Réalisateur(s)": [
             "Chiara MALTA",
             "Sébastien LAUDENBACH"
@@ -24,6 +25,7 @@
         "Année": 2022,
         "Nom du film": "Le Petit Nicolas - Qu'est-ce qu'on attend pour être heureux ?",
         "Studio": "ON CLASSICS",
+        "primé": 1,
         "Réalisateur(s)": [
             "Amandine FREDON",
             "Benjamin MASSOUBRE"
@@ -43,6 +45,7 @@
         "Année": 2021,
         "Nom du film": "Flee",
         "Studio": "SUN CREATURE",
+        "primé": 1,
         "Réalisateur(s)": "Jonas POHER RASMUSSEN",
         "Durée": "01 h 23 mn",
         "Technique": [
@@ -67,6 +70,7 @@
             "MAYBE MOVIES",
             "NORLUM"
         ],
+        "primé": 1,
         "Réalisateur(s)": "Rémi CHAYÉ",
         "Durée": "01 h 22 mn 12 s",
         "Technique": "ordinateur 2D/3D",
@@ -83,6 +87,7 @@
         "Année": 2019,
         "Nom du film": "J'ai perdu mon corps",
         "Studio": "XILAM ANIMATION",
+        "primé": 1,
         "Réalisateur(s)": "Jérémy CLAPIN",
         "Durée": "01 h 21 mn",
         "Technique": "ordinateur 2D/3D",
@@ -102,6 +107,7 @@
             "WEBSPIDER PRODUCTIONS",
             "ITHINKASIA"
         ],
+        "primé": 1,
         "Réalisateur(s)": "Denis DO",
         "Durée": "01 h 24 mn",
         "Technique": "ordinateur 2D",
@@ -124,6 +130,7 @@
             "ANIME LTD.",
             "EUROZOOM"
         ],
+        "primé": 1,
         "Réalisateur(s)": "Masaaki YUASA",
         "Durée": "01 h 52 mn",
         "Technique": "ordinateur 2D",
@@ -144,6 +151,7 @@
             "RITA PRODUCTIONS",
             "GEBEKA FILMS"
         ],
+        "primé": 1,
         "Réalisateur(s)": "Claude BARRAS",
         "Durée": "01 h 05 mn",
         "Technique": "marionnettes",
@@ -168,6 +176,7 @@
             "PROXIMUS",
             "WALLIMAGE"
         ],
+        "primé": 1,
         "Réalisateur(s)": [
             "Franck EKINCI",
             "Christian DESMARES"
@@ -185,6 +194,7 @@
         "Année": 2014,
         "Nom du film": "O menino e o mundo",
         "Studio": "FILME DE PAPEL",
+        "primé": 1,
         "Réalisateur(s)": "Alê ABREU",
         "Durée": "01 h 20 mn",
         "Technique": [
@@ -208,6 +218,7 @@
             "BURITI FILMES",
             "GULLANE"
         ],
+        "primé": 1,
         "Réalisateur(s)": "Luiz BOLOGNESI",
         "Durée": "01 h 15 mn",
         "Technique": "dessin sur papier",
@@ -218,6 +229,7 @@
         "Année": 2012,
         "Nom du film": "Crulic - drumul spre dincolo",
         "Studio": "APARTE FILM",
+        "primé": 1,
         "Réalisateur(s)": "Anca DAMIAN",
         "Durée": "01 h 13 mn",
         "Technique": "techniques diverses",
@@ -238,10 +250,12 @@
             "FRANCE 3 CINÉMA",
             "TF1 INTERNATIONAL"
         ],
+        "primé": 1,
         "Réalisateur(s)": [
             "Joann SFAR",
             "Antoine DELESVAUX"
         ],
+        "primé": 1,
         "Durée": "01 h 30 mn",
         "Technique": [
             "dessin sur papier",
@@ -259,6 +273,7 @@
             "Jeremy DAWSON",
             "Wes ANDERSON"
         ],
+        "primé": 1,
         "Réalisateur(s)": "Wes ANDERSON",
         "Durée": "01 h 27 mn",
         "Technique": "marionnettes",
@@ -267,12 +282,31 @@
     },
     {
         "Année": 2009,
-        "Nom du film": "Coraline / Mary and Max",
+        "Nom du film": "Coraline",
         "Studio": [
             "UNIVERSAL PICTURES INTERNATIONAL UK",
             "LAIKA ENTERTAINMENT",
             "PANDEMONIUM"
         ],
+        "primé": 1,
+        "Réalisateur(s)": "Henry SELICK",
+        "Durée": "01 h 40 mn",
+        "Technique": [
+            "marionnettes",
+            "ordinateur 3D"
+        ],
+        "Pays": "États-Unis",
+        "Public visé": "?"
+    },
+    {
+        "Année": 2009,
+        "Nom du film": "Mary and Max",
+        "Studio": [
+            "UNIVERSAL PICTURES INTERNATIONAL UK",
+            "LAIKA ENTERTAINMENT",
+            "PANDEMONIUM"
+        ],
+        "primé": 1,
         "Réalisateur(s)": "Henry SELICK",
         "Durée": "01 h 40 mn",
         "Technique": [
@@ -289,6 +323,7 @@
             "NINA PALEY PRODUCTIONS",
             "LLC"
         ],
+        "primé": 1,
         "Réalisateur(s)": "Nina PALEY",
         "Durée": "01 h 22 mn",
         "Technique": [
@@ -307,6 +342,7 @@
         "Année": 2007,
         "Nom du film": "Slipp Jimmy Fri",
         "Studio": "STORM STUDIO",
+        "primé": 1,
         "Réalisateur(s)": "Christopher NIELSEN",
         "Durée": "01 h 22 mn",
         "Technique": "ordinateur 3D",
@@ -329,6 +365,7 @@
             "TIMEFIRM LTD.",
             "FRANCE 2 CINÉMA"
         ],
+        "primé": 1,
         "Réalisateur(s)": "Christian VOLCKMAN",
         "Durée": "01 h 45 mn",
         "Technique": "ordinateur 3D",
@@ -346,6 +383,7 @@
         "Année": 2005,
         "Nom du film": "Nyócker !",
         "Studio": "LICHTHOF PRODUCTIONS LTD",
+        "primé": 1,
         "Réalisateur(s)": "Áron GAUDER",
         "Durée": "01 h 22 mn",
         "Technique": "ordinateur 2D/3D",
@@ -356,6 +394,7 @@
         "Année": 2004,
         "Nom du film": "Oseam",
         "Studio": "MAGO21 CO., LTD",
+        "primé": 1,
         "Réalisateur(s)": "Baek-yeop SUNG",
         "Durée": "01 h 15 mn",
         "Technique": "ordinateur 2D",
@@ -366,6 +405,7 @@
         "Année": 2003,
         "Nom du film": "My Life as McDull",
         "Studio": "LUNCHTIME PRODUCTIONS",
+        "primé": 1,
         "Réalisateur(s)": "Toe YUEN",
         "Durée": "01 h 15 mn",
         "Technique": [
@@ -382,6 +422,7 @@
         "Année": 2002,
         "Nom du film": "Mari Iyagi",
         "Studio": "SIZ ENTERTAINMENT",
+        "primé": 1,
         "Réalisateur(s)": "Sung-gang LEE",
         "Durée": "01 h 20 mn",
         "Technique": "ordinateur 2D/3D",
@@ -392,6 +433,7 @@
         "Année": 2001,
         "Nom du film": "Mutant Aliens",
         "Studio": "PLYMPTOONS STUDIO",
+        "primé": 1,
         "Réalisateur(s)": "Bill PLYMPTON",
         "Durée": "1 h 20 mn",
         "Technique": "dessin sur cellulos",
@@ -406,6 +448,7 @@
             "ODEC - KID CARTOONS",
             "MONIPOLY PRODUCTIONS"
         ],
+        "primé": 1,
         "Réalisateur(s)": "Michel OCELOT",
         "Durée": "1 h 11 mn",
         "Technique": [
@@ -423,6 +466,7 @@
         "Année": 1998,
         "Nom du film": "I Married A Strange Person!",
         "Studio": "PLYMPTOONS STUDIO",
+        "primé": 1,
         "Réalisateur(s)": "Bill PLYMPTON",
         "Durée": "1 h 15 mn",
         "Technique": "dessin sur cellulos",
@@ -433,6 +477,7 @@
         "Année": 1997,
         "Nom du film": "James and the Giant Peach",
         "Studio": "Denise DI NOVI",
+        "primé": 1,
         "Réalisateur(s)": "Henry SELICK",
         "Durée": "1 h 20 mn",
         "Technique": [
@@ -446,6 +491,7 @@
         "Année": 1995,
         "Nom du film": "Heisei tanuki gassen Pompoko",
         "Studio": "STUDIO GHIBLI",
+        "primé": 1,
         "Réalisateur(s)": "Isao TAKAHATA",
         "Durée": "1 h 50 mn",
         "Technique": "dessin sur cellulos",
@@ -456,6 +502,7 @@
         "Année": 1993,
         "Nom du film": "Kurenai no buta",
         "Studio": "TOKUMA SHOTEN PUBLISHING CO., LTD.",
+        "primé": 1,
         "Réalisateur(s)": "Hayao MIYAZAKI",
         "Durée": "1 h 33 mn",
         "Technique": "dessin sur cellulos",
@@ -466,6 +513,7 @@
         "Année": 1991,
         "Nom du film": "Robinson & Cie",
         "Studio": "BAT PRODUCTIONS",
+        "primé": 1,
         "Réalisateur(s)": "Jacques COLOMBAT",
         "Durée": "1 h 10 mn",
         "Technique": "dessin sur cellulos",
@@ -476,6 +524,7 @@
         "Année": 1889,
         "Nom du film": "Neco z alenk",
         "Studio": "CONDOR FILMS",
+        "primé": 1,
         "Réalisateur(s)": "Jan SVANKMAJER",
         "Durée": "1 h 24 mn",
         "Technique": [
@@ -490,6 +539,7 @@
         "Année": 1887,
         "Nom du film": "When the Wind Blows",
         "Studio": "TVC LONDON",
+        "primé": 1,
         "Réalisateur(s)": "Jimmy T. MURAKAMI",
         "Durée": "01 h 24 mn",
         "Technique": [
@@ -503,6 +553,7 @@
         "Année": 1885,
         "Nom du film": "Dalias idok",
         "Studio": "PANNONIA FILM STUDIO",
+        "primé": 1,
         "Réalisateur(s)": "József GÉMES",
         "Durée": "01 h 25 mn",
         "Technique": "dessin sur papier (peinture)",
