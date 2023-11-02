@@ -14,7 +14,7 @@ fetch('./FilmData.json')
         // Création d'un tableau de couleurs
         const couleurs = [
             "#477050", "#0F2CC6", "#FFFFFF", "#080C77", "#FF0716",
-            "#36376B", "#FDDA25", "#CD2E3A", "#520609", "#00A3E0",
+            "#7A87FF", "#FDDA25", "#CD2E3A", "#520609", "#00F0FF",
             "#021332", "#EAA4A4", "#009B3A", "#FF5555", "#806F6F", "#3BFF0A"
         ];
 
