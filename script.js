@@ -2,11 +2,28 @@
 fetch('./FilmData.json')
     .then(response => response.json())
     .then(filmdata => {
+        let filmPrime = filmdata.filter(film => film.Primé === 1);
+
         // Collecte des années pour les utiliser dans l'axe des abscisses
-        let filmPrime = filmdata.filter(o =>
-            o.Primé == 1);
-        console.log(filmPrime);
-        const annees = filmPrime.map(movie => movie.AnnéeNomination);
+        const annees = filmPrime.map(film => film.AnnéeNomination);
+
+
+        const couleurParPays = {};
+
+        // Création d'un tableau de couleurs
+        const couleurs = [
+            "#477050", "#0F2CC6", "#FFFFFF", "#080C77", "#FF0716",
+            "#36376B", "#FDDA25", "#CD2E3A", "#520609", "#00A3E0",
+            "#021332", "#EAA4A4", "#009B3A", "#FF5555", "#806F6F", "#3BFF0A"
+        ];
+
+        // Parcours les films pour associer chaque pays à une couleur
+        filmPrime.forEach(film => {
+            if (!couleurParPays[film.Pays]) {
+                couleurParPays[film.Pays] = couleurs[Object.keys(couleurParPays).length];
+            }
+        });
+
 
         // Selection du svg
         let svg = d3.select("svg");
@@ -31,6 +48,13 @@ fetch('./FilmData.json')
             .call(d3.axisLeft(yScale).ticks(10))
             .style("stroke-width", 2);
 
+        // Ajout d'un titre à l'axe y
+        svg.append("text")
+            .text("IMDB rating")
+            .attr("fill", "white")
+            .attr("x", -45)
+            .attr("y", -480);
+
         // Ajout de l'axe X
         const xAxis = svg.append("g")
             .call(d3.axisBottom(xScale))
@@ -43,14 +67,27 @@ fetch('./FilmData.json')
             .data(annees)
             .append("text")
             .attr("x", d => xScale(d) + xScale.bandwidth() / 2)
-            .attr("y", 10) // Ajustez la position verticale selon vos besoins
+            .attr("y", 10)
             .text(d => d);
 
-        // Ajout d'un titre à l'axe y
+        // Ajout d'un titre à l'axe x
         svg.append("text")
-            .text("IMDB rating")
+            .text("Année")
             .attr("fill", "white")
-            .attr("x", -45)
-            .attr("y", -480);
+            .attr("x", 905)
+            .attr("y", 20);
+
+        // Ajout des barres
+        let barres = svg
+            .selectAll("rect")
+            .data(filmPrime);
+
+        barres.enter()
+            .append("rect")
+            .attr("x", film => xScale(film.AnnéeNomination))
+            .attr("y", film => yScale(film.NoteIMDB))
+            .attr("width", xScale.bandwidth())
+            .attr("height", film => -yScale(film.NoteIMDB))
+            .attr("fill", film => couleurParPays[film.Pays]);
     })
     .catch(error => console.error('Erreur lors du chargement du fichier JSON :', error));
