@@ -5,6 +5,7 @@ fetch('./FilmData.json')
         let filmPrime = filmdata.filter(film => film.Primé === 1);
 
         // Collecte des années pour les utiliser dans l'axe des abscisses
+<<<<<<< HEAD
         const annees = filmPrime.map(film => film.AnnéeNomination);
 
 
@@ -24,6 +25,20 @@ fetch('./FilmData.json')
             }
         });
 
+=======
+        let filmPrime = filmdata.filter(p =>
+            p.Primé == 1)
+        console.log(filmPrime);
+
+        // Collecte des années pour les utiliser dans l'axe des abscisses
+        const annees = filmPrime.map(film => film.AnnéeNomination)
+        console.log(annees);
+
+        // Collecte des notes IMDB pour les utiliser dans l'axe des ordonnées 
+        const NoteIMDB = filmPrime.map(film => 
+        film.NoteIMDB)
+        console.log(NoteIMDB);
+>>>>>>> 4658aeaa5f3cc1d9c4341dc5468edacdb818a8a6
 
         // Selection du svg
         let svg = d3.select("svg");
@@ -67,7 +82,11 @@ fetch('./FilmData.json')
             .data(annees)
             .append("text")
             .attr("x", d => xScale(d) + xScale.bandwidth() / 2)
+<<<<<<< HEAD
             .attr("y", 10)
+=======
+            .attr("y", 10) 
+>>>>>>> 4658aeaa5f3cc1d9c4341dc5468edacdb818a8a6
             .text(d => d);
 
         // Ajout d'un titre à l'axe x
@@ -76,11 +95,19 @@ fetch('./FilmData.json')
             .attr("fill", "white")
             .attr("x", 905)
             .attr("y", 20);
+<<<<<<< HEAD
 
         // Ajout des barres
         let barres = svg
             .selectAll("rect")
             .data(filmPrime);
+=======
+        
+        // Ajout des barres
+        let barres = svg
+            .selectAll("rect")
+            .data(filmPrime)
+>>>>>>> 4658aeaa5f3cc1d9c4341dc5468edacdb818a8a6
 
         barres.enter()
             .append("rect")
@@ -88,6 +115,12 @@ fetch('./FilmData.json')
             .attr("y", film => yScale(film.NoteIMDB))
             .attr("width", xScale.bandwidth())
             .attr("height", film => -yScale(film.NoteIMDB))
+<<<<<<< HEAD
             .attr("fill", film => couleurParPays[film.Pays]);
+=======
+            .attr("fill","lightpink")
+        
+
+>>>>>>> 4658aeaa5f3cc1d9c4341dc5468edacdb818a8a6
     })
     .catch(error => console.error('Erreur lors du chargement du fichier JSON :', error));
