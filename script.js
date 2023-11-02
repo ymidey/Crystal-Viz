@@ -42,20 +42,22 @@ fetch('./FilmData.json')
             .range([0, 900])
             .padding(0.1);
 
-        // Ajout de l'axe y
+        // Ajout de la graduation sur l'axe y sur le graph
         d3.select("#graph")
         svg.append("g")
-            .call(d3.axisLeft(yScale).ticks(10))
-            .style("stroke-width", 2);
+            .call(d3.axisLeft(yScale).ticks(50))
+            .style("stroke-width", 2)
+            .call(g => g.selectAll(".tick text")
+                .text((d, i) => i % 5 === 0 ? d : ""));
 
         // Ajout d'un titre à l'axe y
         svg.append("text")
-            .text("IMDB rating")
+            .text("Note IMDB")
             .attr("fill", "white")
             .attr("x", -45)
             .attr("y", -480);
 
-        // Ajout de l'axe X
+        // Ajout de la graduation sur l'axe X sur le graph
         const xAxis = svg.append("g")
             .call(d3.axisBottom(xScale))
             .style("stroke-width", 2);
@@ -87,11 +89,81 @@ fetch('./FilmData.json')
 
         barres.enter()
             .append("rect")
+            .attr("class", "barre")
             .attr("x", film => xScale(film.AnnéeNomination))
             .attr("y", film => yScale(film.NoteIMDB))
             .attr("width", xScale.bandwidth())
             .attr("height", film => -yScale(film.NoteIMDB))
-            .attr("fill", film => couleurParPays[film.Pays]);
+            .attr("fill", film => couleurParPays[film.Pays])
+            .style("cursor", "pointer");
 
+        // Créez un tableau d'objets contenant le nom du pays et la couleur qui lui est attribuée
+        const legendData = Object.entries(couleurParPays);
+
+        /// Créez un élément pour la légende
+        const legend = d3.select("#legende");
+
+        // Ajout la légende
+        const legendItems = legend
+            .selectAll(".legend-item")
+            .data(legendData)
+            .enter()
+            .append("div")
+            .style("cursor", "pointer")
+            .attr("class", "legend-item")
+            .style("white-space", "normal");
+
+        legendItems
+            .append("div")
+            .attr("class", "legend-label")
+            .text(d => d[0])
+            .style("font-weight", "600")
+            .style("font-size", "1.2rem")
+            .style("padding-right", "2px");
+
+        legendItems
+            .append("div")
+            .attr("class", "legend-circle")
+            .style("background-color", d => d[1]);
+
+        // Ajout de l'effet de hover pour les barres et la légende
+        d3.selectAll(".barre, .legend-item")
+            .on("mouseenter", function (e, d) {
+                let pays;
+
+                if (this.classList.contains("barre")) {
+                    pays = d.Pays;
+
+                    // Réduit l'opacité de toutes les barres, sauf celle survolée (this)
+                    d3.selectAll(".barre")
+                        .filter(function () {
+                            return this !== e.target;
+                        })
+                        .attr("opacity", 0.1);
+
+                } else {
+                    pays = d3.select(this).select(".legend-label").text();
+
+                    // Changez l'opacité de toutes les barres, sauf celles coorespondant au pays selectionné dans la légende
+                    d3.selectAll(".barre")
+                        .filter(film => film.Pays !== pays)
+                        .attr("opacity", 0.1);
+                }
+
+                // Changez également l'opacité des éléments de légende en fonction du pays
+                d3.selectAll(".legend-item")
+                    .filter(item => item[0] !== pays)
+                    .style("opacity", 0.2);
+            })
+            .on("mouseleave", function () {
+                // Rétablissez la couleur d'origine pour toutes les barres
+                d3.selectAll(".barre")
+                    .attr("opacity", 1);
+
+                // Rétablissez l'opacité d'origine pour tous les éléments de légende
+                d3.selectAll(".legend-item")
+                    .style("opacity", 1);
+            });
     })
+
     .catch(error => console.error('Erreur lors du chargement du fichier JSON :', error));

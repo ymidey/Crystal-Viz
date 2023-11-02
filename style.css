@@ -51,12 +51,41 @@ footer>* {
 
 .svg-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff1e;
+}
+
+.svg-container>* {
+    padding: 50px 0 50px 0;
+
+}
+
+#legende {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 svg {
     overflow: visible;
-    height: 100vh;
-    background-color: #ffffff1e;
+    height: 90vh;
+}
+
+/* Style de la légende */
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+/* Style du cercle */
+.legend-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
 }
