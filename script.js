@@ -13,9 +13,9 @@ fetch('./FilmData.json')
 
         // Création d'un tableau de couleurs
         const couleurs = [
-            "#477050", "#0F2CC6", "#FFFFFF", "#080C77", "#FF0716",
-            "#7A87FF", "#FDDA25", "#CD2E3A", "#520609", "#00F0FF",
-            "#021332", "#EAA4A4", "#009B3A", "#FF5555", "#806F6F", "#3BFF0A"
+            "#4F805A", "#0F2CC6", "#FFFFFF", "#080C77", "#FF0716",
+            "#7A87FF", "#CD2E3A", "#EE1C25",
+            "#021332", "#FCD116", "#009B3A", "#F79B9E"
         ];
 
         // Parcours les films pour associer chaque pays à une couleur
@@ -118,7 +118,7 @@ fetch('./FilmData.json')
             .attr("class", "legend-label")
             .text(d => d[0])
             .style("font-weight", "600")
-            .style("font-size", "1.2rem")
+            .style("font-size", "1.125rem")
             .style("padding-right", "2px");
 
         legendItems
@@ -139,7 +139,9 @@ fetch('./FilmData.json')
                         .filter(function () {
                             return this !== e.target;
                         })
-                        .attr("opacity", 0.1);
+                        .transition()
+                        .duration(200)
+                        .attr("opacity", 0.2);
 
                 } else {
                     pays = d3.select(this).select(".legend-label").text();
@@ -147,21 +149,29 @@ fetch('./FilmData.json')
                     // Changez l'opacité de toutes les barres, sauf celles coorespondant au pays selectionné dans la légende
                     d3.selectAll(".barre")
                         .filter(film => film.Pays !== pays)
-                        .attr("opacity", 0.1);
+                        .transition()
+                        .duration(200)
+                        .attr("opacity", 0.2);
                 }
 
                 // Changez également l'opacité des éléments de légende en fonction du pays
                 d3.selectAll(".legend-item")
                     .filter(item => item[0] !== pays)
+                    .transition()
+                    .duration(200)
                     .style("opacity", 0.2);
             })
             .on("mouseleave", function () {
                 // Rétablissez la couleur d'origine pour toutes les barres
                 d3.selectAll(".barre")
+                    .transition()
+                    .duration(300)
                     .attr("opacity", 1);
 
                 // Rétablissez l'opacité d'origine pour tous les éléments de légende
                 d3.selectAll(".legend-item")
+                    .transition()
+                    .duration(300)
                     .style("opacity", 1);
             });
     })

@@ -32,7 +32,6 @@ header {
 }
 
 .main {
-    height: 100vh;
     align-content: center;
     padding-top: 15%;
     padding-bottom: 15%;
@@ -42,11 +41,12 @@ footer {
     border-top: 1px solid black;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer>* {
     padding: 3%;
-    width: 100%;
+    max-width: 380px;
 }
 
 .svg-container {
@@ -55,23 +55,23 @@ footer>* {
     justify-content: center;
     align-items: center;
     background-color: #ffffff1e;
+    height: 100vh;
 }
 
 .svg-container>* {
     padding: 50px 0 50px 0;
-
 }
 
 #legende {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    max-width: 90%;
 }
 
 svg {
     overflow: visible;
-    height: 90vh;
+    height: 80%;
 }
 
 /* Style de la légende */
