@@ -253,7 +253,7 @@ fetch('./FilmData.json')
                 .attr("class", "prime")
                 .style("display", "flex")
                 .style("flex-direction", "row")
-                .html(d => `<div><h3>Film primé</h3><br><p><span>Titre : ${d.Titre}</span><br><span>Réalisateur(s) : ${d.Réalisateurs}</span><br><span>Technique(s) de production : ${d.Techniques}</span><br><span>Note IMDB : ${d.NoteIMDB}</span><br><span>Source : <a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank"  tabindex="${tabIndex}"">https://www.imdb.com/title/${d.IdIMDB}/</a></span></p></div><div><p>${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div>`);
+                .html(d => `<div><h3>Film primé</h3><br><p><span>Titre : ${d.Titre}</span><br><span>Réalisateur(s) : ${d.Réalisateurs}</span><br><span>Technique(s) de production : ${d.Techniques}</span><br><span>Note IMDB : ${d.NoteIMDB}</span><br><span><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" tabindex="${tabIndex}">Page IMDB du film ${d.Titre}</a></span></p></div><div><p>${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div>`);
 
             d3.select(".detailNomines")
                 .selectAll(".o")

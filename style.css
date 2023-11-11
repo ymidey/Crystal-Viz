@@ -247,3 +247,51 @@ svg {
 .nominés p :first-child {
     font-weight: 800;
 }
+
+/* Add this media query at the end of your existing CSS */
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+
+    .logo-container {
+        top: 15%;
+        left: 52%;
+        width: 90%;
+        transform: translateX(-50%);
+    }
+
+    svg {
+        width: 100%;
+    }
+
+    svg g {
+        font-size: 1rem;
+    }
+
+    #fullpage {
+        background-image: url(./images/GRAND\ LAC\ 3.jpg);
+    }
+
+    .film-prime p, .films-nomines p {
+        font-size: 1.225rem;
+    }
+
+    footer>* {
+        max-width: 100%;
+        /* Make footer content full width on smaller screens */
+    }
+
+    #detailMovie {
+        margin: 0 15px;
+    }
+
+    .detailNomines {
+        justify-content: start;
+    }
+
+    iframe {
+        width: 320px;
+        height: 180px;
+    }
+
+}
