@@ -251,7 +251,7 @@ svg {
 /* Add this media query at the end of your existing CSS */
 
 /* Small screens (phones) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
     .logo-container {
         top: 15%;
