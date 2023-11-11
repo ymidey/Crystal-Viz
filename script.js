@@ -94,19 +94,105 @@ fetch('./FilmData.json')
             .selectAll("rect")
             .data(filmPrime);
 
-        // Affichage et stylisation des barres sur notre graphique
+        // Variable pour compter le nombre de barres de mon graphique
+        let barresAnimeesCount = 0;
+
+        // Ajout des barres avec un délai entre chaque ajout
         barres.enter()
             .append("rect")
             .attr("class", "barre")
             .attr("tabindex", (film, index) => index + 1)
             .attr("x", film => xScale(film.AnnéeNomination))
-            .attr("y", yScale(0))
             .attr("width", xScale.bandwidth())
-            .attr("height", 0)
             .attr("fill", film => couleurParPays[film.Pays])
             .style("cursor", "pointer")
-            .attr("height", film => -yScale(film.NoteIMDB))
-            .attr("y", film => yScale(film.NoteIMDB))
+            .attr("height", 0) // Commence avec une hauteur de 0
+            .attr("y", yScale(0))
+            .each(function (film, index) {
+                // Ajout de la transition avec délai
+                d3.select(this)
+                    .transition()
+                    .delay(index * 100) // Délai entre chaque rectangle 
+                    .duration(1000) // Durée de la transition en millisecondes
+                    .attr("height", film => -yScale(film.NoteIMDB))
+                    .attr("y", film => yScale(film.NoteIMDB))
+                    .on("end", function () {
+
+                        barresAnimeesCount++;
+
+                        // On vérifie si toutes les barres ont terminées leur animation
+                        if (barresAnimeesCount === filmPrime.length) {
+                            // Si toutes les barres ont terminées leur animation, on appelle la fonction permettant de jouer l'effet de Hover
+                            activerEffetHover();
+                        }
+                    });
+            });
+
+        // Fonction pour activer l'effet de hover
+        function activerEffetHover() {
+            // Ajout de l'effet de hover pour les barres et la légende
+            d3.selectAll(".barre, .legend-item")
+                .on("mouseenter", function (e, d) {
+                    let pays;
+
+                    // On vérifie si l'utilisateur passe sa souris sur une barre
+                    if (this.classList.contains("barre")) {
+
+                        pays = d.Pays;
+
+                        div.transition()
+                            .style("display", "block")
+                            .style("visibility", "visible")
+                        div.html(`<p><span class="hoverDetail">Film primé en ${d.AnnéeNomination}</span><br><span class="hoverDetail">${d.Titre}</span><br><span class="hoverDetail">Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}</p>`)
+                            .style("left", (e.pageX + 10) + "px")
+                            .style("top", (e.pageY - 50) + "px");
+
+                        // Réduit l'opacité de toutes les barres, sauf celle survolée
+                        d3.selectAll(".barre")
+                            .filter(function () {
+                                return this !== e.target;
+                            })
+                            .transition()
+                            .duration(200)
+                            .attr("opacity", 0.2);
+
+                    } else {
+                        pays = d3.select(this).select(".legend-label").text();
+
+                        // Change l'opacité de toutes les barres, sauf celles correspondant au pays sélectionné dans la légende
+                        d3.selectAll(".barre")
+                            .filter(film => film.Pays !== pays)
+                            .transition()
+                            .duration(200)
+                            .attr("opacity", 0.2);
+                    }
+
+                    // Change également l'opacité des éléments de légende en fonction du pays
+                    d3.selectAll(".legend-item")
+                        .filter(item => item[0] !== pays)
+                        .transition()
+                        .duration(200)
+                        .style("opacity", 0.2);
+                })
+
+                .on("mouseleave", function () {
+                    div.transition()
+                        .style("visibility", "hidden")
+                        .style("display", "none");
+                    // Retour à l'opacité d'origine de toutes les barres
+                    d3.selectAll(".barre")
+                        .transition()
+                        .duration(200)
+                        .attr("opacity", 1);
+
+                    // Retour à l'opacité d'origine des pays dans la légende
+                    d3.selectAll(".legend-item")
+                        .transition()
+                        .duration(200)
+                        .style("opacity", 1);
+                });
+        }
+
 
         // Création d'un tableau d'objets contenant le nom du pays et la couleur qui lui est attribuée
         const legendData = Object.entries(couleurParPays);
@@ -139,71 +225,6 @@ fetch('./FilmData.json')
             .select(".main")
             .append("div")
             .attr("class", "hoverMovie")
-
-        // Ajout de l'effet de hover pour les barres et la légende
-        d3.selectAll(".barre, .legend-item")
-            .on("mouseenter", function (e, d) {
-
-                let pays;
-
-                // On vérifie si l'utilisateur passe sa souris sur une barre
-                if (this.classList.contains("barre")) {
-
-                    pays = d.Pays;
-
-                    div.transition()
-                        .style("display", "block")
-                        .style("visibility", "visible")
-                    div.html(`<p><span class="hoverDetail">Film primé en ${d.AnnéeNomination}</span><br><span class="hoverDetail">${d.Titre}</span><br><span class="hoverDetail">Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}</p>`)
-                        .style("left", (e.pageX + 10) + "px")
-                        .style("top", (e.pageY - 50) + "px");
-
-                    // Réduit l'opacité de toutes les barres, sauf celle survolée
-                    d3.selectAll(".barre")
-                        .filter(function () {
-                            return this !== e.target;
-                        })
-                        .transition()
-                        .duration(200)
-                        .attr("opacity", 0.2);
-
-                } else {
-                    pays = d3.select(this).select(".legend-label").text();
-
-                    // Change l'opacité de toutes les barres, sauf celles coorespondant au pays selectionné dans la légende
-                    d3.selectAll(".barre")
-                        .filter(film => film.Pays !== pays)
-                        .transition()
-                        .duration(200)
-                        .attr("opacity", 0.2);
-                }
-
-                // Change également l'opacité des éléments de légende en fonction du pays
-                d3.selectAll(".legend-item")
-                    .filter(item => item[0] !== pays)
-                    .transition()
-                    .duration(200)
-                    .style("opacity", 0.2);
-            })
-
-            // On remet l'opacité par défaut pour les textes situés dans la légende et pour toutes les barres si l'utilisateur ne passe plus sa souris sur une barre ou un pays dans la légende
-            .on("mouseleave", function () {
-                div.transition()
-                    .style("visibility", "hidden")
-                    .style("display", "none")
-                // Retour à l'opacité d'origine de toutes les barres
-                d3.selectAll(".barre")
-                    .transition()
-                    .duration(200)
-                    .attr("opacity", 1);
-
-                // Retour à l'opacité d'origine de les pays dans la légende
-                d3.selectAll(".legend-item")
-                    .transition()
-                    .duration(200)
-                    .style("opacity", 1);
-            });
-
 
         // Fonction permettant d'afficher les informations sur le film primé et les films nominés de l'année selectionné
         function seeMoreInformations(tabIndex) {
