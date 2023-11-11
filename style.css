@@ -169,6 +169,7 @@ svg {
 }
 
 .hoverMovie {
+    display: none;
     visibility: hidden;
     background-color: #263C5F;
     position: absolute;

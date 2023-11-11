@@ -152,6 +152,7 @@ fetch('./FilmData.json')
                     pays = d.Pays;
 
                     div.transition()
+                        .style("display", "block")
                         .style("visibility", "visible")
                     div.html(`<p><span class="hoverDetail">Film primé en ${d.AnnéeNomination}</span><br><span class="hoverDetail">${d.Titre}</span><br><span class="hoverDetail">Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}</p>`)
                         .style("left", (e.pageX + 10) + "px")
@@ -189,6 +190,7 @@ fetch('./FilmData.json')
             .on("mouseleave", function () {
                 div.transition()
                     .style("visibility", "hidden")
+                    .style("display", "none")
                 // Retour à l'opacité d'origine de toutes les barres
                 d3.selectAll(".barre")
                     .transition()
