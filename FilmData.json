@@ -13,7 +13,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 1984,
     "Pays": "Hongrie",
-    "Bande-Annonce": "https://youtu.be/Qx1bbjSmAKE?si=GvZ0W8Hye4U5FsUr",
+    "BandeAnnonce": "https://www.youtube.com/embed/9pJKdTqYijY",
     "Techniques": "dessin sur papier (peinture)"
   },
   {
@@ -30,7 +30,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 1985,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -47,7 +47,7 @@
     "NoteIMDB": "Donnée non disponible",
     "AnneeSortie": 1984,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -64,7 +64,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 1983,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -81,7 +81,7 @@
     "NoteIMDB": 7.7,
     "AnneeSortie": 1986,
     "Pays": "Royaume-Uni",
-    "Bande-Annonce": "https://youtu.be/9pJKdTqYijY?si=rwQpSAVffuR-CzZi",
+    "BandeAnnonce": "https://archive.org/embed/when-the-wind-blows_202109",
     "Techniques": "dessin sur cellulos, vues réelles"
   },
   {
@@ -98,7 +98,7 @@
     "NoteIMDB": 7.6,
     "AnneeSortie": 1985,
     "Pays": "Chine",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -115,7 +115,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 1985,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -132,7 +132,7 @@
     "NoteIMDB": 7.8,
     "AnneeSortie": 1986,
     "Pays": "Allemagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -149,7 +149,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 1986,
     "Pays": "Danemark",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -166,7 +166,7 @@
     "NoteIMDB": 7.4,
     "AnneeSortie": 1988,
     "Pays": "Tchécoslovaquie",
-    "Bande-Annonce": "https://youtu.be/MR6HcT8P-VA?si=NxnFxhq6l3HvwKTf",
+    "BandeAnnonce": "https://www.youtube.com/embed/MR6HcT8P-VA?si=KFYgPkOOUaKv0fJI",
     "Techniques": "marionnettes, animation d'objets, vues réelles"
   },
   {
@@ -183,7 +183,7 @@
     "NoteIMDB": 8,
     "AnneeSortie": 1988,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -200,7 +200,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 1987,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -217,7 +217,7 @@
     "NoteIMDB": "Donnée non disponible",
     "AnneeSortie": 1987,
     "Pays": "Cuba",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -234,7 +234,7 @@
     "NoteIMDB": 7.4,
     "AnneeSortie": 1988,
     "Pays": "Irlande",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -251,7 +251,7 @@
     "NoteIMDB": 6.1,
     "AnneeSortie": 1991,
     "Pays": "France",
-    "Bande-Annonce": "https://player.allocine.fr/6774031.html",
+    "BandeAnnonce": "https://player.allocine.fr/6774031.html",
     "Techniques": "dessin sur cellulos"
   },
   {
@@ -268,7 +268,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 1989,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -285,7 +285,7 @@
     "NoteIMDB": 7.3,
     "AnneeSortie": 1989,
     "Pays": "Norvège",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -302,7 +302,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 1990,
     "Pays": "Suède",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -319,7 +319,7 @@
     "NoteIMDB": 5.5,
     "AnneeSortie": 1987,
     "Pays": "Russie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -336,7 +336,7 @@
     "NoteIMDB": 7.7,
     "AnneeSortie": 1992,
     "Pays": "Japon",
-    "Bande-Annonce": "https://player.allocine.fr/19422350.html",
+    "BandeAnnonce": "https://player.allocine.fr/19422350.html",
     "Techniques": "dessin sur cellulos"
   },
   {
@@ -353,7 +353,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 1991,
     "Pays": "Canada",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -370,7 +370,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 1992,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -387,7 +387,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 1992,
     "Pays": "Royaume-Uni",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -404,7 +404,7 @@
     "NoteIMDB": "Donnée non disponible",
     "AnneeSortie": 1994,
     "Pays": "Etat-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -421,7 +421,7 @@
     "NoteIMDB": 7.3,
     "AnneeSortie": 1994,
     "Pays": "Japon",
-    "Bande-Annonce": "https://player.allocine.fr/18407809.html",
+    "BandeAnnonce": "https://player.allocine.fr/18407809.html",
     "Techniques": "dessin sur cellulos"
   },
   {
@@ -438,7 +438,7 @@
     "NoteIMDB": 6.1,
     "AnneeSortie": 2003,
     "Pays": "Danemark",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -455,7 +455,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 1994,
     "Pays": "Italie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -472,7 +472,7 @@
     "NoteIMDB": 6.7,
     "AnneeSortie": 1996,
     "Pays": "États-Unis",
-    "Bande-Annonce": "https://player.allocine.fr/18407809.html",
+    "BandeAnnonce": "https://player.allocine.fr/18407809.html",
     "Techniques": "marionnettes, vues réelles"
   },
   {
@@ -489,7 +489,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 1996,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -506,7 +506,7 @@
     "NoteIMDB": 6.5,
     "AnneeSortie": 1996,
     "Pays": "Luxembourg",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -523,7 +523,7 @@
     "NoteIMDB": 5.5,
     "AnneeSortie": 1996,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -540,7 +540,7 @@
     "NoteIMDB": 5,
     "AnneeSortie": 1995,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -557,7 +557,7 @@
     "NoteIMDB": 5.6,
     "AnneeSortie": 1996,
     "Pays": "Allemagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -574,7 +574,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 1997,
     "Pays": "États-Unis",
-    "Bande-Annonce": "https://player.allocine.fr/19599931.html",
+    "BandeAnnonce": "https://player.allocine.fr/19599931.html",
     "Techniques": "dessin sur cellulos"
   },
   {
@@ -591,7 +591,7 @@
     "NoteIMDB": 5.8,
     "AnneeSortie": 1998,
     "Pays": "Norvège",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -608,7 +608,7 @@
     "NoteIMDB": 5.2,
     "AnneeSortie": 1997,
     "Pays": "Suède",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -625,7 +625,7 @@
     "NoteIMDB": "Donnée non disponible",
     "AnneeSortie": 1997,
     "Pays": "Suède",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -642,7 +642,7 @@
     "NoteIMDB": "Donnée non disponible",
     "AnneeSortie": 1997,
     "Pays": "",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -659,7 +659,7 @@
     "NoteIMDB": 7.5,
     "AnneeSortie": 1998,
     "Pays": "France",
-    "Bande-Annonce": "https://player.allocine.fr/19517866.html",
+    "BandeAnnonce": "https://player.allocine.fr/19517866.html",
     "Techniques": "dessin sur papier (crayon), ordinateur 2D"
   },
   {
@@ -676,7 +676,7 @@
     "NoteIMDB": 5.9,
     "AnneeSortie": 1998,
     "Pays": "Norvège",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -693,7 +693,7 @@
     "NoteIMDB": 7.3,
     "AnneeSortie": 1999,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -710,7 +710,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 1998,
     "Pays": "Italie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -727,7 +727,7 @@
     "NoteIMDB": 5.9,
     "AnneeSortie": 1998,
     "Pays": "Royaume-Uni",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -744,7 +744,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2001,
     "Pays": "États-Unis",
-    "Bande-Annonce": "https://player.allocine.fr/19599931.html",
+    "BandeAnnonce": "https://player.allocine.fr/19599931.html",
     "Techniques": "dessin sur cellulos"
   },
   {
@@ -761,7 +761,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2000,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -778,7 +778,7 @@
     "NoteIMDB": 6,
     "AnneeSortie": 2000,
     "Pays": "Irlande",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -795,7 +795,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 2000,
     "Pays": "Norvège",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -812,7 +812,7 @@
     "NoteIMDB": 6.5,
     "AnneeSortie": 2002,
     "Pays": "Corée du Sud",
-    "Bande-Annonce": "https://player.allocine.fr/18352639.html",
+    "BandeAnnonce": "https://player.allocine.fr/18352639.html",
     "Techniques": "ordinateur 2D/3D"
   },
   {
@@ -829,7 +829,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2002,
     "Pays": "Argentine",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -846,7 +846,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 2001,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -863,7 +863,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2001,
     "Pays": "Italie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -880,7 +880,7 @@
     "NoteIMDB": 4.8,
     "AnneeSortie": 2002,
     "Pays": "Luxembourg",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -897,7 +897,7 @@
     "NoteIMDB": "Donnée non disponible",
     "AnneeSortie": 2003,
     "Pays": "Italie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -914,7 +914,7 @@
     "NoteIMDB": 7.3,
     "AnneeSortie": 2001,
     "Pays": "Hong Kong",
-    "Bande-Annonce": "https://player.allocine.fr/18353716.html",
+    "BandeAnnonce": "https://player.allocine.fr/18353716.html",
     "Techniques": "dessin sur cellulos , photos , éléments découpés, ordinateur 3D, vues réelles"
   },
   {
@@ -931,7 +931,7 @@
     "NoteIMDB": 6,
     "AnneeSortie": 2003,
     "Pays": "Canada",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -948,7 +948,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2002,
     "Pays": "Danemark",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -965,7 +965,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2003,
     "Pays": "Zimbabwe",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -982,7 +982,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2003,
     "Pays": "Corée du Sud",
-    "Bande-Annonce": "https://player.allocine.fr/18368140.html",
+    "BandeAnnonce": "https://player.allocine.fr/18368140.html",
     "Techniques": "ordinateur 2D"
   },
   {
@@ -999,7 +999,7 @@
     "NoteIMDB": 5.4,
     "AnneeSortie": 2003,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1016,7 +1016,7 @@
     "NoteIMDB": 6.7,
     "AnneeSortie": 2004,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1033,7 +1033,7 @@
     "NoteIMDB": 3.9,
     "AnneeSortie": 2003,
     "Pays": "Canada",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1050,7 +1050,7 @@
     "NoteIMDB": 6,
     "AnneeSortie": 2003,
     "Pays": "Italie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1067,7 +1067,7 @@
     "NoteIMDB": 6,
     "AnneeSortie": 2004,
     "Pays": "Hongrie",
-    "Bande-Annonce": "https://player.allocine.fr/19548635.html",
+    "BandeAnnonce": "https://player.allocine.fr/19548635.html",
     "Techniques": "ordinateur 2D/3D"
   },
   {
@@ -1084,7 +1084,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2005,
     "Pays": "Suède",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1101,7 +1101,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2004,
     "Pays": "Estonie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1118,7 +1118,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2004,
     "Pays": "Danemark",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1135,7 +1135,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2004,
     "Pays": "Russie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1152,7 +1152,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2006,
     "Pays": "France",
-    "Bande-Annonce": "https://player.allocine.fr/18407696.html",
+    "BandeAnnonce": "https://player.allocine.fr/18407696.html",
     "Techniques": "ordinateur 3D"
   },
   {
@@ -1169,7 +1169,7 @@
     "NoteIMDB": 6,
     "AnneeSortie": 2006,
     "Pays": "Danemark",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1186,7 +1186,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2006,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1203,7 +1203,7 @@
     "NoteIMDB": 7.5,
     "AnneeSortie": 2005,
     "Pays": "Royaume-Uni",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1220,7 +1220,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 2005,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1237,7 +1237,7 @@
     "NoteIMDB": 5.9,
     "AnneeSortie": 2006,
     "Pays": "Norvège",
-    "Bande-Annonce": "https://player.allocine.fr/19548634.html",
+    "BandeAnnonce": "https://player.allocine.fr/19548634.html",
     "Techniques": "ordinateur 3D"
   },
   {
@@ -1254,7 +1254,7 @@
     "NoteIMDB": 7.4,
     "AnneeSortie": 2006,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1271,7 +1271,7 @@
     "NoteIMDB": 6.5,
     "AnneeSortie": 2006,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1288,7 +1288,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2007,
     "Pays": "Serbie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1305,7 +1305,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2006,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1322,7 +1322,7 @@
     "NoteIMDB": 5.9,
     "AnneeSortie": 2007,
     "Pays": "Belgique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1339,7 +1339,7 @@
     "NoteIMDB": 7.7,
     "AnneeSortie": 2006,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1356,7 +1356,7 @@
     "NoteIMDB": 5.7,
     "AnneeSortie": 2006,
     "Pays": "Thaïlande",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1373,7 +1373,7 @@
     "NoteIMDB": 7.7,
     "AnneeSortie": 2006,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1390,7 +1390,7 @@
     "NoteIMDB": 7.6,
     "AnneeSortie": 2008,
     "Pays": "États-Unis",
-    "Bande-Annonce": "https://player.allocine.fr/18909800.html",
+    "BandeAnnonce": "https://player.allocine.fr/18909800.html",
     "Techniques": "dessin sur papier, éléments découpés, ordinateur 2D, rotoscopie"
   },
   {
@@ -1407,7 +1407,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2007,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1424,7 +1424,7 @@
     "NoteIMDB": 6.5,
     "AnneeSortie": 2008,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1441,7 +1441,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2007,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1458,7 +1458,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2007,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1475,7 +1475,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2008,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1492,7 +1492,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 2007,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1509,7 +1509,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2007,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1526,7 +1526,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2007,
     "Pays": "Allemagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1543,7 +1543,7 @@
     "NoteIMDB": 7.7,
     "AnneeSortie": 2009,
     "Pays": "États-Unis",
-    "Bande-Annonce": "https://player.allocine.fr/18874791.html",
+    "BandeAnnonce": "https://player.allocine.fr/18874791.html",
     "Techniques": "pâte à modeler"
   },
   {
@@ -1560,7 +1560,7 @@
     "NoteIMDB": 6.5,
     "AnneeSortie": 2007,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1577,7 +1577,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2009,
     "Pays": "Mexique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1594,7 +1594,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2008,
     "Pays": "Norvège",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1611,7 +1611,7 @@
     "NoteIMDB": 6.4,
     "AnneeSortie": 2009,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1628,7 +1628,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 2009,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1645,7 +1645,7 @@
     "NoteIMDB": 7.5,
     "AnneeSortie": 2009,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1662,7 +1662,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 2009,
     "Pays": "Corée du Sud",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1679,7 +1679,7 @@
     "NoteIMDB": 7.9,
     "AnneeSortie": 2009,
     "Pays": "Royaume-Uni",
-    "Bande-Annonce": "https://player.allocine.fr/18942560.html",
+    "BandeAnnonce": "https://player.allocine.fr/18942560.html",
     "Techniques": "marionnettes"
   },
   {
@@ -1696,7 +1696,7 @@
     "NoteIMDB": 6.7,
     "AnneeSortie": 2009,
     "Pays": "Italie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1713,7 +1713,7 @@
     "NoteIMDB": 6.2,
     "AnneeSortie": 2009,
     "Pays": "Norvège",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1730,7 +1730,7 @@
     "NoteIMDB": 7.5,
     "AnneeSortie": 2009,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1747,7 +1747,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2010,
     "Pays": "Chine",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1764,7 +1764,7 @@
     "NoteIMDB": 7.4,
     "AnneeSortie": 2009,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1781,7 +1781,7 @@
     "NoteIMDB": 6.2,
     "AnneeSortie": 2010,
     "Pays": "Belgique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1798,7 +1798,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2011,
     "Pays": "France",
-    "Bande-Annonce": "https://player.allocine.fr/19214108.html",
+    "BandeAnnonce": "https://player.allocine.fr/19214108.html",
     "Techniques": "dessin sur papier, ordinateur 2D"
   },
   {
@@ -1815,7 +1815,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2010,
     "Pays": "Suisse",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1832,7 +1832,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 2010,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1849,7 +1849,7 @@
     "NoteIMDB": 7.4,
     "AnneeSortie": 2010,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1866,7 +1866,7 @@
     "NoteIMDB": 5.6,
     "AnneeSortie": 2011,
     "Pays": "Danemark",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1883,7 +1883,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2010,
     "Pays": "Irlande",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1900,7 +1900,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2011,
     "Pays": "Corée du Sud",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1917,7 +1917,7 @@
     "NoteIMDB": 6.7,
     "AnneeSortie": 2011,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1934,7 +1934,7 @@
     "NoteIMDB": 7.3,
     "AnneeSortie": 2011,
     "Pays": "Corée du Sud",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1951,7 +1951,7 @@
     "NoteIMDB": 7.5,
     "AnneeSortie": 2011,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -1968,7 +1968,7 @@
     "NoteIMDB": 7.6,
     "AnneeSortie": 2011,
     "Pays": "Roumanie",
-    "Bande-Annonce": "https://player.allocine.fr/19370140.html",
+    "BandeAnnonce": "https://player.allocine.fr/19370140.html",
     "Techniques": "techniques diverses"
   },
   {
@@ -1985,7 +1985,7 @@
     "NoteIMDB": 7.6,
     "AnneeSortie": 2011,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2002,7 +2002,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2012,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2019,7 +2019,7 @@
     "NoteIMDB": 7.3,
     "AnneeSortie": 2012,
     "Pays": "Belgique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2036,7 +2036,7 @@
     "NoteIMDB": 6.2,
     "AnneeSortie": 2012,
     "Pays": "Corée du Sud",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2053,7 +2053,7 @@
     "NoteIMDB": 7.3,
     "AnneeSortie": 2011,
     "Pays": "Belgique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2070,7 +2070,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2011,
     "Pays": "Danemark",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2087,7 +2087,7 @@
     "NoteIMDB": 5.9,
     "AnneeSortie": 2012,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2104,7 +2104,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2011,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2121,7 +2121,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2012,
     "Pays": "Belgique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2138,7 +2138,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2012,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2155,7 +2155,7 @@
     "NoteIMDB": "Donnée non disponible",
     "AnneeSortie": 2012,
     "Pays": "",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2172,7 +2172,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2013,
     "Pays": "Brésil",
-    "Bande-Annonce": "https://player.allocine.fr/19523026.html",
+    "BandeAnnonce": "https://player.allocine.fr/19523026.html",
     "Techniques": "dessin sur papier"
   },
   {
@@ -2189,7 +2189,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 2012,
     "Pays": "Inde",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2206,7 +2206,7 @@
     "NoteIMDB": 7.7,
     "AnneeSortie": 2012,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2223,7 +2223,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2013,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2240,7 +2240,7 @@
     "NoteIMDB": 5.7,
     "AnneeSortie": 2013,
     "Pays": "Afrique du Sud",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2257,7 +2257,7 @@
     "NoteIMDB": "5;0",
     "AnneeSortie": 2013,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2274,7 +2274,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2013,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2291,7 +2291,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 2012,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2308,7 +2308,7 @@
     "NoteIMDB": 5.2,
     "AnneeSortie": 2013,
     "Pays": "Allemagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2325,7 +2325,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2013,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2342,7 +2342,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2013,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2359,7 +2359,7 @@
     "NoteIMDB": 7.5,
     "AnneeSortie": 2013,
     "Pays": "Brésil",
-    "Bande-Annonce": "https://player.allocine.fr/19547531.html",
+    "BandeAnnonce": "https://player.allocine.fr/19547531.html",
     "Techniques": "dessin sur papier, ordinateur 2D, techniques diverses, vues réelles"
   },
   {
@@ -2376,7 +2376,7 @@
     "NoteIMDB": 5.9,
     "AnneeSortie": 2013,
     "Pays": "Canada",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2393,7 +2393,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2013,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2410,7 +2410,7 @@
     "NoteIMDB": 7.3,
     "AnneeSortie": 2014,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2427,7 +2427,7 @@
     "NoteIMDB": 7.3,
     "AnneeSortie": 2013,
     "Pays": "Italie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2444,7 +2444,7 @@
     "NoteIMDB": 6.1,
     "AnneeSortie": 2014,
     "Pays": "Irlande",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2461,7 +2461,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2013,
     "Pays": "Finlande",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2478,7 +2478,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2013,
     "Pays": "Belgique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2495,7 +2495,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 2013,
     "Pays": "Corée du Sud",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2512,7 +2512,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 2015,
     "Pays": "France",
-    "Bande-Annonce": "https://player.allocine.fr/19557514.html",
+    "BandeAnnonce": "https://player.allocine.fr/19557514.html",
     "Techniques": "ordinateur 2D"
   },
   {
@@ -2529,7 +2529,7 @@
     "NoteIMDB": 6.7,
     "AnneeSortie": 2015,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2546,7 +2546,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2014,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2563,7 +2563,7 @@
     "NoteIMDB": 6,
     "AnneeSortie": 2014,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2580,7 +2580,7 @@
     "NoteIMDB": 6.1,
     "AnneeSortie": 2015,
     "Pays": "Colombie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2597,7 +2597,7 @@
     "NoteIMDB": 6.7,
     "AnneeSortie": 2015,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2614,7 +2614,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2015,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2631,7 +2631,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 2015,
     "Pays": "Danemark",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2648,7 +2648,7 @@
     "NoteIMDB": 7.8,
     "AnneeSortie": 2016,
     "Pays": "France",
-    "Bande-Annonce": "https://player.allocine.fr/19564644.html",
+    "BandeAnnonce": "https://player.allocine.fr/19564644.html",
     "Techniques": "marionnettes"
   },
   {
@@ -2665,7 +2665,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2015,
     "Pays": "Nouvelle-Zélande",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2682,7 +2682,7 @@
     "NoteIMDB": 6,
     "AnneeSortie": 2015,
     "Pays": "Canada",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2699,7 +2699,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2016,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2716,7 +2716,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2016,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2733,7 +2733,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 2015,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2750,7 +2750,7 @@
     "NoteIMDB": 6.1,
     "AnneeSortie": 2016,
     "Pays": "Corée du Sud",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2767,7 +2767,7 @@
     "NoteIMDB": 5.8,
     "AnneeSortie": 2016,
     "Pays": "Russie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2784,7 +2784,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 2016,
     "Pays": "Canada",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2801,7 +2801,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 2017,
     "Pays": "Japon",
-    "Bande-Annonce": "https://player.allocine.fr/19573170.html",
+    "BandeAnnonce": "https://player.allocine.fr/19573170.html",
     "Techniques": "ordinateur 2D"
   },
   {
@@ -2818,7 +2818,7 @@
     "NoteIMDB": 8.1,
     "AnneeSortie": 2016,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2835,7 +2835,7 @@
     "NoteIMDB": 5.8,
     "AnneeSortie": 2017,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2852,7 +2852,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2016,
     "Pays": "Chine",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2869,7 +2869,7 @@
     "NoteIMDB": 7.7,
     "AnneeSortie": 2016,
     "Pays": "Royaume-Uni",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2886,7 +2886,7 @@
     "NoteIMDB": 6.5,
     "AnneeSortie": 2017,
     "Pays": "Chine",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2903,7 +2903,7 @@
     "NoteIMDB": 7.8,
     "AnneeSortie": 2016,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2920,7 +2920,7 @@
     "NoteIMDB": 7.8,
     "AnneeSortie": 2017,
     "Pays": "Royaume-Uni",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2937,7 +2937,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2017,
     "Pays": "Autriche",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2954,7 +2954,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2017,
     "Pays": "Belgique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2971,7 +2971,7 @@
     "NoteIMDB": 6.7,
     "AnneeSortie": 2017,
     "Pays": "Italie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -2988,7 +2988,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2018,
     "Pays": "France",
-    "Bande-Annonce": "https://player.allocine.fr/19578912.html",
+    "BandeAnnonce": "https://player.allocine.fr/19578912.html",
     "Techniques": "ordinateur 2D"
   },
   {
@@ -3005,7 +3005,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2018,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3022,7 +3022,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2018,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3039,7 +3039,7 @@
     "NoteIMDB": 7.4,
     "AnneeSortie": 2018,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3056,7 +3056,7 @@
     "NoteIMDB": 7.7,
     "AnneeSortie": 2017,
     "Pays": "Canada",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3073,7 +3073,7 @@
     "NoteIMDB": 6.7,
     "AnneeSortie": 2018,
     "Pays": "Brésil",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3090,7 +3090,7 @@
     "NoteIMDB": 6.5,
     "AnneeSortie": 2017,
     "Pays": "Belgique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3107,7 +3107,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 2017,
     "Pays": "Colombie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3124,7 +3124,7 @@
     "NoteIMDB": 7.5,
     "AnneeSortie": 2018,
     "Pays": "Chili",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3141,7 +3141,7 @@
     "NoteIMDB": 7.5,
     "AnneeSortie": 2019,
     "Pays": "France",
-    "Bande-Annonce": "https://player.allocine.fr/19585856.html",
+    "BandeAnnonce": "https://player.allocine.fr/19585856.html",
     "Techniques": "ordinateur 2D/3D"
   },
   {
@@ -3158,7 +3158,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2018,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3175,7 +3175,7 @@
     "NoteIMDB": 7.5,
     "AnneeSortie": 2019,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3192,7 +3192,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2019,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3209,7 +3209,7 @@
     "NoteIMDB": 7.4,
     "AnneeSortie": 2019,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3226,7 +3226,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 2019,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3243,7 +3243,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2018,
     "Pays": "Danemark",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3260,7 +3260,7 @@
     "NoteIMDB": 5.8,
     "AnneeSortie": 2019,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3277,7 +3277,7 @@
     "NoteIMDB": 6.2,
     "AnneeSortie": 2019,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3294,7 +3294,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2019,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3311,7 +3311,7 @@
     "NoteIMDB": 7.9,
     "AnneeSortie": 2019,
     "Pays": "Luxembourg",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3328,7 +3328,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2020,
     "Pays": "France",
-    "Bande-Annonce": "https://player.allocine.fr/19588866.html",
+    "BandeAnnonce": "https://player.allocine.fr/19588866.html",
     "Techniques": "ordinateur 2D/3D"
   },
   {
@@ -3345,7 +3345,7 @@
     "NoteIMDB": 6.1,
     "AnneeSortie": 2019,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3362,7 +3362,7 @@
     "NoteIMDB": 5.8,
     "AnneeSortie": 2020,
     "Pays": "Belgique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3379,7 +3379,7 @@
     "NoteIMDB": 5.4,
     "AnneeSortie": 2020,
     "Pays": "Russie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3396,7 +3396,7 @@
     "NoteIMDB": 5.4,
     "AnneeSortie": 2020,
     "Pays": "Maurice",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3413,7 +3413,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2020,
     "Pays": "Pologne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3430,7 +3430,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2019,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3447,7 +3447,7 @@
     "NoteIMDB": 6.5,
     "AnneeSortie": 2020,
     "Pays": "Brésil",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3464,7 +3464,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2020,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3481,7 +3481,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2020,
     "Pays": "Russie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3498,7 +3498,7 @@
     "NoteIMDB": 7.9,
     "AnneeSortie": 2021,
     "Pays": "Danemark",
-    "Bande-Annonce": "https://player.allocine.fr/19597338.html",
+    "BandeAnnonce": "https://player.allocine.fr/19597338.html",
     "Techniques": "ordinateur 2D, vues réelles"
   },
   {
@@ -3515,7 +3515,7 @@
     "NoteIMDB": 6.4,
     "AnneeSortie": 2020,
     "Pays": "Philippines",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3532,7 +3532,7 @@
     "NoteIMDB": 6.5,
     "AnneeSortie": 2020,
     "Pays": "Chine",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3549,7 +3549,7 @@
     "NoteIMDB": 7.6,
     "AnneeSortie": 2020,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3566,7 +3566,7 @@
     "NoteIMDB": 7.4,
     "AnneeSortie": 2021,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3583,7 +3583,7 @@
     "NoteIMDB": 6.2,
     "AnneeSortie": 2021,
     "Pays": "Canada",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3600,7 +3600,7 @@
     "NoteIMDB": 6.7,
     "AnneeSortie": 2021,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3617,7 +3617,7 @@
     "NoteIMDB": 6.4,
     "AnneeSortie": 2020,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3634,7 +3634,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2021,
     "Pays": "Autriche",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3651,7 +3651,7 @@
     "NoteIMDB": 5.7,
     "AnneeSortie": 2021,
     "Pays": "Norvège",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3668,7 +3668,7 @@
     "NoteIMDB": 6.4,
     "AnneeSortie": 2021,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3685,7 +3685,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 2022,
     "Pays": "France",
-    "Bande-Annonce": "https://player.allocine.fr/19594670.html",
+    "BandeAnnonce": "https://player.allocine.fr/19594670.html",
     "Techniques": "ordinateur 2D, techniques diverses"
   },
   {
@@ -3702,7 +3702,7 @@
     "NoteIMDB": 6.4,
     "AnneeSortie": 2021,
     "Pays": "Canada",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3719,7 +3719,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2021,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3736,7 +3736,7 @@
     "NoteIMDB": 7.2,
     "AnneeSortie": 2022,
     "Pays": "Italie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3753,7 +3753,7 @@
     "NoteIMDB": 6.6,
     "AnneeSortie": 2021,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3770,7 +3770,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2022,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3787,7 +3787,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2022,
     "Pays": "Belgique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3804,7 +3804,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2022,
     "Pays": "Canada",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3821,7 +3821,7 @@
     "NoteIMDB": 5.7,
     "AnneeSortie": 2021,
     "Pays": "États-Unis",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3838,7 +3838,7 @@
     "NoteIMDB": 6.8,
     "AnneeSortie": 2022,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3855,7 +3855,7 @@
     "NoteIMDB": 7.5,
     "AnneeSortie": 2023,
     "Pays": "France",
-    "Bande-Annonce": "https://player.allocine.fr/19601529.html",
+    "BandeAnnonce": "https://player.allocine.fr/19601529.html",
     "Techniques": "ordinateur 2D"
   },
   {
@@ -3872,7 +3872,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2023,
     "Pays": "Belgique",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3889,7 +3889,7 @@
     "NoteIMDB": 6.3,
     "AnneeSortie": 2023,
     "Pays": "Chine",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3906,7 +3906,7 @@
     "NoteIMDB": 7.6,
     "AnneeSortie": 2023,
     "Pays": "Hongrie",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3923,7 +3923,7 @@
     "NoteIMDB": 8,
     "AnneeSortie": 2023,
     "Pays": "Royaume-Uni",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3940,7 +3940,7 @@
     "NoteIMDB": 7,
     "AnneeSortie": 2022,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3957,7 +3957,7 @@
     "NoteIMDB": 7.4,
     "AnneeSortie": 2023,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3974,7 +3974,7 @@
     "NoteIMDB": 7.7,
     "AnneeSortie": 2023,
     "Pays": "France",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -3991,7 +3991,7 @@
     "NoteIMDB": 7.1,
     "AnneeSortie": 2023,
     "Pays": "Espagne",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -4008,7 +4008,7 @@
     "NoteIMDB": 6.2,
     "AnneeSortie": 2023,
     "Pays": "Irlande",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   },
   {
@@ -4025,7 +4025,7 @@
     "NoteIMDB": 6.9,
     "AnneeSortie": 2022,
     "Pays": "Japon",
-    "Bande-Annonce": "",
+    "BandeAnnonce": "",
     "Techniques": ""
   }
 ]

@@ -5,17 +5,15 @@ fetch('./FilmData.json')
         let filmPrime = filmdata.filter(film => film.Primé === 1);
 
         // Collecte des années pour les utiliser dans l'axe des abscisses
-
         const annees = filmPrime.map(film => film.AnnéeNomination);
-
 
         const couleurParPays = {};
 
         // Création d'un tableau de couleurs
         const couleurs = [
-            "#4F805A", "#0F2CC6", "#FFFFFF", "#080C77", "#FF0716",
-            "#7A87FF", "#CD2E3A", "#EE1C25",
-            "#021332", "#FCD116", "#009B3A", "#F79B9E"
+            "#B5E8E2", "#CEA4E4", "#C2D0F5", "#7A87FF", "#AB5869",
+            "#7AADD1", "#FFBDC3", "#E46381",
+            "#B75FE5", "#F0CD96", "#ABE3AB", "#E2847D"
         ];
 
         // Parcours les films pour associer chaque pays à une couleur
@@ -33,7 +31,6 @@ fetch('./FilmData.json')
             .scaleLinear()
             .domain([0, 10])
             .range([0, -470]);
-
 
         // Graduation de l'échelle des x
         const xScale = d3
@@ -80,24 +77,24 @@ fetch('./FilmData.json')
             .attr("x", 905)
             .attr("y", 20);
 
-
         // Ajout des barres
         let barres = svg
             .selectAll("rect")
             .data(filmPrime);
 
-
         barres.enter()
             .append("rect")
             .attr("class", "barre")
             .attr("x", film => xScale(film.AnnéeNomination))
-            .attr("y", film => yScale(film.NoteIMDB))
+            .attr("y", yScale(0))
             .attr("width", xScale.bandwidth())
-            .attr("height", film => -yScale(film.NoteIMDB))
+            .attr("height", 0)
             .attr("fill", film => couleurParPays[film.Pays])
-            .style("cursor", "pointer");
+            .style("cursor", "pointer")
+            .attr("height", film => -yScale(film.NoteIMDB))
+            .attr("y", film => yScale(film.NoteIMDB))
 
-        // Créez un tableau d'objets contenant le nom du pays et la couleur qui lui est attribuée
+        // Création d'un tableau d'objets contenant le nom du pays et la couleur qui lui est attribuée
         const legendData = Object.entries(couleurParPays);
 
         /// Créez un élément pour la légende
@@ -126,6 +123,7 @@ fetch('./FilmData.json')
             .attr("class", "legend-circle")
             .style("background-color", d => d[1]);
 
+
         // Ajout de l'effet de hover pour les barres et la légende
         d3.selectAll(".barre, .legend-item")
             .on("mouseenter", function (e, d) {
@@ -134,7 +132,7 @@ fetch('./FilmData.json')
                 if (this.classList.contains("barre")) {
                     pays = d.Pays;
 
-                    // Réduit l'opacité de toutes les barres, sauf celle survolée (this)
+                    // Réduit l'opacité de toutes les barres, sauf celle survolée
                     d3.selectAll(".barre")
                         .filter(function () {
                             return this !== e.target;
@@ -146,7 +144,7 @@ fetch('./FilmData.json')
                 } else {
                     pays = d3.select(this).select(".legend-label").text();
 
-                    // Changez l'opacité de toutes les barres, sauf celles coorespondant au pays selectionné dans la légende
+                    // Change l'opacité de toutes les barres, sauf celles coorespondant au pays selectionné dans la légende
                     d3.selectAll(".barre")
                         .filter(film => film.Pays !== pays)
                         .transition()
@@ -154,7 +152,7 @@ fetch('./FilmData.json')
                         .attr("opacity", 0.2);
                 }
 
-                // Changez également l'opacité des éléments de légende en fonction du pays
+                // Change également l'opacité des éléments de légende en fonction du pays
                 d3.selectAll(".legend-item")
                     .filter(item => item[0] !== pays)
                     .transition()
@@ -162,18 +160,79 @@ fetch('./FilmData.json')
                     .style("opacity", 0.2);
             })
             .on("mouseleave", function () {
-                // Rétablissez la couleur d'origine pour toutes les barres
+                // Retour à l'opacité d'origine de toutes les barres
                 d3.selectAll(".barre")
                     .transition()
-                    .duration(300)
+                    .duration(200)
                     .attr("opacity", 1);
 
-                // Rétablissez l'opacité d'origine pour tous les éléments de légende
+                // Retour à l'opacité d'origine de les pays dans la légende
                 d3.selectAll(".legend-item")
                     .transition()
-                    .duration(300)
+                    .duration(200)
                     .style("opacity", 1);
             });
+
+        function seeMoreInformations(e, d) {
+
+            document.getElementById("detailMovie").scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+            });
+
+            // Changer la visibilité de la div pour la rendre visible
+            let detailMovieDiv = document.getElementById("detailMovie");
+            detailMovieDiv.style.visibility = "visible";
+
+            let anneeSelectionnee = filmdata.filter(film =>
+                film.AnnéeNomination == d.AnnéeNomination
+            );
+
+            d3.selectAll(".prime, .nominés").remove();
+
+            d3.select(".date")
+                .selectAll(".annee-cristal")
+                .data(anneeSelectionnee)
+                .enter()
+                .filter(d => d.Primé == 1)
+                .append("h2")
+                .attr("class", "prime")
+                .html(d => `Crystal du long métrage année ${d.AnnéeNomination}`);
+
+            d3.select(".bande-annonce")
+                .selectAll(".annonce-film")
+                .data(anneeSelectionnee)
+                .enter()
+                .filter(d => d.Primé == 1)
+                .append("div")
+                .attr("class", "prime")
+                .html(d => `<iframe src="${d.BandeAnnonce}" width="640" height="360" allowfullscreen="true" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe>`);
+
+            d3.select(".film-container")
+                .selectAll(".prime")
+                .data(anneeSelectionnee)
+                .enter()
+                .filter(d => d.Primé == 1)
+                .append("div")
+                .attr("class", "prime")
+                .style("display", "flex")
+                .style("flex-direction", "row")
+                .html(d => `<div><h3>Film primé</h3><br><p><span>Titre : ${d.Titre}</span><br><span>Réalisateur(s) : ${d.Réalisateurs}</span><br><span>Technique(s) de production : ${d.Techniques}</span><br><span>Note IMDB : ${d.NoteIMDB}</span><br><span>Source : <a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" title="Page IMDB du film ${d.Titre}">https://www.imdb.com/title/${d.IdIMDB}/</a></span></p></div><div><p><span>${d.Pays}</span><img src="./images/" alt="" srcset=""></p></div>`);
+
+            d3.select(".detailNomines")
+                .selectAll(".o")
+                .data(anneeSelectionnee)
+                .enter()
+                .filter(d => d.Primé == 0)
+                .append("div")
+                .attr("class", "nominés")
+                .style("display", "flex")
+                .style("flex-direction", "column")
+                .html(d => `<p><span>Titre : ${d.Titre}</span><br><span>Pays : ${d.Pays}</span><br><span class="noteIMDB">Note IMDB : ${d.NoteIMDB}</span></p>`);
+        }
+        svg.selectAll(".barre").on("click", seeMoreInformations);
+        // Ajout d'event focus pour que les éléments détaillés puissent être accessibles via la navigation au clavier
+        svg.selectAll(".barre").on("focus", seeMoreInformations);
     })
 
     .catch(error => console.error('Erreur lors du chargement du fichier JSON :', error));

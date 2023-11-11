@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Teko';
+    src: url(./Fonts/Teko-VariableFont_wght.ttf) format('truetype');
+}
+
+a {
+    color: #D5EFFF;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -34,7 +43,6 @@ header {
 .main {
     align-content: center;
     padding-top: 15%;
-    padding-bottom: 15%;
 }
 
 footer {
@@ -55,11 +63,18 @@ footer>* {
     justify-content: center;
     align-items: center;
     background-color: #ffffff1e;
-    height: 100vh;
+}
+
+.svg-container {
+    padding: 25px 0;
 }
 
 .svg-container>* {
-    padding: 50px 0 50px 0;
+    padding: 10px 0;
+}
+
+.svg-container h2 {
+    margin: 3px;
 }
 
 #legende {
@@ -72,6 +87,7 @@ footer>* {
 svg {
     overflow: visible;
     height: 80%;
+    width: 75vw;
 }
 
 /* Style de la légende */
@@ -88,4 +104,61 @@ svg {
     height: 20px;
     border-radius: 50%;
     margin-right: 5px;
+}
+
+#detailMovie {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#detailMovie {
+    font-family: 'Teko';
+}
+
+.date h2 {
+    font-size: 2.775rem;
+}
+
+.film-prime {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    flex-direction: row;
+}
+
+.film-prime * {
+    margin: 0;
+    gap: 2.225rem;
+}
+
+.film-prime h3, .titre-nomines {
+    font-size: 2rem;
+}
+
+.film-prime p :first-child {
+    font-weight: 700;
+}
+
+.film-prime p {
+    font-size: 1.5rem;
+}
+
+.films-nomines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailNomines {
+    display: flex;
+    max-width: 140vh;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.detailNomines p {
+    font-size: 1.4rem;
 }
