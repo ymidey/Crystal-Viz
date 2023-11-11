@@ -212,7 +212,6 @@ fetch('./FilmData.json')
 
             document.getElementById("detailMovie").scrollIntoView({
                 behavior: "smooth",
-                block: "center",
             });
 
             // Changer la visibilité de la div pour la rendre visible
