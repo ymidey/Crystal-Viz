@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystal'viz - Annecy Festival</title>
     <script src="d3.js" defer></script>
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favIcons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favIcons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favIcons/favicon-16x16.png">
+    <link rel="mask-icon" href="./images/favIcons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -17,12 +22,15 @@
             <div class="logo-container">
                 <img src="images/Logo.svg" alt="">
             </div>
+            <div class="scroll-down-arrow">
+                <span id="scroll-down"></span>
+            </div>
         </header>
 
         <section class="main">
-
-            <div class="svg-container">
-                <h2>Films qui ont reçu le cristal du long métrage au festival d'Annecy au fur et à mesure des années
+            <div class="svg-container" id="svg-container">
+                <h2>Films d'animation qui ont reçu le cristal du long-métrage au festival d'Annecy au fur et à mesure
+                    des années
                 </h2>
                 <div id="legende"></div>
                 <svg width="90vw" height="calc(90vw * 520 / 1000)" viewBox="-50 -490 1000 520">
@@ -55,6 +63,9 @@
 
 
     <footer>
+        <div class="div-footer">
+            <img src="./images/CrystalViz.svg" alt="" srcset="">
+        </div>
         <div class="div-footer">
             <h3>Raison Sociale de l’Hébergeur</h3>
             <p>

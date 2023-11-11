@@ -3,11 +3,36 @@
     src: url(./Fonts/Teko-VariableFont_wght.ttf) format('truetype');
 }
 
+/* Changement du style de la scrollbar */
+
+/* taille de la scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* couleur de fond secondaire de la scrollbar */
+::-webkit-scrollbar-track {
+    background: #2c4670;
+}
+
+/* couleur de fond primaire de la scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #e4e1e1;
+    border-radius: 10px;
+}
+
+/* Hcouleur de fond primaire de la scrollbar au hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+
 a {
-    color: #D5EFFF;
+    color: #b2d3e7;
 }
 
 body {
+    border: 0;
     margin: 0;
     padding: 0;
     color: white;
@@ -19,12 +44,12 @@ body {
     width: 100%;
     background-image: url('./images/backgroundCompress.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 header {
     height: 100vh;
 }
+
 
 .logo-container {
     position: relative;
@@ -40,9 +65,46 @@ header {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+.scroll-down-arrow {
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: arrowBounce 2s infinite ease-in-out;
+}
+
+.scroll-down-arrow span {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-left: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    transform: rotate(-45deg);
+    margin: 0 8px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+}
+
+@keyframes arrowBounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(10px);
+    }
+
+    60% {
+        transform: translateY(5px);
+    }
+}
+
 .main {
     align-content: center;
-    padding-top: 15%;
+    padding-top: 12%;
+    padding-bottom: 12%;
 }
 
 footer {
@@ -106,6 +168,22 @@ svg {
     margin-right: 5px;
 }
 
+.hoverMovie {
+    visibility: hidden;
+    background-color: #263C5F;
+    position: absolute;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.hoverMovie p span {
+    margin-bottom: 100px;
+}
+
+.hoverMovie p :first-child {
+    font-weight: 800;
+}
+
 #detailMovie {
     visibility: hidden;
     display: flex;
@@ -126,6 +204,8 @@ svg {
     flex-wrap: wrap;
     gap: 3rem;
     flex-direction: row;
+    justify-content: center;
+
 }
 
 .film-prime * {
@@ -161,4 +241,8 @@ svg {
 
 .detailNomines p {
     font-size: 1.4rem;
+}
+
+.nominés p :first-child {
+    font-weight: 800;
 }

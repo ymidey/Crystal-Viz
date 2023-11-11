@@ -1,4 +1,16 @@
-// Charger le fichier JSON
+// Sélectionnez le span par son identifiant
+var scrollDownSpan = document.getElementById('scroll-down');
+
+// Ajoutez un gestionnaire d'événements au span
+scrollDownSpan.addEventListener('click', function () {
+    // Sélectionnez la section cible par son identifiant
+    var mainSection = document.getElementById('svg-container');
+
+    // Faites défiler la section dans la vue
+    mainSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+// Chargement du fichier JSON
 fetch('./FilmData.json')
     .then(response => response.json())
     .then(filmdata => {
@@ -77,14 +89,16 @@ fetch('./FilmData.json')
             .attr("x", 905)
             .attr("y", 20);
 
-        // Ajout des barres
+        // Création des barres
         let barres = svg
             .selectAll("rect")
             .data(filmPrime);
 
+        // Affichage et stylisation des barres sur notre graphique
         barres.enter()
             .append("rect")
             .attr("class", "barre")
+            .attr("tabindex", (film, index) => index + 1)
             .attr("x", film => xScale(film.AnnéeNomination))
             .attr("y", yScale(0))
             .attr("width", xScale.bandwidth())
@@ -97,11 +111,8 @@ fetch('./FilmData.json')
         // Création d'un tableau d'objets contenant le nom du pays et la couleur qui lui est attribuée
         const legendData = Object.entries(couleurParPays);
 
-        /// Créez un élément pour la légende
-        const legend = d3.select("#legende");
-
         // Ajout la légende
-        const legendItems = legend
+        const legendItems = d3.select("#legende")
             .selectAll(".legend-item")
             .data(legendData)
             .enter()
@@ -123,14 +134,28 @@ fetch('./FilmData.json')
             .attr("class", "legend-circle")
             .style("background-color", d => d[1]);
 
+        // Ajout d'un encadré affichant les détails du film au survol d'une barre
+        const div = d3
+            .select(".main")
+            .append("div")
+            .attr("class", "hoverMovie")
 
         // Ajout de l'effet de hover pour les barres et la légende
         d3.selectAll(".barre, .legend-item")
             .on("mouseenter", function (e, d) {
+
                 let pays;
 
+                // On vérifie si l'utilisateur passe sa souris sur une barre
                 if (this.classList.contains("barre")) {
+
                     pays = d.Pays;
+
+                    div.transition()
+                        .style("visibility", "visible")
+                    div.html(`<p><span class="hoverDetail">Film primé en ${d.AnnéeNomination}</span><br><span class="hoverDetail">${d.Titre}</span><br><span class="hoverDetail">Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}</p>`)
+                        .style("left", (e.pageX + 10) + "px")
+                        .style("top", (e.pageY - 50) + "px");
 
                     // Réduit l'opacité de toutes les barres, sauf celle survolée
                     d3.selectAll(".barre")
@@ -159,7 +184,11 @@ fetch('./FilmData.json')
                     .duration(200)
                     .style("opacity", 0.2);
             })
+
+            // On remet l'opacité par défaut pour les textes situés dans la légende et pour toutes les barres si l'utilisateur ne passe plus sa souris sur une barre ou un pays dans la légende
             .on("mouseleave", function () {
+                div.transition()
+                    .style("visibility", "hidden")
                 // Retour à l'opacité d'origine de toutes les barres
                 d3.selectAll(".barre")
                     .transition()
@@ -173,7 +202,11 @@ fetch('./FilmData.json')
                     .style("opacity", 1);
             });
 
-        function seeMoreInformations(e, d) {
+
+        // Fonction permettant d'afficher les informations sur le film primé et les films nominés de l'année selectionné
+        function seeMoreInformations(tabIndex) {
+
+            let d = filmPrime[tabIndex - 1];
 
             document.getElementById("detailMovie").scrollIntoView({
                 behavior: "smooth",
@@ -197,6 +230,7 @@ fetch('./FilmData.json')
                 .filter(d => d.Primé == 1)
                 .append("h2")
                 .attr("class", "prime")
+                .attr("tabIndex", tabIndex)
                 .html(d => `Crystal du long métrage année ${d.AnnéeNomination}`);
 
             d3.select(".bande-annonce")
@@ -206,6 +240,7 @@ fetch('./FilmData.json')
                 .filter(d => d.Primé == 1)
                 .append("div")
                 .attr("class", "prime")
+                .attr("tabindex", tabIndex)
                 .html(d => `<iframe src="${d.BandeAnnonce}" width="640" height="360" allowfullscreen="true" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe>`);
 
             d3.select(".film-container")
@@ -217,7 +252,7 @@ fetch('./FilmData.json')
                 .attr("class", "prime")
                 .style("display", "flex")
                 .style("flex-direction", "row")
-                .html(d => `<div><h3>Film primé</h3><br><p><span>Titre : ${d.Titre}</span><br><span>Réalisateur(s) : ${d.Réalisateurs}</span><br><span>Technique(s) de production : ${d.Techniques}</span><br><span>Note IMDB : ${d.NoteIMDB}</span><br><span>Source : <a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" title="Page IMDB du film ${d.Titre}">https://www.imdb.com/title/${d.IdIMDB}/</a></span></p></div><div><p><span>${d.Pays}</span><img src="./images/" alt="" srcset=""></p></div>`);
+                .html(d => `<div><h3>Film primé</h3><br><p><span>Titre : ${d.Titre}</span><br><span>Réalisateur(s) : ${d.Réalisateurs}</span><br><span>Technique(s) de production : ${d.Techniques}</span><br><span>Note IMDB : ${d.NoteIMDB}</span><br><span>Source : <a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank"  tabindex="${tabIndex}"">https://www.imdb.com/title/${d.IdIMDB}/</a></span></p></div><div><p>${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div>`);
 
             d3.select(".detailNomines")
                 .selectAll(".o")
@@ -226,13 +261,21 @@ fetch('./FilmData.json')
                 .filter(d => d.Primé == 0)
                 .append("div")
                 .attr("class", "nominés")
-                .style("display", "flex")
-                .style("flex-direction", "column")
-                .html(d => `<p><span>Titre : ${d.Titre}</span><br><span>Pays : ${d.Pays}</span><br><span class="noteIMDB">Note IMDB : ${d.NoteIMDB}</span></p>`);
+
+                .html(d => `<p><span>Titre : ${d.Titre}</span><br><span>Pays : ${d.Pays}</span><br><span>Note IMDB : ${d.NoteIMDB}</span><br><span><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank"">Page IMDB du film ${d.Titre}</a></span></p>`);
         }
-        svg.selectAll(".barre").on("click", seeMoreInformations);
+        svg.selectAll(".barre").on("click", function () {
+            // On récupère l'index de la barre focuser
+            let tabIndex = this.tabIndex;
+            seeMoreInformations(tabIndex);
+        });
         // Ajout d'event focus pour que les éléments détaillés puissent être accessibles via la navigation au clavier
-        svg.selectAll(".barre").on("focus", seeMoreInformations);
+        svg.selectAll(".barre").on("focus", function () {
+            // On récupère l'index de la barre focuser
+            let tabIndex = this.tabIndex;
+            seeMoreInformations(tabIndex);
+        })
+
     })
 
     .catch(error => console.error('Erreur lors du chargement du fichier JSON :', error));
