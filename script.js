@@ -101,6 +101,7 @@ fetch('./FilmData.json')
         barres.enter()
             .append("rect")
             .attr("class", "barre")
+            .attr("title", film => `Année ${film.AnnéeNomination} film primé ${film.Titre}`)
             .attr("tabindex", (film, index) => index + 1)
             .attr("x", film => xScale(film.AnnéeNomination))
             .attr("width", xScale.bandwidth())
@@ -113,7 +114,7 @@ fetch('./FilmData.json')
                 d3.select(this)
                     .transition()
                     .delay(index * 100) // Délai entre chaque rectangle 
-                    .duration(1000) // Durée de la transition en millisecondes
+                    .duration(950) // Durée de la transition
                     .attr("height", film => -yScale(film.NoteIMDB))
                     .attr("y", film => yScale(film.NoteIMDB))
                     .on("end", function () {
@@ -253,7 +254,7 @@ fetch('./FilmData.json')
                 .append("h2")
                 .attr("class", "prime")
                 .attr("tabIndex", tabIndex)
-                .html(d => `Crystal du long métrage année ${d.AnnéeNomination}`);
+                .html(d => `Cristal du long métrage année ${d.AnnéeNomination}`);
 
             d3.select(".bande-annonce")
                 .selectAll(".annonce-film")
@@ -262,8 +263,7 @@ fetch('./FilmData.json')
                 .filter(d => d.Primé == 1)
                 .append("div")
                 .attr("class", "prime")
-                .attr("tabindex", tabIndex)
-                .html(d => `<iframe src="${d.BandeAnnonce}" width="640" height="360" allowfullscreen="true" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe>`);
+                .html(d => `<iframe src="${d.BandeAnnonce}" tabIndex=${tabIndex} width="640" height="360" allowfullscreen="true" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation" title="Bande annonce du film ${d.Titre}"></iframe>`);
 
             d3.select(".film-container")
                 .selectAll(".prime")
