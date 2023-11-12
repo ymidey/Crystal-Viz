@@ -1,15 +1,14 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(ScrollTrigger)
 
-    const img = document.querySelector(".logo-container img");
-    gsap.from(img, {
+    const logoContainer = document.querySelector(".logo-container");
+
+    gsap.from(logoContainer, {
         duration: 1.7,
-        y: 300,
+        y: 500,
         opacity: 0,
         ease: "ease-out",
     });
-
 
 
 });

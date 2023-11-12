@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Teko';
     src: url(./Fonts/Teko-VariableFont_wght.ttf) format('truetype');
+    font-family: 'Poppins';
+    src: url(./Fonts/Poppins-Medium.ttf) format('truetype');
 }
 
 /* Changement du style de la scrollbar */
@@ -42,7 +44,7 @@ body {
 #fullpage {
     position: relative;
     width: 100%;
-    background-image: url('./images/backgroundCompress.jpg');
+    background-image: url('./images/background.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -52,21 +54,37 @@ header {
 }
 
 
+.clip-path-container {
+    position: relative;
+    width: 38%;
+    left: 55%;
+    top: 10%;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
 .logo-container {
     position: relative;
-    left: 55%;
-    width: 35%;
-    top: 10%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.logo-container h1 {
+    font-family: 'Poppins';
+    margin: 0;
+    color: transparent;
+    -webkit-text-stroke: .5px #263C5F;
+    font-size: 3.9vw;
+    text-transform: uppercase;
+    letter-spacing: 14px;
 }
 
 .logo-container img {
-    opacity: 1;
     width: 100%;
     height: auto;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
+
 
 .scroll-down-arrow {
     position: relative;
@@ -253,13 +271,17 @@ svg {
 
 
 /* Responsive sur mobile */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
 
-    .logo-container {
+    .clip-path-container {
         top: 15%;
         left: 52%;
-        width: 90%;
+        width: 87%;
         transform: translateX(-50%);
+    }
+
+    .clip-path-container h1 {
+        font-size: 9vw;
     }
 
     svg {
@@ -271,7 +293,7 @@ svg {
     }
 
     #fullpage {
-        background-image: url(./images/GRAND\ LAC\ 3.jpg);
+        background-image: url(./images/Background-950px.jpg);
     }
 
     .film-prime p, .films-nomines p {
@@ -297,9 +319,15 @@ svg {
 
 }
 
+
+
 @media only screen and (max-width: 500px) {
     iframe {
         width: 320px;
         height: 180px;
+    }
+
+    .logo-container h1 {
+        font-size: 5vw;
     }
 }
