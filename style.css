@@ -1,6 +1,9 @@
 @font-face {
     font-family: 'Teko';
     src: url(./Fonts/Teko-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
     font-family: 'Poppins';
     src: url(./Fonts/Poppins-Medium.ttf) format('truetype');
 }
@@ -244,25 +247,34 @@ svg {
 }
 
 .film-prime p {
+    font-family: 'Teko';
     font-size: 1.5rem;
 }
 
 .films-nomines {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
 
 .detailNomines {
     display: flex;
-    max-width: 140vh;
-    gap: 70px;
+    max-width: 160vh;
+
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-content: center;
 }
 
 .detailNomines p {
     font-size: 1.4rem;
+}
+
+.nominés {
+    flex: 0 0 calc(33.33% - 20px);
+    /* 33.33% for three items with a little space in between */
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .nominés p :first-child {

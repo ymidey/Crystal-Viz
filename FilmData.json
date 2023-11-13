@@ -14,7 +14,8 @@
     "AnneeSortie": 1984,
     "Pays": "Hongrie",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/Qx1bbjSmAKE?si=dovAX4B0sS8GRAZb",
-    "Techniques": "dessin sur papier (peinture)"
+    "Techniques": "dessin sur papier (peinture)",
+    "URLimage": "./images/images_film/prime1985.png"
   },
   {
     "Titre": "Gwen, le livre de sable",
@@ -82,7 +83,8 @@
     "AnneeSortie": 1986,
     "Pays": "Royaume-Uni",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x8hzwum",
-    "Techniques": "dessin sur cellulos, vues réelles"
+    "Techniques": "dessin sur cellulos, vues réelles",
+    "URLimage": "./images/images_film/prime1987.png"
   },
   {
     "Titre": "The Monkey King Conquers the Demon",
@@ -167,7 +169,8 @@
     "AnneeSortie": 1988,
     "Pays": "Tchécoslovaquie",
     "BandeAnnonce": "https://www.youtube.com/embed/MR6HcT8P-VA?si=KFYgPkOOUaKv0fJI",
-    "Techniques": "marionnettes, animation d'objets, vues réelles"
+    "Techniques": "marionnettes, animation d'objets, vues réelles",
+    "URLimage": "./images/images_film/prime1989.png"
   },
   {
     "Titre": "Akira",
@@ -252,7 +255,8 @@
     "AnneeSortie": 1991,
     "Pays": "France",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/xpwbjv",
-    "Techniques": "dessin sur cellulos"
+    "Techniques": "dessin sur cellulos",
+    "URLimage": "./images/images_film/prime1991.png"
   },
   {
     "Titre": "Little Nemo: les Aventures au pays de Slumberland",
@@ -337,7 +341,8 @@
     "AnneeSortie": 1992,
     "Pays": "Japon",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/5Wiv3d6IS7Y?si=IXT91gZ_CEt9p-e8",
-    "Techniques": "dessin sur cellulos"
+    "Techniques": "dessin sur cellulos",
+    "URLimage": "./images/images_film/prime1993.png"
   },
   {
     "Titre": "The Flying Sneaker",
@@ -422,7 +427,8 @@
     "AnneeSortie": 1994,
     "Pays": "Japon",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/_7cowIHjCD4?si=emHX_2nuByV2ZsGr",
-    "Techniques": "dessin sur cellulos"
+    "Techniques": "dessin sur cellulos",
+    "URLimage": "./images/images_film/prime1995.png"
   },
   {
     "Titre": "Hugo de la jungle",
@@ -473,7 +479,8 @@
     "AnneeSortie": 1996,
     "Pays": "États-Unis",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/k47xksQXU-E?si=fj53pqaSQTHdd9at",
-    "Techniques": "marionnettes, vues réelles"
+    "Techniques": "marionnettes, vues réelles",
+    "URLimage": "./images/images_film/prime1997.png"
   },
   {
     "Titre": "Beavis et Butt-Head se font l'Amérique",
@@ -575,7 +582,8 @@
     "AnneeSortie": 1997,
     "Pays": "États-Unis",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/kq0tEZIiO48?si=pSP67qs7dQMHpvi-",
-    "Techniques": "dessin sur cellulos"
+    "Techniques": "dessin sur cellulos",
+    "URLimage": "./images/images_film/prime1998.png"
   },
   {
     "Titre": "L'Ombre d'Andersen",
@@ -660,7 +668,8 @@
     "AnneeSortie": 1998,
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/Bgc9Vy3EGV8?si=B9S53aBowviw07bu",
-    "Techniques": "dessin sur papier (crayon), ordinateur 2D"
+    "Techniques": "dessin sur papier (crayon), ordinateur 2D",
+    "URLimage": "./images/images_film/prime1999.png"
   },
   {
     "Titre": "Gourine et la queue de renard",
@@ -745,7 +754,8 @@
     "AnneeSortie": 2001,
     "Pays": "États-Unis",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/7Q4Vamsv5NY?si=ws8mFYqnAhWs_EGe",
-    "Techniques": "dessin sur cellulos"
+    "Techniques": "dessin sur cellulos",
+    "URLimage": "./images/images_film/prime2001.png"
   },
   {
     "Titre": "Blood: The Last Vampire",
@@ -813,7 +823,8 @@
     "AnneeSortie": 2002,
     "Pays": "Corée du Sud",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/51M6T67Qyd8?si=cFpMBVwqx0m1izMu",
-    "Techniques": "ordinateur 2D/3D"
+    "Techniques": "ordinateur 2D/3D",
+    "URLimage": "./images/images_film/prime2002.png"
   },
   {
     "Titre": "Mercano, le Martien",
@@ -915,7 +926,8 @@
     "AnneeSortie": 2001,
     "Pays": "Hong Kong",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x8a3d4w",
-    "Techniques": "dessin sur cellulos , photos , éléments découpés, ordinateur 3D, vues réelles"
+    "Techniques": "dessin sur cellulos , photos , éléments découpés, ordinateur 3D, vues réelles",
+    "URLimage": "./images/images_film/prime2003.png"
   },
   {
     "Titre": "Kaena, la prophétie",
@@ -983,7 +995,8 @@
     "AnneeSortie": 2003,
     "Pays": "Corée du Sud",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/j36fJNT2nj8?si=S3ltqxl3spKGgRut",
-    "Techniques": "ordinateur 2D"
+    "Techniques": "ordinateur 2D",
+    "URLimage": "./images/images_film/prime2004.png"
   },
   {
     "Titre": "La Légende du Cid",
@@ -1068,7 +1081,8 @@
     "AnneeSortie": 2004,
     "Pays": "Hongrie",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/_PrKf-mLRws?si=YZNiavzjVuLkZtSI",
-    "Techniques": "ordinateur 2D/3D"
+    "Techniques": "ordinateur 2D/3D",
+    "URLimage": "./images/images_film/prime2005.png"
   },
   {
     "Titre": "Franz et le chef d'orchestre",
@@ -1153,7 +1167,8 @@
     "AnneeSortie": 2006,
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/GM5KCoWNXF4?si=ctHwKC4U2JbK5dr3",
-    "Techniques": "ordinateur 3D"
+    "Techniques": "ordinateur 3D",
+    "URLimage": "./images/images_film/prime2006.png"
   },
   {
     "Titre": "Astérix et les Vikings",
@@ -1238,7 +1253,8 @@
     "AnneeSortie": 2006,
     "Pays": "Norvège",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/7IGGlwCKq1Q?si=EdX2yh3TN8qgrmH0",
-    "Techniques": "ordinateur 3D"
+    "Techniques": "ordinateur 3D",
+    "URLimage": "./images/images_film/prime2007.png"
   },
   {
     "Titre": "Azur et Asmar",
@@ -1391,7 +1407,8 @@
     "AnneeSortie": 2008,
     "Pays": "États-Unis",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x3lxwee",
-    "Techniques": "dessin sur papier, éléments découpés, ordinateur 2D, rotoscopie"
+    "Techniques": "dessin sur papier, éléments découpés, ordinateur 2D, rotoscopie",
+    "URLimage": "./images/images_film/prime2008.png"
   },
   {
     "Titre": "Appleseed Ex Machina",
@@ -1544,7 +1561,8 @@
     "AnneeSortie": 2009,
     "Pays": "États-Unis",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x8sdf7",
-    "Techniques": "pâte à modeler"
+    "Techniques": "pâte à modeler",
+    "URLimage": "./images/images_film/prime2009(1).png"
   },
   {
     "Titre": "Terra",
@@ -1680,7 +1698,8 @@
     "AnneeSortie": 2009,
     "Pays": "Royaume-Uni",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x26mc7y",
-    "Techniques": "marionnettes"
+    "Techniques": "marionnettes",
+    "URLimage": "./images/images_film/prime2010.png"
   },
   {
     "Titre": "Kérity, la maison des contes",
@@ -1799,7 +1818,8 @@
     "AnneeSortie": 2011,
     "Pays": "France",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x8k4izo",
-    "Techniques": "dessin sur papier, ordinateur 2D"
+    "Techniques": "dessin sur papier, ordinateur 2D",
+    "URLimage": "./images/images_film/prime2011.png"
   },
   {
     "Titre": "Une vie de chat",
@@ -1969,7 +1989,8 @@
     "AnneeSortie": 2011,
     "Pays": "Roumanie",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x27h0vb",
-    "Techniques": "techniques diverses"
+    "Techniques": "techniques diverses",
+    "URLimage": "./images/images_film/prime2012.png"
   },
   {
     "Titre": "La tête en l'air",
@@ -2173,7 +2194,8 @@
     "AnneeSortie": 2013,
     "Pays": "Brésil",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/mSq4oCo3keY?si=ARL0vPO0aGIFm8Rz",
-    "Techniques": "dessin sur papier"
+    "Techniques": "dessin sur papier",
+    "URLimage": "./images/images_film/prime2013.png"
   },
   {
     "Titre": "Arjun, le prince guerrier",
@@ -2360,7 +2382,8 @@
     "AnneeSortie": 2013,
     "Pays": "Brésil",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/0Ctz8X6_MTY?si=6r3ehnMVZs-sVnRI",
-    "Techniques": "dessin sur papier, ordinateur 2D, techniques diverses, vues réelles"
+    "Techniques": "dessin sur papier, ordinateur 2D, techniques diverses, vues réelles",
+    "URLimage": "./images/images_film/prime2014.png"
   },
   {
     "Titre": "Asphalt Watches",
@@ -2513,7 +2536,8 @@
     "AnneeSortie": 2015,
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/0CeRmyassi4?si=Q2rq8-Na2hMSrbxh",
-    "Techniques": "ordinateur 2D"
+    "Techniques": "ordinateur 2D",
+    "URLimage": "./images/images_film/prime2015.png"
   },
   {
     "Titre": "Adama",
@@ -2649,7 +2673,8 @@
     "AnneeSortie": 2016,
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/OEwycy4aaFw?si=3f3BqlBxrEw3ILCJ",
-    "Techniques": "marionnettes"
+    "Techniques": "marionnettes",
+    "URLimage": "./images/images_film/prime2016.png"
   },
   {
     "Titre": "25 April",
@@ -2802,7 +2827,8 @@
     "AnneeSortie": 2017,
     "Pays": "Japon",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/HaxrJ23ht3I?si=DbTafBePEVhQI2MF",
-    "Techniques": "ordinateur 2D"
+    "Techniques": "ordinateur 2D",
+    "URLimage": "./images/images_film/prime2017.png"
   },
   {
     "Titre": "A Silent Voice",
@@ -2989,7 +3015,8 @@
     "AnneeSortie": 2018,
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/xdSqaLOcOXc?si=lyWmamJ4gVsoxUq8",
-    "Techniques": "ordinateur 2D"
+    "Techniques": "ordinateur 2D",
+    "URLimage": "./images/images_film/prime2018.png"
   },
   {
     "Titre": "Miraï, ma petite sœur",
@@ -3142,7 +3169,8 @@
     "AnneeSortie": 2019,
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/PEmvj6lduE8?si=KIp0uf_g_KuwDiRo",
-    "Techniques": "ordinateur 2D/3D"
+    "Techniques": "ordinateur 2D/3D",
+    "URLimage": "./images/images_film/prime2019.png"
   },
   {
     "Titre": "Buñuel après l'âge d'or",
@@ -3329,7 +3357,8 @@
     "AnneeSortie": 2020,
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/gdKJRqrXngU?si=tqplzpU2vrr398ey",
-    "Techniques": "ordinateur 2D/3D"
+    "Techniques": "ordinateur 2D/3D",
+    "URLimage": "./images/images_film/prime2020.png"
   },
   {
     "Titre": "7 jours",
@@ -3499,7 +3528,8 @@
     "AnneeSortie": 2021,
     "Pays": "Danemark",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/EVyzj5Cipg0?si=cSns35fqhmdReug7",
-    "Techniques": "ordinateur 2D, vues réelles"
+    "Techniques": "ordinateur 2D, vues réelles",
+    "URLimage": "./images/images_film/prime2021.png"
   },
   {
     "Titre": "Hayop ka!",
@@ -3686,7 +3716,8 @@
     "AnneeSortie": 2022,
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/jTnqaOsozxw?si=CnlYdO_P9rIAJ4gA",
-    "Techniques": "ordinateur 2D, techniques diverses"
+    "Techniques": "ordinateur 2D, techniques diverses",
+    "URLimage": "./images/images_film/prime2022.png"
   },
   {
     "Titre": "Charlotte",
@@ -3856,7 +3887,8 @@
     "AnneeSortie": 2023,
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/XvyOL_uWFbA?si=lffBK2q2UP3nnJjM",
-    "Techniques": "ordinateur 2D"
+    "Techniques": "ordinateur 2D",
+    "URLimage": "./images/images_film/prime2023.png"
   },
   {
     "Titre": "La sirène",

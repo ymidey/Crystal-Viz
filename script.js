@@ -1,12 +1,8 @@
-// Sélectionnez le span par son identifiant
 var scrollDownSpan = document.getElementById('scroll-down');
 
-// Ajoutez un gestionnaire d'événements au span
 scrollDownSpan.addEventListener('click', function () {
-    // Sélectionnez la section cible par son identifiant
     var mainSection = document.getElementById('svg-container');
 
-    // Faites défiler la section dans la vue
     mainSection.scrollIntoView({ behavior: 'smooth' });
 });
 
@@ -50,6 +46,7 @@ fetch('./FilmData.json')
             .domain(annees)
             .range([0, 900])
             .padding(0.1);
+
 
         // Ajout de la graduation sur l'axe y sur le graph
         d3.select("#graph")
@@ -122,12 +119,78 @@ fetch('./FilmData.json')
                         barresAnimeesCount++;
 
                         // On vérifie si toutes les barres ont terminées leur animation
-                        if (barresAnimeesCount === filmPrime.length) {
+                        if ((barresAnimeesCount / 3) == filmPrime.length) {
                             // Si toutes les barres ont terminées leur animation, on appelle la fonction permettant de jouer l'effet de Hover
                             activerEffetHover();
                         }
                     });
             });
+        // Ajout des carrés des différentes barres
+        let carres = svg
+            .selectAll(".carre")
+            .data(filmPrime);
+
+        carres.enter()
+            .append("rect")
+            .attr("fill", "none")
+            .attr("class", "carre")
+            .attr("stroke", film => couleurParPays[film.Pays])
+            .attr("stroke-width", 2)
+            .attr("x", film => xScale(film.AnnéeNomination))
+            .attr("y", yScale(0))
+            .attr("height", 0)
+            .attr("width", 25)
+            .style("cursor", "pointer")
+            .each(function (film, index) {
+                // Ajout de la transition avec délai
+                d3.select(this)
+                    .transition()
+                    .delay(index * 100) // Délai entre chaque rectangle 
+                    .duration(950) // Durée de la transition
+                    .attr("height", 25)
+                    .attr("y", film => yScale(film.NoteIMDB))
+                    .on("end", function () {
+
+                        barresAnimeesCount++;
+
+                        // Vérification si toutes les barres ont terminées leur animation
+                        if ((barresAnimeesCount / 3) == filmPrime.length) {
+                            // Si toutes les barres ont terminées leur animation, on appelle la fonction permettant de jouer l'effet de Hover
+                            activerEffetHover();
+                        }
+                    });
+
+            });
+
+        carres.enter()
+            .append("image")
+            .attr("class", "image")
+            .attr("href", film => film.URLimage)
+            .attr("x", film => xScale(film.AnnéeNomination))
+            .attr("y", yScale(0))
+            .style("opacity", 0)
+            .attr("height", "25")
+            .attr("width", "25")
+            .each(function (film, index) {
+                // Ajout de la transition avec délai
+                d3.select(this)
+                    .transition()
+                    .delay(index * 100) // Délai entre chaque rectangle 
+                    .duration(950) // Durée de la transition
+                    .attr("height", 25)
+                    .style("opacity", 1)
+                    .attr("y", film => yScale(film.NoteIMDB))
+                    .on("end", function () {
+
+                        barresAnimeesCount++;
+                        // On vérifie si toutes les barres ont terminées leur animation
+                        if ((barresAnimeesCount / 3) == filmPrime.length) {
+                            // Si toutes les barres ont terminées leur animation, on appelle la fonction permettant de jouer l'effet de Hover
+                            activerEffetHover();
+                        }
+                    });
+            });
+
 
         // Fonction pour activer l'effet de hover
         function activerEffetHover() {
@@ -144,11 +207,11 @@ fetch('./FilmData.json')
                         div.transition()
                             .style("display", "block")
                             .style("visibility", "visible")
-                        div.html(`<p><span class="hoverDetail">Film primé en ${d.AnnéeNomination}</span><br><span class="hoverDetail">${d.Titre}</span><br><span class="hoverDetail">Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}</p>`)
+                        div.html(`<p><span class="hoverDetail">Film primé en ${d.AnnéeNomination}</span><br><span class="hoverDetail">${d.Titre}</span><br><span class="hoverDetail">Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}/10</p>`)
                             .style("left", (e.pageX + 10) + "px")
                             .style("top", (e.pageY - 50) + "px");
 
-                        // Réduit l'opacité de toutes les barres, sauf celle survolée
+                        // Réduction de l'opacité de toutes les barres, sauf celle survolée
                         d3.selectAll(".barre")
                             .filter(function () {
                                 return this !== e.target;
@@ -160,15 +223,29 @@ fetch('./FilmData.json')
                     } else {
                         pays = d3.select(this).select(".legend-label").text();
 
-                        // Change l'opacité de toutes les barres, sauf celles correspondant au pays sélectionné dans la légende
+                        // Changement de l'opacité de toutes les barres, sauf celles correspondant au pays sélectionné dans la légende
                         d3.selectAll(".barre")
+                            .filter(film => film.Pays !== pays)
+                            .transition()
+                            .duration(200)
+                            .attr("opacity", 0.2);
+
+                        // Changement de l'opacité de tout les carrés, sauf ceux correspondant au pays sélectionné dans la légende
+                        d3.selectAll(".carre")
+                            .filter(film => film.Pays !== pays)
+                            .transition()
+                            .duration(200)
+                            .attr("opacity", 0.2);
+
+                        // Changement de l'opacité de toutes les images, sauf celles correspondant au pays sélectionné dans la légende
+                        d3.selectAll(".image")
                             .filter(film => film.Pays !== pays)
                             .transition()
                             .duration(200)
                             .attr("opacity", 0.2);
                     }
 
-                    // Change également l'opacité des éléments de légende en fonction du pays
+                    // Changement également de l'opacité des éléments de légende en fonction du pays
                     d3.selectAll(".legend-item")
                         .filter(item => item[0] !== pays)
                         .transition()
@@ -191,6 +268,19 @@ fetch('./FilmData.json')
                         .transition()
                         .duration(200)
                         .style("opacity", 1);
+
+                    // Retour à l'opacité d'origine des carrés
+                    d3.selectAll(".carre")
+                        .transition()
+                        .duration(200)
+                        .attr("opacity", 0.2);
+
+                    // Retour à l'opacité 
+                    d3.selectAll(".image")
+                        .transition()
+                        .duration(200)
+                        .attr("opacity", 0.2);
+
                 });
         }
 
@@ -274,7 +364,7 @@ fetch('./FilmData.json')
                 .attr("class", "prime")
                 .style("display", "flex")
                 .style("flex-direction", "row")
-                .html(d => `<div><h3>Film primé</h3><br><p><span>Titre : ${d.Titre}</span><br><span>Réalisateur(s) : ${d.Réalisateurs}</span><br><span>Technique(s) de production : ${d.Techniques}</span><br><span>Note IMDB : ${d.NoteIMDB}</span><br><span><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" tabindex="${tabIndex}">Page IMDB du film ${d.Titre}</a></span></p></div><div><p>${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div>`);
+                .html(d => `<div><h3>Film primé</h3><br><p><span>Titre : ${d.Titre}</span><br><span>Réalisateur(s) : ${d.Réalisateurs}</span><br><span>Technique(s) de production : ${d.Techniques}</span><br><span>Note IMDB : ${d.NoteIMDB}/10</span><br><span><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" tabindex="${tabIndex}">Page IMDB du film ${d.Titre}</a></span></p></div><div><p>${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div>`);
 
             d3.select(".detailNomines")
                 .selectAll(".o")
@@ -284,7 +374,7 @@ fetch('./FilmData.json')
                 .append("div")
                 .attr("class", "nominés")
 
-                .html(d => `<p><span>Titre : ${d.Titre}</span><br><span>Pays : ${d.Pays}</span><br><span>Note IMDB : ${d.NoteIMDB}</span><br><span><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank"">Page IMDB du film ${d.Titre}</a></span></p>`);
+                .html(d => `<p><span>Titre : ${d.Titre}</span><br><span>Pays : ${d.Pays}</span><br><span>Note IMDB : ${d.NoteIMDB}/10</span><br><span><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank"">Page IMDB du film ${d.Titre}</a></span></p>`);
         }
         svg.selectAll(".barre").on("click", function () {
             // On récupère l'index de la barre focuser
