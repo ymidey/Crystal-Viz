@@ -168,7 +168,7 @@ fetch('./FilmData.json')
             .attr("href", film => film.URLimage)
             .attr("x", film => xScale(film.AnnéeNomination))
             .attr("y", yScale(0))
-            .style("opacity", 0)
+            .attr("opacity", 0)
             .attr("height", "25")
             .attr("width", "25")
             .each(function (film, index) {
@@ -178,7 +178,7 @@ fetch('./FilmData.json')
                     .delay(index * 100) // Délai entre chaque rectangle 
                     .duration(950) // Durée de la transition
                     .attr("height", 25)
-                    .style("opacity", 1)
+                    .attr("opacity", 1)
                     .attr("y", film => yScale(film.NoteIMDB))
                     .on("end", function () {
 
@@ -198,16 +198,17 @@ fetch('./FilmData.json')
             d3.selectAll(".barre, .legend-item")
                 .on("mouseenter", function (e, d) {
                     let pays;
+                    let anneeNomination;
 
                     // On vérifie si l'utilisateur passe sa souris sur une barre
                     if (this.classList.contains("barre")) {
 
                         pays = d.Pays;
-
+                        anneeNomination = d.AnnéeNomination;
                         div.transition()
                             .style("display", "block")
                             .style("visibility", "visible")
-                        div.html(`<p><span class="hoverDetail">Film primé en ${d.AnnéeNomination}</span><br><span class="hoverDetail">${d.Titre}</span><br><span class="hoverDetail">Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}/10</p>`)
+                        div.html(`<p><span>Film primé en ${d.AnnéeNomination}</span><br>${d.Titre}<br>Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}/10</p>`)
                             .style("left", (e.pageX + 10) + "px")
                             .style("top", (e.pageY - 50) + "px");
 
@@ -216,6 +217,20 @@ fetch('./FilmData.json')
                             .filter(function () {
                                 return this !== e.target;
                             })
+                            .transition()
+                            .duration(200)
+                            .attr("opacity", 0.2);
+
+                        // Changement de l'opacité de tout les carrés, sauf ceux correspondant au pays sélectionné dans la légende
+                        d3.selectAll(".carre")
+                            .filter(film => film.AnnéeNomination !== anneeNomination)
+                            .transition()
+                            .duration(200)
+                            .attr("opacity", 0.2);
+
+                        // Changement de l'opacité de toutes les images, sauf celles correspondant au pays sélectionné dans la légende
+                        d3.selectAll(".image")
+                            .filter(film => film.AnnéeNomination !== anneeNomination)
                             .transition()
                             .duration(200)
                             .attr("opacity", 0.2);
@@ -230,19 +245,6 @@ fetch('./FilmData.json')
                             .duration(200)
                             .attr("opacity", 0.2);
 
-                        // Changement de l'opacité de tout les carrés, sauf ceux correspondant au pays sélectionné dans la légende
-                        d3.selectAll(".carre")
-                            .filter(film => film.Pays !== pays)
-                            .transition()
-                            .duration(200)
-                            .attr("opacity", 0.2);
-
-                        // Changement de l'opacité de toutes les images, sauf celles correspondant au pays sélectionné dans la légende
-                        d3.selectAll(".image")
-                            .filter(film => film.Pays !== pays)
-                            .transition()
-                            .duration(200)
-                            .attr("opacity", 0.2);
                     }
 
                     // Changement également de l'opacité des éléments de légende en fonction du pays
@@ -273,13 +275,13 @@ fetch('./FilmData.json')
                     d3.selectAll(".carre")
                         .transition()
                         .duration(200)
-                        .attr("opacity", 0.2);
+                        .attr("opacity", 1);
 
                     // Retour à l'opacité d'origine des images
                     d3.selectAll(".image")
                         .transition()
                         .duration(200)
-                        .attr("opacity", 0.2);
+                        .attr("opacity", 1);
 
                 });
         }
@@ -364,7 +366,7 @@ fetch('./FilmData.json')
                 .attr("class", "prime")
                 .style("display", "flex")
                 .style("flex-direction", "row")
-                .html(d => `<div><h3>Film primé</h3><br><p><span>Titre : ${d.Titre}</span><br><span>Réalisateur(s) : ${d.Réalisateurs}</span><br><span>Technique(s) de production : ${d.Techniques}</span><br><span>Note IMDB : ${d.NoteIMDB}/10</span><br><span><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" tabindex="${tabIndex}">Page IMDB du film ${d.Titre}</a></span></p></div><div><p>${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div>`);
+                .html(d => `<div><h3>Film primé</h3><br><p><span>Titre : ${d.Titre}</span><br>Réalisateur(s) : ${d.Réalisateurs}<br>Technique(s) de production : ${d.Techniques}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" tabindex="${tabIndex}">Page IMDB du film ${d.Titre}</a></p></div><div><p>${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div>`);
 
             d3.select(".detailNomines")
                 .selectAll(".o")
@@ -374,7 +376,7 @@ fetch('./FilmData.json')
                 .append("div")
                 .attr("class", "nominés")
 
-                .html(d => `<p><span>Titre : ${d.Titre}</span><br><span>Pays : ${d.Pays}</span><br><span>Note IMDB : ${d.NoteIMDB}/10</span><br><span><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank"">Page IMDB du film ${d.Titre}</a></span></p>`);
+                .html(d => `<p><span>Titre : ${d.Titre}</span><br>Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank"">Page IMDB du film ${d.Titre}</a></p>`);
         }
         svg.selectAll(".barre").on("click", function () {
             // On récupère l'index de la barre focuser
