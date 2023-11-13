@@ -31,10 +31,6 @@ fetch('./FilmData.json')
             }
         });
 
-        // Collecte des URL des films primés 
-        const url = filmPrime.map(film => film.URLimage);
-        console.log(url)
-
         // Selection du svg
         let svg = d3.select("svg");
 
@@ -196,33 +192,6 @@ fetch('./FilmData.json')
             });
 
 
-        // Ajout des carrés des différentes barres
-        let carres = svg
-            .selectAll(".carre")
-            .data(filmPrime);
-        
-        carres.enter()
-            .append("rect")
-            .attr("fill","none")
-            .attr("class","carre")
-            .attr("stroke", film => couleurParPays[film.Pays])
-            .attr("stroke-width", 2)
-            .attr("x", film => xScale(film.AnnéeNomination))
-            .attr("y", film => yScale(film.NoteIMDB))
-            .attr("height", 25)
-            .attr("width", 25)
-            .style("cursor", "pointer")
-
-
-        carres.enter()
-            .append("image")
-            .attr("class","image")
-            .attr("href", film => film.URLimage)
-            .attr("x", film => xScale(film.AnnéeNomination))
-            .attr("y", film => yScale(film.NoteIMDB))
-            .attr("height", "25")
-            .attr("width", "25")
-
         // Fonction pour activer l'effet de hover
         function activerEffetHover() {
             // Ajout de l'effet de hover pour les barres et la légende
@@ -306,7 +275,7 @@ fetch('./FilmData.json')
                         .duration(200)
                         .attr("opacity", 0.2);
 
-                    // Retour à l'opacité 
+                    // Retour à l'opacité d'origine des images
                     d3.selectAll(".image")
                         .transition()
                         .duration(200)
