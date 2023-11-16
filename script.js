@@ -215,6 +215,7 @@ fetch('./FilmData.json')
             .enter()
             .append("div")
             .attr("class", "legend-item")
+            .attr("id", legendData => legendData[0])
             .style("cursor", "pointer")
             .style("white-space", "normal")
             .style("opacity", 1)
@@ -289,6 +290,7 @@ fetch('./FilmData.json')
                         .style("opacity", 1);
                 });
         }
+
         // Fonction permettant d'afficher les informations sur le film primé et les films nominés de l'année selectionné
         function voirPlusDinformations(tabIndex) {
 
@@ -352,9 +354,27 @@ fetch('./FilmData.json')
         svg.selectAll(".barre, .image, .carre").on("focus", function () {
             // On récupère l'index de la barre focuser
             let tabIndex = this.id;
-            console.log(tabIndex)
             voirPlusDinformations(tabIndex);
         })
+
+
+        // Fonction permettant d'afficher les informations sur le film primé et les films nominés de l'année selectionné
+        function voirPlusFilmPays(tabIndex) {
+
+
+            let anneeSelectionnee = filmPrime.filter(film =>
+                film.Pays == tabIndex
+            );
+
+            console.log(anneeSelectionnee);
+        }
+
+        // Ajout d'event focus pour que les éléments détaillés puissent être accessibles via la navigation au clavier
+        d3.selectAll(".legend-item").on("click", function () {
+            let tabIndex = this.id;
+            voirPlusFilmPays(tabIndex);
+        })
+
 
     })
 
