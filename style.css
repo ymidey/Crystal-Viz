@@ -8,6 +8,11 @@
     src: url(./Fonts/Poppins-Medium.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Lalezar';
+    src: url(./Fonts/Lalezar-Regular.ttf) format('truetype');
+}
+
 /* Changement du style de la scrollbar */
 
 /* taille de la scrollbar */
@@ -17,7 +22,7 @@
 
 /* couleur de fond secondaire de la scrollbar */
 ::-webkit-scrollbar-track {
-    background: #2c4670;
+    background: #3a445a;
 }
 
 /* couleur de fond primaire de la scrollbar */
@@ -53,47 +58,52 @@ body {
 }
 
 header {
+    position: relative;
     height: 100vh;
 }
 
-
 .clip-path-container {
     position: relative;
-    width: 38%;
-    left: 55%;
+    left: 60%;
     top: 10%;
     overflow: hidden;
+    width: max-content;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.logo-container {
+.title-container {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.logo-container h1 {
-    font-family: 'Poppins';
+.title-container h1 {
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lalezar';
     margin: 0;
-    color: transparent;
-    -webkit-text-stroke: .5px #263C5F;
-    font-size: 3.9vw;
+    letter-spacing: .4em;
+    color: #263C5F;
     text-transform: uppercase;
-    letter-spacing: 14px;
 }
 
-.logo-container img {
-    width: 100%;
-    height: auto;
+.title-1 {
+    font-size: 3.5vw;
+    font-family: 'Poppins';
+    color: transparent;
+    -webkit-text-stroke: .5px #263C5F;
+    letter-spacing: .2em;
 }
 
 
 .scroll-down-arrow {
-    position: relative;
+    position: absolute;
     width: fit-content;
     cursor: pointer;
-    top: 50%;
+    top: 85%;
     left: 50%;
     transform: translateX(-50%);
     animation: arrowBounce 2s infinite ease-in-out;
@@ -126,15 +136,13 @@ header {
 }
 
 .main {
-    align-content: center;
-    padding-top: 12%;
-    padding-bottom: 12%;
+    padding: 8% 0;
 }
 
 footer {
     border-top: 1px solid black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -149,18 +157,20 @@ footer>* {
     justify-content: center;
     align-items: center;
     background-color: #ffffff1e;
+    font-family: 'Teko';
+    padding: 25px 0;
+    margin: auto;
+    border-radius: 20px;
 }
 
-.svg-container {
-    padding: 25px 0;
-}
 
 .svg-container>* {
-    padding: 10px 0;
+    padding: 10px 5px;
 }
 
 .svg-container h2 {
     margin: 3px;
+    font-size: 1.8rem;
 }
 
 #legende {
@@ -171,10 +181,10 @@ footer>* {
 }
 
 svg {
-    overflow: visible;
-    height: 80%;
     width: 75vw;
+    height: 80%;
 }
+
 
 /* Style de la légende */
 .legend-item {
@@ -190,6 +200,11 @@ svg {
     height: 20px;
     border-radius: 50%;
     margin-right: 5px;
+}
+
+.legend-label {
+    padding: 0;
+    margin: 0;
 }
 
 .hoverMovie {
@@ -261,9 +276,8 @@ svg {
 .detailNomines {
     display: flex;
     max-width: 160vh;
-
+    justify-content: center;
     flex-wrap: wrap;
-    align-content: center;
 }
 
 .detailNomines p {
@@ -282,31 +296,21 @@ svg {
 }
 
 
-/* Responsive sur mobile */
+
+
+
 @media only screen and (max-width: 950px) {
 
-    .clip-path-container {
-        top: 15%;
-        left: 52%;
-        width: 87%;
-        transform: translateX(-50%);
-    }
+
 
     .clip-path-container h1 {
-        font-size: 9vw;
-    }
-
-    svg {
-        width: 100%;
+        font-size: 4vw;
     }
 
     svg g {
         font-size: 1rem;
     }
 
-    #fullpage {
-        background-image: url(./images/Background-950px.jpg);
-    }
 
     .film-prime p, .films-nomines p {
         font-size: 1.225rem;
@@ -333,7 +337,26 @@ svg {
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
+    .clip-path-container {
+        top: 15%;
+        left: 52%;
+        width: 87%;
+        transform: translateX(-50%);
+    }
+
+    .clip-path-container h1, .title-1 {
+        font-size: 8vw;
+    }
+
+    .detailNomines {
+        flex-direction: column;
+    }
+
+    #fullpage {
+        background-image: url(./images/Background-950px.jpg);
+    }
+
     iframe {
         width: 320px;
         height: 180px;

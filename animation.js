@@ -1,12 +1,11 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const logoContainer = document.querySelector(".logo-container");
+    const titleContainer = document.querySelector(".title-container");
 
-    gsap.from(logoContainer, {
-        duration: 1.7,
+    gsap.from(titleContainer, {
+        duration: 1.5,
         y: 500,
-        opacity: 0,
         ease: "ease-out",
     });
 

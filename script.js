@@ -1,5 +1,6 @@
 var scrollDownSpan = document.getElementById('scroll-down');
 
+// span permettant au clic sur celui-ci de scroller la page de l'utilisateur vers la div ayant l'id svg-container
 scrollDownSpan.addEventListener('click', function () {
     var mainSection = document.getElementById('svg-container');
 
@@ -49,7 +50,6 @@ fetch('./FilmData.json')
 
 
         // Ajout de la graduation sur l'axe y sur le graph
-        d3.select("#graph")
         svg.append("g")
             .call(d3.axisLeft(yScale).ticks(50))
             .style("stroke-width", 2)
@@ -64,19 +64,16 @@ fetch('./FilmData.json')
             .attr("y", -480);
 
         // Ajout de la graduation sur l'axe X sur le graph
-        const xAxis = svg.append("g")
+        svg.append("g")
             .call(d3.axisBottom(xScale))
-            .style("stroke-width", 2);
-
-        // Stylisation des années sur l'axe x
-        xAxis.selectAll("text")
+            .style("stroke-width", 2)
+            .selectAll("text")
             .attr("transform", "rotate(-45)")
             .style("text-anchor", "end")
             .data(annees)
             .append("text")
             .attr("x", d => xScale(d) + xScale.bandwidth() / 2)
             .attr("y", 10)
-
             .text(d => d);
 
         // Ajout d'un titre à l'axe x
@@ -89,6 +86,11 @@ fetch('./FilmData.json')
         // Création des barres
         let barres = svg
             .selectAll("rect")
+            .data(filmPrime);
+
+        // Ajout des carrés des différentes barres
+        let carres = svg
+            .selectAll(".carre")
             .data(filmPrime);
 
         // Variable pour compter le nombre de barres de mon graphique
@@ -104,6 +106,7 @@ fetch('./FilmData.json')
             .attr("width", xScale.bandwidth())
             .attr("fill", film => couleurParPays[film.Pays])
             .style("cursor", "pointer")
+            .attr("id", (film, index) => index + 1)
             .attr("height", 0) // Commence avec une hauteur de 0
             .attr("y", yScale(0))
             .each(function (film, index) {
@@ -125,11 +128,8 @@ fetch('./FilmData.json')
                         }
                     });
             });
-        // Ajout des carrés des différentes barres
-        let carres = svg
-            .selectAll(".carre")
-            .data(filmPrime);
 
+        // Ajout des carrés avec un délai entre chaque ajout
         carres.enter()
             .append("rect")
             .attr("fill", "none")
@@ -138,7 +138,9 @@ fetch('./FilmData.json')
             .attr("stroke-width", 2)
             .attr("x", film => xScale(film.AnnéeNomination))
             .attr("y", yScale(0))
+            .attr("id", (film, index) => index + 1)
             .attr("height", 0)
+            .attr("tabindex", -1)
             .attr("width", 25)
             .style("cursor", "pointer")
             .each(function (film, index) {
@@ -162,15 +164,21 @@ fetch('./FilmData.json')
 
             });
 
+        // Ajout des images avec un délai entre chaque ajout
         carres.enter()
             .append("image")
             .attr("class", "image")
             .attr("href", film => film.URLimage)
             .attr("x", film => xScale(film.AnnéeNomination))
             .attr("y", yScale(0))
-            .attr("opacity", 0)
+            .attr("stroke", film => couleurParPays[film.Pays])
+            .attr("stroke-width", 2)
+            .attr("tabindex", -1)
+            .style("opacity", 0)
+            .attr("id", (film, index) => index + 1)
             .attr("height", "25")
             .attr("width", "25")
+            .attr("cursor", "pointer")
             .each(function (film, index) {
                 // Ajout de la transition avec délai
                 d3.select(this)
@@ -178,7 +186,7 @@ fetch('./FilmData.json')
                     .delay(index * 100) // Délai entre chaque rectangle 
                     .duration(950) // Durée de la transition
                     .attr("height", 25)
-                    .attr("opacity", 1)
+                    .style("opacity", 1)
                     .attr("y", film => yScale(film.NoteIMDB))
                     .on("end", function () {
 
@@ -191,60 +199,75 @@ fetch('./FilmData.json')
                     });
             });
 
+        // Ajout d'un encadré affichant les détails du film au survol d'une barre
+        const encadre = d3
+            .select(".main")
+            .append("div")
+            .attr("class", "hoverMovie")
+
+        // Création d'un tableau d'objets contenant le nom du pays et la couleur qui lui est attribuée
+        const legendData = Object.entries(couleurParPays);
+
+        // Ajout de la légende
+        d3.select("#legende")
+            .selectAll(".legend-item")
+            .data(legendData)
+            .enter()
+            .append("div")
+            .attr("class", "legend-item")
+            .style("cursor", "pointer")
+            .style("white-space", "normal")
+            .style("opacity", 1)
+            .call(legendItem => {
+                legendItem.append("p")
+                    .attr("class", "legend-label")
+                    .text(d => d[0])
+                    .style("font-weight", "600")
+                    .style("font-size", "1.5rem")
+                    .style("padding-right", "2px");
+
+                legendItem.append("div")
+                    .attr("class", "legend-circle")
+                    .style("background-color", d => d[1]);
+            });
 
         // Fonction pour activer l'effet de hover
         function activerEffetHover() {
             // Ajout de l'effet de hover pour les barres et la légende
-            d3.selectAll(".barre, .legend-item")
+            d3.selectAll(".barre, .legend-item, .carre, .image")
                 .on("mouseenter", function (e, d) {
                     let pays;
                     let anneeNomination;
+                    pays = d.Pays;
 
-                    // On vérifie si l'utilisateur passe sa souris sur une barre
-                    if (this.classList.contains("barre")) {
+                    // On vérifie si l'utilisateur passe sa souris sur une barre, sur l'image sur la barre ou sur le carré qui entoure l'image
+                    if (this.classList.contains("barre") || this.classList.contains("carre") || this.classList.contains("image")) {
 
-                        pays = d.Pays;
                         anneeNomination = d.AnnéeNomination;
-                        div.transition()
+                        encadre.transition()
                             .style("display", "block")
                             .style("visibility", "visible")
-                        div.html(`<p><span>Film primé en ${d.AnnéeNomination}</span><br>${d.Titre}<br>Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}/10</p>`)
+                        encadre.html(`<p><span>Film primé en ${d.AnnéeNomination}</span><br>${d.Titre}<br>Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}/10</p>`)
                             .style("left", (e.pageX + 10) + "px")
                             .style("top", (e.pageY - 50) + "px");
 
                         // Réduction de l'opacité de toutes les barres, sauf celle survolée
-                        d3.selectAll(".barre")
-                            .filter(function () {
-                                return this !== e.target;
-                            })
-                            .transition()
-                            .duration(200)
-                            .attr("opacity", 0.2);
-
-                        // Changement de l'opacité de tout les carrés, sauf ceux correspondant au pays sélectionné dans la légende
-                        d3.selectAll(".carre")
+                        d3.selectAll(".barre, .carre, .image")
                             .filter(film => film.AnnéeNomination !== anneeNomination)
                             .transition()
                             .duration(200)
-                            .attr("opacity", 0.2);
+                            .style("opacity", 0.2);
 
-                        // Changement de l'opacité de toutes les images, sauf celles correspondant au pays sélectionné dans la légende
-                        d3.selectAll(".image")
-                            .filter(film => film.AnnéeNomination !== anneeNomination)
-                            .transition()
-                            .duration(200)
-                            .attr("opacity", 0.2);
 
                     } else {
                         pays = d3.select(this).select(".legend-label").text();
 
                         // Changement de l'opacité de toutes les barres, sauf celles correspondant au pays sélectionné dans la légende
-                        d3.selectAll(".barre")
+                        d3.selectAll(".barre, .carre, .image")
                             .filter(film => film.Pays !== pays)
                             .transition()
                             .duration(200)
-                            .attr("opacity", 0.2);
-
+                            .style("opacity", 0.2);
                     }
 
                     // Changement également de l'opacité des éléments de légende en fonction du pays
@@ -256,71 +279,18 @@ fetch('./FilmData.json')
                 })
 
                 .on("mouseleave", function () {
-                    div.transition()
+                    encadre.transition()
                         .style("visibility", "hidden")
                         .style("display", "none");
-                    // Retour à l'opacité d'origine de toutes les barres
-                    d3.selectAll(".barre")
-                        .transition()
-                        .duration(200)
-                        .attr("opacity", 1);
-
-                    // Retour à l'opacité d'origine des pays dans la légende
-                    d3.selectAll(".legend-item")
+                    // Retour à l'opacité d'origine de toutes les barres/images et carrés
+                    d3.selectAll(".barre,  .carre, .image, .legend-item")
                         .transition()
                         .duration(200)
                         .style("opacity", 1);
-
-                    // Retour à l'opacité d'origine des carrés
-                    d3.selectAll(".carre")
-                        .transition()
-                        .duration(200)
-                        .attr("opacity", 1);
-
-                    // Retour à l'opacité d'origine des images
-                    d3.selectAll(".image")
-                        .transition()
-                        .duration(200)
-                        .attr("opacity", 1);
-
                 });
         }
-
-
-        // Création d'un tableau d'objets contenant le nom du pays et la couleur qui lui est attribuée
-        const legendData = Object.entries(couleurParPays);
-
-        // Ajout la légende
-        const legendItems = d3.select("#legende")
-            .selectAll(".legend-item")
-            .data(legendData)
-            .enter()
-            .append("div")
-            .style("cursor", "pointer")
-            .attr("class", "legend-item")
-            .style("white-space", "normal");
-
-        legendItems
-            .append("div")
-            .attr("class", "legend-label")
-            .text(d => d[0])
-            .style("font-weight", "600")
-            .style("font-size", "1.125rem")
-            .style("padding-right", "2px");
-
-        legendItems
-            .append("div")
-            .attr("class", "legend-circle")
-            .style("background-color", d => d[1]);
-
-        // Ajout d'un encadré affichant les détails du film au survol d'une barre
-        const div = d3
-            .select(".main")
-            .append("div")
-            .attr("class", "hoverMovie")
-
         // Fonction permettant d'afficher les informations sur le film primé et les films nominés de l'année selectionné
-        function seeMoreInformations(tabIndex) {
+        function voirPlusDinformations(tabIndex) {
 
             let d = filmPrime[tabIndex - 1];
 
@@ -369,25 +339,21 @@ fetch('./FilmData.json')
                 .html(d => `<div><h3>Film primé</h3><br><p><span>Titre : ${d.Titre}</span><br>Réalisateur(s) : ${d.Réalisateurs}<br>Technique(s) de production : ${d.Techniques}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" tabindex="${tabIndex}">Page IMDB du film ${d.Titre}</a></p></div><div><p>${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div>`);
 
             d3.select(".detailNomines")
-                .selectAll(".o")
+                .selectAll(".filmNomines")
                 .data(anneeSelectionnee)
                 .enter()
                 .filter(d => d.Primé == 0)
                 .append("div")
                 .attr("class", "nominés")
-
                 .html(d => `<p><span>Titre : ${d.Titre}</span><br>Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank"">Page IMDB du film ${d.Titre}</a></p>`);
         }
-        svg.selectAll(".barre").on("click", function () {
-            // On récupère l'index de la barre focuser
-            let tabIndex = this.tabIndex;
-            seeMoreInformations(tabIndex);
-        });
+
         // Ajout d'event focus pour que les éléments détaillés puissent être accessibles via la navigation au clavier
-        svg.selectAll(".barre").on("focus", function () {
+        svg.selectAll(".barre, .image, .carre").on("focus", function () {
             // On récupère l'index de la barre focuser
-            let tabIndex = this.tabIndex;
-            seeMoreInformations(tabIndex);
+            let tabIndex = this.id;
+            console.log(tabIndex)
+            voirPlusDinformations(tabIndex);
         })
 
     })
