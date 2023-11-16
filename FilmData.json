@@ -1565,6 +1565,23 @@
     "URLimage": "./images/images_film/prime2009(1).png"
   },
   {
+    "Titre": "Mary et Max",
+    "TitreOriginal": "Mary and Max",
+    "Réalisateurs": "Adam Elliot",
+    "AnnéeNomination": 2009,
+    "Primé": 1,
+    "élément": "Q1128756",
+    "Scenaristes": "Adam Elliot",
+    "Production": "Melodrama Pictures",
+    "Duree": 90,
+    "IdIMDB": "tt0978762",
+    "NoteIMDB": 8.1,
+    "AnneeSortie": 2009,
+    "Pays": "Australie",
+    "Bande-Annonce": "https://player.allocine.fr/18893735.html",
+    "Techniques": "marionnettes, ordinateur 3D"
+  },
+  {
     "Titre": "Terra",
     "TitreOriginal": "Battle for Terra",
     "Réalisateurs": "Aristomenis Tsirbas",
