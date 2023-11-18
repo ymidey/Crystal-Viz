@@ -361,20 +361,55 @@ fetch('./FilmData.json')
         // Fonction permettant d'afficher les informations sur le film primé et les films nominés de l'année selectionné
         function voirPlusFilmPays(tabIndex) {
 
+        document.getElementById("detailPays").scrollIntoView({
+            behavior: "smooth",
+        });
 
-            let anneeSelectionnee = filmPrime.filter(film =>
-                film.Pays == tabIndex
-            );
+        // Change la visibilité de la div pour la rendre visible
+        let detailPaysDiv = document.getElementById("detailPays");
+        detailPaysDiv.style.visibility = "visible";
 
-            console.log(anneeSelectionnee);
-        }
+        // Sélectionne les films par pays 
+        let paysSelectionne = filmPrime.filter(film =>
+            film.Pays == tabIndex
+        );
+        console.log(paysSelectionne);
 
+        // Suppression de l'affichage de ces différents elements 
+        d3.selectAll(".primespays, .pays, .prime, .nominés, .titre-nomines").remove();
+
+        d3.select(".films-pays")
+            .selectAll(".annee-cristal")
+            .data(paysSelectionne)
+            .enter()
+            // .filter(d => d.Primé == 1)
+            .append("h1")
+            .attr("class","pays")
+            .html(d => `${d.Pays} : film(s) primé(s)`)
+            // .attr("tabIndex", tabIndex)
+            // .html(d => `Cristal du long métrage année ${d.AnnéeNomination}`);
+
+
+        d3.select(".bande-annonce1")
+            .selectAll(".annonce-film")
+            .data(paysSelectionne)
+            .enter()
+            // .filter(d => d.Primé == 1)
+            .append("div")
+            .attr("class", "primespays")
+            .html(d => `<h2>Cristal du long métrage année ${d.AnnéeNomination}<h2><iframe src="${d.BandeAnnonce}" tabIndex=${tabIndex} width="640" height="360" allowfullscreen="true" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation" title="Bande annonce du film ${d.Titre}"></iframe>`);
+            }
+        
+        // Affichage des 34 premiers caractères du titre h2
+        // d3.selectAll("h2").text(function(){
+        //     return d3.select(this).text().substring(0,34)
+        // });
+        
         // Ajout d'event focus pour que les éléments détaillés puissent être accessibles via la navigation au clavier
         d3.selectAll(".legend-item").on("click", function () {
             let tabIndex = this.id;
             voirPlusFilmPays(tabIndex);
         })
-
 
     })
 
