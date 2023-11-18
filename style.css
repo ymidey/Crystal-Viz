@@ -258,22 +258,19 @@ svg {
     font-weight: 800;
 }
 
-#detailMovie {
+#detailMovie, #detailPays {
     visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#detailMovie {
     font-family: 'Teko';
 }
 
-.date h2 {
+#detailMovie h2, #detailPays h2 {
     font-size: 2.775rem;
 }
 
-.film-prime {
+.film-prime, .films-pays {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -307,6 +304,8 @@ svg {
 }
 
 .detailNomines {
+    width: 90vw;
+    gap: 50px;
     display: flex;
     max-width: 160vh;
     justify-content: center;
