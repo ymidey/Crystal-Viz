@@ -305,6 +305,7 @@ fetch('./FilmData.json')
 
             detailMovieDiv.scrollIntoView({
                 behavior: "smooth",
+                block: "start"
             });
 
             let anneeSelectionnee = filmdata.filter(film =>
