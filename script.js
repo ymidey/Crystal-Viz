@@ -294,21 +294,23 @@ fetch('./FilmData.json')
         // Fonction permettant d'afficher les informations sur le film primé et les films nominés de l'année selectionné
         function voirPlusDinformations(tabIndex) {
 
-            let d = filmPrime[tabIndex - 1];
+            d3.selectAll("#prime, #pays, #nominés").remove();
 
-            document.getElementById("detailMovie").scrollIntoView({
-                behavior: "smooth",
-            });
+            let d = filmPrime[tabIndex - 1];
 
             // Changer la visibilité de la div pour la rendre visible
             let detailMovieDiv = document.getElementById("detailMovie");
             detailMovieDiv.style.visibility = "visible";
 
+
+            detailMovieDiv.scrollIntoView({
+                behavior: "smooth",
+            });
+
             let anneeSelectionnee = filmdata.filter(film =>
                 film.AnnéeNomination == d.AnnéeNomination
             );
 
-            d3.selectAll("#prime, #pays, #nominés").remove();
 
             d3.select(".date")
                 .selectAll(".annee-cristal")
@@ -365,15 +367,17 @@ fetch('./FilmData.json')
 
         // Fonction permettant d'afficher les informations sur le film primé et les films nominés de l'année selectionné
         function voirPlusFilmPays(paysChoisi) {
-
-            document.getElementById("detailPays").scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
+            d3.selectAll("#prime, #nominés, #pays").remove();
 
             // Change la visibilité de la div pour la rendre visible
             let detailPaysDiv = document.getElementById("detailPays");
             detailPaysDiv.style.visibility = "visible";
+
+
+            detailPaysDiv.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
 
             // Sélectionne les films par pays 
             let paysSelectionne = filmPrime.filter(film =>
@@ -382,7 +386,6 @@ fetch('./FilmData.json')
             console.log(paysSelectionne);
 
             // Suppression de l'affichage de ces différents elements 
-            d3.selectAll("#prime, #nominés, #pays").remove();
 
             d3.select(".nomPays")
                 .append("h2")
