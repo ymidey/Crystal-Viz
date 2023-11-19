@@ -76,6 +76,12 @@ fetch('./FilmData.json')
             .attr("y", 10)
             .text(d => d);
 
+        // Affichage des 4 premiers caractères de chaque année pour pouvoir afficher 2 fois l'année 2009
+        d3.selectAll(".tick text").text(function(){
+            return d3.select(this).text().substring(0,4)
+        });
+
+
         // Ajout d'un titre à l'axe x
         svg.append("text")
             .text("Année")
@@ -241,16 +247,21 @@ fetch('./FilmData.json')
                     let anneeNomination;
                     pays = d.Pays;
 
-                    // On vérifie si l'utilisateur passe sa souris sur une barre, sur l'image sur la barre ou sur le carré qui entoure l'image
+                    // On vérifie si l'utilisateur passe sa souris sur une barre, sur l'image, sur la barre, ou sur le carré qui entoure l'image
                     if (this.classList.contains("barre") || this.classList.contains("carre") || this.classList.contains("image")) {
 
                         anneeNomination = d.AnnéeNomination;
                         encadre.transition()
                             .style("display", "block")
                             .style("visibility", "visible")
-                        encadre.html(`<p><span>Film primé en ${d.AnnéeNomination}</span><br>${d.Titre}<br>Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}/10</p>`)
+                        encadre.html(`<p><span id ="annee-nomination">Film primé en ${d.AnnéeNomination}</span><br><img src="${d.URLimage}"><br>${d.Titre}<br>Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}/10</p>`)
                             .style("left", (e.pageX + 10) + "px")
                             .style("top", (e.pageY - 50) + "px");
+
+                        // Affichage des 18 premiers caractères du span #annee-nomination pour pouvoir afficher 2 fois l'année 2009
+                        d3.selectAll("#annee-nomination").text(function(){
+                            return d3.select(this).text().substring(0,18)
+                        });
 
                         // Réduction de l'opacité de toutes les barres, sauf celle survolée
                         d3.selectAll(".barre, .carre, .image")
@@ -294,21 +305,24 @@ fetch('./FilmData.json')
         // Fonction permettant d'afficher les informations sur le film primé et les films nominés de l'année selectionné
         function voirPlusDinformations(tabIndex) {
 
-            let d = filmPrime[tabIndex - 1];
+            d3.selectAll("#prime, #pays, #nominés, #primespays").remove();
 
-            document.getElementById("detailMovie").scrollIntoView({
-                behavior: "smooth",
-            });
+            let d = filmPrime[tabIndex - 1];
 
             // Changer la visibilité de la div pour la rendre visible
             let detailMovieDiv = document.getElementById("detailMovie");
             detailMovieDiv.style.visibility = "visible";
 
+
+            detailMovieDiv.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
             let anneeSelectionnee = filmdata.filter(film =>
                 film.AnnéeNomination == d.AnnéeNomination
             );
 
-            d3.selectAll(".prime, .nominés").remove();
 
             d3.select(".date")
                 .selectAll(".annee-cristal")
@@ -316,9 +330,16 @@ fetch('./FilmData.json')
                 .enter()
                 .filter(d => d.Primé == 1)
                 .append("h2")
-                .attr("class", "prime")
+                .attr("id", "prime")
+                .attr("class","titre-cristal")
                 .attr("tabIndex", tabIndex)
                 .html(d => `Cristal du long métrage année ${d.AnnéeNomination}`);
+            
+            // Affichage des 34 premiers caractères du titre de chaque cristal pour pouvoir afficher 2 fois l'année 2009
+            d3.selectAll(".titre-cristal").text(function(){
+                return d3.select(this).text().substring(0,34)
+            });
+
 
             d3.select(".bande-annonce")
                 .selectAll(".annonce-film")
@@ -326,19 +347,24 @@ fetch('./FilmData.json')
                 .enter()
                 .filter(d => d.Primé == 1)
                 .append("div")
-                .attr("class", "prime")
+                .attr("id", "prime")
                 .html(d => `<iframe src="${d.BandeAnnonce}" tabIndex=${tabIndex} width="640" height="360" allowfullscreen="true" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation" title="Bande annonce du film ${d.Titre}"></iframe>`);
 
             d3.select(".film-container")
-                .selectAll(".prime")
+                .selectAll(".film-prime")
                 .data(anneeSelectionnee)
                 .enter()
                 .filter(d => d.Primé == 1)
                 .append("div")
-                .attr("class", "prime")
+                .attr("id", "prime")
                 .style("display", "flex")
                 .style("flex-direction", "row")
                 .html(d => `<div><h3>Film primé</h3><br><p><span>Titre : ${d.Titre}</span><br>Réalisateur(s) : ${d.Réalisateurs}<br>Technique(s) de production : ${d.Techniques}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" tabindex="${tabIndex}">Page IMDB du film ${d.Titre}</a></p></div><div><p>${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div>`);
+
+            d3.select(".titre-nomines")
+                .append("h2")
+                .attr("id", "nominés")
+                .html(`Films nominés`);
 
             d3.select(".detailNomines")
                 .selectAll(".filmNomines")
@@ -346,7 +372,7 @@ fetch('./FilmData.json')
                 .enter()
                 .filter(d => d.Primé == 0)
                 .append("div")
-                .attr("class", "nominés")
+                .attr("id", "nominés")
                 .html(d => `<p><span>Titre : ${d.Titre}</span><br>Pays : ${d.Pays}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank"">Page IMDB du film ${d.Titre}</a></p>`);
         }
 
@@ -359,23 +385,65 @@ fetch('./FilmData.json')
 
 
         // Fonction permettant d'afficher les informations sur le film primé et les films nominés de l'année selectionné
-        function voirPlusFilmPays(tabIndex) {
+        function voirPlusFilmPays(paysChoisi) {
+            d3.selectAll("#prime, #nominés, #pays, #primespays").remove();
+
+            // Change la visibilité de la div pour la rendre visible
+            let detailPaysDiv = document.getElementById("detailPays");
+            detailPaysDiv.style.visibility = "visible";
 
 
-            let anneeSelectionnee = filmPrime.filter(film =>
-                film.Pays == tabIndex
+            detailPaysDiv.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+            // Sélectionne les films par pays 
+            let paysSelectionne = filmPrime.filter(film =>
+                film.Pays == paysChoisi
             );
+            console.log(paysSelectionne);
 
-            console.log(anneeSelectionnee);
+            // Suppression de l'affichage de ces différents elements 
+
+            d3.select(".nomPays")
+                .append("h2")
+                .attr("id", "pays")
+                .attr("class","payschoisi")
+                .html(`Liste de tous les Films primés provenant de ${paysChoisi}`);
+
+
+            d3.select(".films-pays")
+                .selectAll(".annonce-film")
+                .data(paysSelectionne)
+                .enter()
+                .append("div")
+                .attr("id", "pays")
+                .html(d => `<h2 id="annee-cristal">Cristal du long métrage année ${d.AnnéeNomination}</h2><div class="pays-container"><div class="iframe"><iframe src="${d.BandeAnnonce}"  width="640" height="360" allowfullscreen="true" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation" title="Bande annonce du film ${d.Titre}"></iframe></div><div class="infos-container"><br><p><span>Titre : ${d.Titre}</span><br>Réalisateur(s) : ${d.Réalisateurs}<br>Technique(s) de production : ${d.Techniques}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank">Page IMDB du film ${d.Titre}</a></p></div></div>`);
+
+            // Affichage des 34 premiers caractères du titre h2 #annee-cristal pour pouvoir afficher 2 fois l'année 2009
+            d3.selectAll("#annee-cristal").text(function(){
+                return d3.select(this).text().substring(0,34)
+            });
+
+
+            // d3.select(".bande-annonce1")
+            //     .selectAll(".films-pays")
+            //     .data(paysSelectionne)
+            //     .enter()
+            //     .append("div")
+            //     .attr("id", "primespays")
+            //     .style("display", "flex")
+            //     .style("flex-direction", "row")
+            //     .html(d => `<div><br><p><span>Titre : ${d.Titre}</span><br>Réalisateur(s) : ${d.Réalisateurs}<br>Technique(s) de production : ${d.Techniques}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank">Page IMDB du film ${d.Titre}</a></p></div>`);
+
         }
 
+      
         // Ajout d'event focus pour que les éléments détaillés puissent être accessibles via la navigation au clavier
         d3.selectAll(".legend-item").on("click", function () {
-            let tabIndex = this.id;
-            voirPlusFilmPays(tabIndex);
+            let paysChoisi = this.id;
+            voirPlusFilmPays(paysChoisi);
         })
 
-
     })
-
-    .catch(error => console.error('Erreur lors du chargement du fichier JSON :', error));
