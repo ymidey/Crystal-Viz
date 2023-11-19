@@ -234,17 +234,14 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
 /* Changement de la taille de mes h3 situé dans les div ayant l'id detailFilm et detailPays */
 #detailFilm h3, #detailPays h3 {
     font-size: 2.775rem;
-} 
-  
-#pays.payschoisi {
-    margin-bottom: 0;
 }
 
-.film-prime, #annee-cristal {
+#detailFilm .film-prime, #detailPays #annee-cristal {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -282,7 +279,6 @@ svg {
 
 /* Style de mes éléments p situé ma div info-filmPrime et ma div ayant l'id #pays */
 .film-prime .info-filmPrime p, #pays p {
-    font-family: 'Teko';
     font-size: 1.5rem;
 }
 
@@ -313,7 +309,7 @@ svg {
     padding: 20px;
 }
 
-/* Ajout d'une graisse de 800 au premier enfant de p */
+
 .nominés p :first-child {
     font-weight: 800;
 }
@@ -359,6 +355,10 @@ footer h3 {
     font-size: 2rem;
     margin: 0;
     font-weight: 800;
+}
+
+.div-footer h5 {
+    font-size: 1.7rem;
 }
 
 .div-footer p {
