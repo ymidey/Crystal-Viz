@@ -71,6 +71,7 @@ header {
     left: 60%;
     top: 10%;
     width: max-content;
+    height: 30vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -187,6 +188,10 @@ svg {
     width: 75vw;
 }
 
+svg g {
+    font-size: .775rem;
+}
+
 /* Style de la légende */
 .legende-container {
     display: flex;
@@ -241,7 +246,7 @@ svg {
     font-size: 2.775rem;
 }
 
-#detailFilm .film-prime, #detailPays #annee-cristal {
+#detailFilm .film-prime {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -254,7 +259,11 @@ svg {
     flex-direction: row;
     gap: 3rem;
     justify-items: center;
-    max-width: 1050px;
+    max-width: 1100px;
+}
+
+.paysChoisi {
+    text-align: center;
 }
 
 .pays-container .infos-container p {
@@ -391,9 +400,10 @@ footer h3 {
         font-size: 1.225rem;
     }
 
-    footer>* {
-        max-width: 100%;
+    .pays-container {
+        flex-wrap: wrap;
     }
+
 
     #detailFilm {
         margin: 0 15px;
@@ -408,6 +418,11 @@ footer h3 {
         height: 270px;
     }
 
+
+    footer>* {
+        max-width: 100%;
+    }
+
 }
 
 /* Style si l'écran à une taille inférieur à 750px */
@@ -417,6 +432,7 @@ footer h3 {
         left: 52%;
         width: 87%;
         transform: translateX(-50%);
+        height: inherit;
     }
 
     .container-titre h1 {
@@ -436,7 +452,6 @@ footer h3 {
 }
 
 @media only screen and (max-width: 550px) {
-
     iframe {
         width: 320px;
         height: 180px;

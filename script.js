@@ -371,7 +371,7 @@ fetch('./FilmData.json')
             d3.select(".titre-nomines")
                 .append("h4")
                 .attr("id", "nominés")
-                .html(`Film(s) nominés`);
+                .html(`Films nominés`);
 
             if (annee == 20092) {
                 annee = 2009;
