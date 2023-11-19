@@ -1,29 +1,33 @@
 @font-face {
     font-family: 'Teko';
     src: url(./Fonts/Teko-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
     font-family: 'Poppins';
     src: url(./Fonts/Poppins-Medium.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Lalezar';
+    src: url(./Fonts/Lalezar-Regular.ttf) format('truetype');
+}
+
 /* Changement du style de la scrollbar */
-
-/* taille de la scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 9px;
 }
 
-/* couleur de fond secondaire de la scrollbar */
 ::-webkit-scrollbar-track {
-    background: #2c4670;
+    background: #ffffff1e;
+
 }
 
-/* couleur de fond primaire de la scrollbar */
 ::-webkit-scrollbar-thumb {
     background: #e4e1e1;
     border-radius: 10px;
 }
 
-/* Hcouleur de fond primaire de la scrollbar au hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #ffffff;
 }
@@ -34,6 +38,7 @@ a {
 }
 
 body {
+    box-sizing: border-box;
     border: 0;
     margin: 0;
     padding: 0;
@@ -50,47 +55,55 @@ body {
 }
 
 header {
+    position: relative;
     height: 100vh;
 }
 
-
 .clip-path-container {
     position: relative;
-    width: 38%;
-    left: 55%;
+    left: 60%;
     top: 10%;
     overflow: hidden;
+    width: max-content;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.logo-container {
-    position: relative;
+.title-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.logo-container h1 {
-    font-family: 'Poppins';
+.title-container h1 {
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lalezar';
     margin: 0;
-    color: transparent;
-    -webkit-text-stroke: .5px #263C5F;
-    font-size: 3.9vw;
+    letter-spacing: .4em;
+    color: #263C5F;
     text-transform: uppercase;
-    letter-spacing: 14px;
 }
 
-.logo-container img {
-    width: 100%;
-    height: auto;
+.title-1 {
+    font-size: 3.5vw;
+    font-family: 'Poppins';
+    color: transparent;
+    -webkit-text-stroke: .5px #263C5F;
+    letter-spacing: .2em;
+}
+
+.title-2 {
+    font-size: 5vw;
 }
 
 
 .scroll-down-arrow {
-    position: relative;
+    position: absolute;
     width: fit-content;
     cursor: pointer;
-    top: 50%;
+    top: 85%;
     left: 50%;
     transform: translateX(-50%);
     animation: arrowBounce 2s infinite ease-in-out;
@@ -123,41 +136,75 @@ header {
 }
 
 .main {
-    align-content: center;
-    padding-top: 12%;
-    padding-bottom: 12%;
+    padding: 80px 0;
 }
 
 footer {
-    border-top: 1px solid black;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: 'Teko';
+    height: 100vh;
+    border-top: 1px solid black;
 }
 
-footer>* {
-    padding: 3%;
-    max-width: 380px;
+footer h3 {
+    font-size: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 10vw;
+}
+
+.footer-container>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+}
+
+.div-footer {
+    padding: 30px 0;
+}
+
+.div-footer h4 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 800;
+}
+
+.div-footer p {
+    font-size: 1.5rem;
 }
 
 .svg-container {
+    width: 98vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #ffffff1e;
+    font-family: 'Teko';
+    padding: 25px 0;
+    margin: auto;
+    border-radius: 20px;
 }
 
-.svg-container {
-    padding: 25px 0;
-}
 
 .svg-container>* {
-    padding: 10px 0;
+    padding: 10px 5px;
 }
 
 .svg-container h2 {
     margin: 3px;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 #legende {
@@ -168,10 +215,10 @@ footer>* {
 }
 
 svg {
-    overflow: visible;
-    height: 80%;
     width: 75vw;
+    height: 80%;
 }
+
 
 /* Style de la légende */
 .legend-item {
@@ -187,6 +234,11 @@ svg {
     height: 20px;
     border-radius: 50%;
     margin-right: 5px;
+}
+
+.legend-label {
+    padding: 0;
+    margin: 0;
 }
 
 .hoverMovie {
@@ -206,29 +258,55 @@ svg {
     font-weight: 800;
 }
 
-#detailMovie {
+/* .bande-annonce1 {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+  } */
+
+/* .pays-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+} */
+
+/* .infos-container {
+    gap: 3em;
+} */
+#detailMovie, #detailPays {
     visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#detailMovie {
     font-family: 'Teko';
 }
 
-.date h2 {
+#detailMovie h2, #detailPays h2 {
     font-size: 2.775rem;
+    /* text-align: center; */
 }
 
-.film-prime {
+#pays.payschoisi {
+    margin-bottom: 0;
+}
+
+.film-prime, #annee-cristal {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     flex-direction: row;
     justify-content: center;
-
 }
+
+.pays-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-items: center;
+    max-width: 1050px;
+}
+
 
 .film-prime * {
     margin: 0;
@@ -243,57 +321,55 @@ svg {
     font-weight: 700;
 }
 
-.film-prime p {
+.film-prime p, #pays p {
+    font-family: 'Teko';
     font-size: 1.5rem;
 }
 
 .films-nomines {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
 
 .detailNomines {
+    width: 90vw;
+    gap: 50px;
     display: flex;
-    max-width: 140vh;
-    gap: 70px;
+    max-width: 160vh;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .detailNomines p {
     font-size: 1.4rem;
 }
 
+.nominés {
+    flex: 0 0 calc(33.33% - 20px);
+    /* 33.33% pour 3 éléments avec un petit espace au milieu */
+    box-sizing: border-box;
+    padding: 20px;
+}
+
 .nominés p :first-child {
     font-weight: 800;
 }
 
-
-/* Responsive sur mobile */
 @media only screen and (max-width: 950px) {
 
-    .clip-path-container {
-        top: 15%;
-        left: 52%;
-        width: 87%;
-        transform: translateX(-50%);
-    }
-
     .clip-path-container h1 {
-        font-size: 9vw;
+        font-size: 4vw;
     }
 
-    svg {
-        width: 100%;
+    .title-2 {
+        font-size: 5vw;
     }
+
 
     svg g {
         font-size: 1rem;
-    }
-
-    #fullpage {
-        background-image: url(./images/Background-950px.jpg);
     }
 
     .film-prime p, .films-nomines p {
@@ -319,9 +395,31 @@ svg {
 
 }
 
+@media only screen and (max-width: 750px) {
+    .clip-path-container {
+        top: 15%;
+        left: 52%;
+        width: 87%;
+        transform: translateX(-50%);
+    }
+
+    .clip-path-container h1, .title-1 {
+        font-size: 8vw;
+    }
+
+    .title-2 {
+        font-size: 10vw;
+    }
 
 
-@media only screen and (max-width: 500px) {
+    .detailNomines {
+        flex-direction: column;
+    }
+
+    #fullpage {
+        background-image: url(./images/Background-950px.jpg);
+    }
+
     iframe {
         width: 320px;
         height: 180px;

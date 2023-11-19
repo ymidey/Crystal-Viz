@@ -15,8 +15,7 @@
     "Pays": "Hongrie",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/Qx1bbjSmAKE?si=dovAX4B0sS8GRAZb",
     "Techniques": "dessin sur papier (peinture)",
-    "URLimage" : "./images/images_film/prime1985.png"
-
+    "URLimage": "./images/images_film/prime1985.png"
   },
   {
     "Titre": "Gwen, le livre de sable",
@@ -85,8 +84,7 @@
     "Pays": "Royaume-Uni",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x8hzwum",
     "Techniques": "dessin sur cellulos, vues réelles",
-    "URLimage" : "./images/images_film/prime1987.png"
-
+    "URLimage": "./images/images_film/prime1987.png"
   },
   {
     "Titre": "The Monkey King Conquers the Demon",
@@ -172,7 +170,7 @@
     "Pays": "Tchécoslovaquie",
     "BandeAnnonce": "https://www.youtube.com/embed/MR6HcT8P-VA?si=KFYgPkOOUaKv0fJI",
     "Techniques": "marionnettes, animation d'objets, vues réelles",
-    "URLimage" : "./images/images_film/prime1989.png"
+    "URLimage": "./images/images_film/prime1989.png"
   },
   {
     "Titre": "Akira",
@@ -258,7 +256,7 @@
     "Pays": "France",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/xpwbjv",
     "Techniques": "dessin sur cellulos",
-    "URLimage" : "./images/images_film/prime1991.png"
+    "URLimage": "./images/images_film/prime1991.png"
   },
   {
     "Titre": "Little Nemo: les Aventures au pays de Slumberland",
@@ -344,7 +342,7 @@
     "Pays": "Japon",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/5Wiv3d6IS7Y?si=IXT91gZ_CEt9p-e8",
     "Techniques": "dessin sur cellulos",
-    "URLimage" : "./images/images_film/prime1993.png"
+    "URLimage": "./images/images_film/prime1993.png"
   },
   {
     "Titre": "The Flying Sneaker",
@@ -430,7 +428,7 @@
     "Pays": "Japon",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/_7cowIHjCD4?si=emHX_2nuByV2ZsGr",
     "Techniques": "dessin sur cellulos",
-    "URLimage" : "./images/images_film/prime1995.png"
+    "URLimage": "./images/images_film/prime1995.png"
   },
   {
     "Titre": "Hugo de la jungle",
@@ -482,7 +480,7 @@
     "Pays": "États-Unis",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/k47xksQXU-E?si=fj53pqaSQTHdd9at",
     "Techniques": "marionnettes, vues réelles",
-    "URLimage" : "./images/images_film/prime1997.png"
+    "URLimage": "./images/images_film/prime1997.png"
   },
   {
     "Titre": "Beavis et Butt-Head se font l'Amérique",
@@ -585,7 +583,7 @@
     "Pays": "États-Unis",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/kq0tEZIiO48?si=pSP67qs7dQMHpvi-",
     "Techniques": "dessin sur cellulos",
-    "URLimage" : "./images/images_film/prime1998.png"
+    "URLimage": "./images/images_film/prime1998.png"
   },
   {
     "Titre": "L'Ombre d'Andersen",
@@ -671,7 +669,7 @@
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/Bgc9Vy3EGV8?si=B9S53aBowviw07bu",
     "Techniques": "dessin sur papier (crayon), ordinateur 2D",
-    "URLimage" : "./images/images_film/prime1999.png"
+    "URLimage": "./images/images_film/prime1999.png"
   },
   {
     "Titre": "Gourine et la queue de renard",
@@ -757,7 +755,7 @@
     "Pays": "États-Unis",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/7Q4Vamsv5NY?si=ws8mFYqnAhWs_EGe",
     "Techniques": "dessin sur cellulos",
-    "URLimage" : "./images/images_film/prime2001.png"
+    "URLimage": "./images/images_film/prime2001.png"
   },
   {
     "Titre": "Blood: The Last Vampire",
@@ -826,7 +824,7 @@
     "Pays": "Corée du Sud",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/51M6T67Qyd8?si=cFpMBVwqx0m1izMu",
     "Techniques": "ordinateur 2D/3D",
-    "URLimage" : "./images/images_film/prime2002.png"
+    "URLimage": "./images/images_film/prime2002.png"
   },
   {
     "Titre": "Mercano, le Martien",
@@ -929,7 +927,7 @@
     "Pays": "Hong Kong",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x8a3d4w",
     "Techniques": "dessin sur cellulos , photos , éléments découpés, ordinateur 3D, vues réelles",
-    "URLimage" : "./images/images_film/prime2003.png"
+    "URLimage": "./images/images_film/prime2003.png"
   },
   {
     "Titre": "Kaena, la prophétie",
@@ -998,7 +996,7 @@
     "Pays": "Corée du Sud",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/j36fJNT2nj8?si=S3ltqxl3spKGgRut",
     "Techniques": "ordinateur 2D",
-    "URLimage" : "./images/images_film/prime2004.png"
+    "URLimage": "./images/images_film/prime2004.png"
   },
   {
     "Titre": "La Légende du Cid",
@@ -1084,7 +1082,7 @@
     "Pays": "Hongrie",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/_PrKf-mLRws?si=YZNiavzjVuLkZtSI",
     "Techniques": "ordinateur 2D/3D",
-    "URLimage" : "./images/images_film/prime2005.png"
+    "URLimage": "./images/images_film/prime2005.png"
   },
   {
     "Titre": "Franz et le chef d'orchestre",
@@ -1170,7 +1168,7 @@
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/GM5KCoWNXF4?si=ctHwKC4U2JbK5dr3",
     "Techniques": "ordinateur 3D",
-    "URLimage" : "./images/images_film/prime2006.png"
+    "URLimage": "./images/images_film/prime2006.png"
   },
   {
     "Titre": "Astérix et les Vikings",
@@ -1256,7 +1254,7 @@
     "Pays": "Norvège",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/7IGGlwCKq1Q?si=EdX2yh3TN8qgrmH0",
     "Techniques": "ordinateur 3D",
-    "URLimage" : "./images/images_film/prime2007.png"
+    "URLimage": "./images/images_film/prime2007.png"
   },
   {
     "Titre": "Azur et Asmar",
@@ -1410,7 +1408,7 @@
     "Pays": "États-Unis",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x3lxwee",
     "Techniques": "dessin sur papier, éléments découpés, ordinateur 2D, rotoscopie",
-    "URLimage" : "./images/images_film/prime2008.png"
+    "URLimage": "./images/images_film/prime2008.png"
   },
   {
     "Titre": "Appleseed Ex Machina",
@@ -1564,7 +1562,7 @@
     "Pays": "États-Unis",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x8sdf7",
     "Techniques": "pâte à modeler",
-    "URLimage" : "./images/images_film/prime2009(1).png"
+    "URLimage": "./images/images_film/prime2009(1).png"
   },
   {
     "Titre": "Terra",
@@ -1686,6 +1684,143 @@
     "Techniques": ""
   },
   {
+    "Titre": "Mary et Max",
+    "TitreOriginal": "Mary and Max",
+    "Réalisateurs": "Adam Elliot",
+    "AnnéeNomination": 2009.2,
+    "Primé": 1,
+    "élément": "Q1128756",
+    "Scenaristes": "Adam Elliot",
+    "Production": "Melodrama Pictures",
+    "Duree": 90,
+    "IdIMDB": "tt0978762",
+    "NoteIMDB": 8.1,
+    "AnneeSortie": 2009,
+    "Pays": "Australie",
+    "BandeAnnonce": "https://www.youtube.com/watch?v=lzC1TRwLm2o",
+    "Techniques": "marionnettes, ordinateur 3D",
+    "URLimage": "./images/images_film/prime2009(2).png"
+  },
+  {
+    "Titre": "Terra",
+    "TitreOriginal": "Battle for Terra",
+    "Réalisateurs": "Aristomenis Tsirbas",
+    "AnnéeNomination": 2009.2,
+    "Primé": 0,
+    "élément": "Q2298194",
+    "Scenaristes": "Evan Spiliotopoulos",
+    "Production": "Roadside Attractions",
+    "Duree": 85,
+    "IdIMDB": "tt0858486",
+    "NoteIMDB": 6.5,
+    "AnneeSortie": 2007,
+    "Pays": "États-Unis",
+    "BandeAnnonce": "",
+    "Techniques": ""
+  },
+  {
+    "Titre": "Boogie",
+    "TitreOriginal": "Boogie, el aceitoso",
+    "Réalisateurs": "Gustavo Cova",
+    "AnnéeNomination": 2009.2,
+    "Primé": 0,
+    "élément": "Q4942835",
+    "Scenaristes": "",
+    "Production": "Illusion Studios",
+    "Duree": 82,
+    "IdIMDB": "tt1235827",
+    "NoteIMDB": 6.3,
+    "AnneeSortie": 2009,
+    "Pays": "Mexique",
+    "BandeAnnonce": "",
+    "Techniques": ""
+  },
+  {
+    "Titre": "Kurt blir grusom",
+    "TitreOriginal": "",
+    "Réalisateurs": "Rasmus Sivertson",
+    "AnnéeNomination": 2009.2,
+    "Primé": 0,
+    "élément": "Q17414840",
+    "Scenaristes": "Per H. V. Schreiner",
+    "Production": "Nordisk Film",
+    "Duree": 74,
+    "IdIMDB": "tt1245891",
+    "NoteIMDB": 6.3,
+    "AnneeSortie": 2008,
+    "Pays": "Norvège",
+    "BandeAnnonce": "",
+    "Techniques": ""
+  },
+  {
+    "Titre": "Monstres contre Aliens",
+    "TitreOriginal": "Monsters vs. Aliens",
+    "Réalisateurs": "Conrad Vernon et Rob Letterman",
+    "AnnéeNomination": 2009.2,
+    "Primé": 0,
+    "élément": "Q681918",
+    "Scenaristes": "Rob Letterman",
+    "Production": "PDI",
+    "Duree": 94,
+    "IdIMDB": "tt0892782",
+    "NoteIMDB": 6.4,
+    "AnneeSortie": 2009,
+    "Pays": "États-Unis",
+    "BandeAnnonce": "",
+    "Techniques": ""
+  },
+  {
+    "Titre": "My Dog Tulip",
+    "TitreOriginal": "",
+    "Réalisateurs": "Paul Fierlinger",
+    "AnnéeNomination": 2009.2,
+    "Primé": 0,
+    "élément": "Q6945294",
+    "Scenaristes": "J. R. Ackerley",
+    "Production": "",
+    "Duree": 83,
+    "IdIMDB": "tt0843358",
+    "NoteIMDB": 6.8,
+    "AnneeSortie": 2009,
+    "Pays": "États-Unis",
+    "BandeAnnonce": "",
+    "Techniques": ""
+  },
+  {
+    "Titre": "Brendan et le Secret de Kells",
+    "TitreOriginal": "",
+    "Réalisateurs": "Tomm Moore et Nora Twomey",
+    "AnnéeNomination": 2009.2,
+    "Primé": 0,
+    "élément": "Q908816",
+    "Scenaristes": "Tomm Moore",
+    "Production": "Canal+",
+    "Duree": 75,
+    "IdIMDB": "tt0485601",
+    "NoteIMDB": 7.5,
+    "AnneeSortie": 2009,
+    "Pays": "France",
+    "BandeAnnonce": "",
+    "Techniques": ""
+  },
+  {
+    "Titre": "Jeh-bool-chal-shee e-ya-gee",
+    "TitreOriginal": "",
+    "Réalisateurs": "Kim Il-hyun, Kwak In-keun et Ryu Ji-na",
+    "AnnéeNomination": 2009.2,
+    "Primé": 0,
+    "élément": "Q123173873",
+    "Scenaristes": "",
+    "Production": "",
+    "Duree": 65,
+    "IdIMDB": "tt2078651",
+    "NoteIMDB": 6.8,
+    "AnneeSortie": 2009,
+    "Pays": "Corée du Sud",
+    "BandeAnnonce": "",
+    "Techniques": ""
+  },
+  {
     "Titre": "Fantastic Mr. Fox",
     "TitreOriginal": "Fantastic Mr. Fox",
     "Réalisateurs": "Wes Anderson",
@@ -1701,7 +1836,7 @@
     "Pays": "Royaume-Uni",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x26mc7y",
     "Techniques": "marionnettes",
-    "URLimage" : "./images/images_film/prime2010.png"
+    "URLimage": "./images/images_film/prime2010.png"
   },
   {
     "Titre": "Kérity, la maison des contes",
@@ -1821,7 +1956,7 @@
     "Pays": "France",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x8k4izo",
     "Techniques": "dessin sur papier, ordinateur 2D",
-    "URLimage" : "./images/images_film/prime2011.png"
+    "URLimage": "./images/images_film/prime2011.png"
   },
   {
     "Titre": "Une vie de chat",
@@ -1992,7 +2127,7 @@
     "Pays": "Roumanie",
     "BandeAnnonce": "https://www.dailymotion.com/embed/video/x27h0vb",
     "Techniques": "techniques diverses",
-    "URLimage" : "./images/images_film/prime2012.png"
+    "URLimage": "./images/images_film/prime2012.png"
   },
   {
     "Titre": "La tête en l'air",
@@ -2197,7 +2332,7 @@
     "Pays": "Brésil",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/mSq4oCo3keY?si=ARL0vPO0aGIFm8Rz",
     "Techniques": "dessin sur papier",
-    "URLimage" : "./images/images_film/prime2013.png"
+    "URLimage": "./images/images_film/prime2013.png"
   },
   {
     "Titre": "Arjun, le prince guerrier",
@@ -2385,7 +2520,7 @@
     "Pays": "Brésil",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/0Ctz8X6_MTY?si=6r3ehnMVZs-sVnRI",
     "Techniques": "dessin sur papier, ordinateur 2D, techniques diverses, vues réelles",
-    "URLimage" : "./images/images_film/prime2014.png"
+    "URLimage": "./images/images_film/prime2014.png"
   },
   {
     "Titre": "Asphalt Watches",
@@ -2539,7 +2674,7 @@
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/0CeRmyassi4?si=Q2rq8-Na2hMSrbxh",
     "Techniques": "ordinateur 2D",
-    "URLimage" : "./images/images_film/prime2015.png"
+    "URLimage": "./images/images_film/prime2015.png"
   },
   {
     "Titre": "Adama",
@@ -2676,7 +2811,7 @@
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/OEwycy4aaFw?si=3f3BqlBxrEw3ILCJ",
     "Techniques": "marionnettes",
-    "URLimage" : "./images/images_film/prime2016.png"
+    "URLimage": "./images/images_film/prime2016.png"
   },
   {
     "Titre": "25 April",
@@ -2830,7 +2965,7 @@
     "Pays": "Japon",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/HaxrJ23ht3I?si=DbTafBePEVhQI2MF",
     "Techniques": "ordinateur 2D",
-    "URLimage" : "./images/images_film/prime2017.png"
+    "URLimage": "./images/images_film/prime2017.png"
   },
   {
     "Titre": "A Silent Voice",
@@ -3018,7 +3153,7 @@
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/xdSqaLOcOXc?si=lyWmamJ4gVsoxUq8",
     "Techniques": "ordinateur 2D",
-    "URLimage" : "./images/images_film/prime2018.png"
+    "URLimage": "./images/images_film/prime2018.png"
   },
   {
     "Titre": "Miraï, ma petite sœur",
@@ -3172,7 +3307,7 @@
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/PEmvj6lduE8?si=KIp0uf_g_KuwDiRo",
     "Techniques": "ordinateur 2D/3D",
-    "URLimage" : "./images/images_film/prime2019.png"
+    "URLimage": "./images/images_film/prime2019.png"
   },
   {
     "Titre": "Buñuel après l'âge d'or",
@@ -3360,7 +3495,7 @@
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/gdKJRqrXngU?si=tqplzpU2vrr398ey",
     "Techniques": "ordinateur 2D/3D",
-    "URLimage" : "./images/images_film/prime2020.png"
+    "URLimage": "./images/images_film/prime2020.png"
   },
   {
     "Titre": "7 jours",
@@ -3531,7 +3666,7 @@
     "Pays": "Danemark",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/EVyzj5Cipg0?si=cSns35fqhmdReug7",
     "Techniques": "ordinateur 2D, vues réelles",
-    "URLimage" : "./images/images_film/prime2021.png"
+    "URLimage": "./images/images_film/prime2021.png"
   },
   {
     "Titre": "Hayop ka!",
@@ -3719,7 +3854,7 @@
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/jTnqaOsozxw?si=CnlYdO_P9rIAJ4gA",
     "Techniques": "ordinateur 2D, techniques diverses",
-    "URLimage" : "./images/images_film/prime2022.png"
+    "URLimage": "./images/images_film/prime2022.png"
   },
   {
     "Titre": "Charlotte",
@@ -3890,7 +4025,7 @@
     "Pays": "France",
     "BandeAnnonce": "https://www.youtube-nocookie.com/embed/XvyOL_uWFbA?si=lffBK2q2UP3nnJjM",
     "Techniques": "ordinateur 2D",
-    "URLimage" : "./images/images_film/prime2023.png"
+    "URLimage": "./images/images_film/prime2023.png"
   },
   {
     "Titre": "La sirène",
