@@ -336,10 +336,10 @@ fetch('./FilmData.json')
 
                 .attr("tabIndex", tabIndex)
                 .html(d => `Cristal du long métrage année ${d.AnnéeNomination}`);
-            
+
             // Affichage des 34 premiers caractères du titre de chaque cristal pour pouvoir afficher 2 fois l'année 2009
-            d3.selectAll(".titre-cristal").text(function(){
-                return d3.select(this).text().substring(0,34)
+            d3.selectAll(".titre-cristal").text(function () {
+                return d3.select(this).text().substring(0, 34)
             });
 
 
@@ -411,29 +411,12 @@ fetch('./FilmData.json')
                 film.Pays == paysChoisi
             );
 
-            d3.select(".nomPays")
-                .append("h2")
-                .attr("id", "pays")
-                .attr("class","payschoisi")
-                .html(`Liste de tous les Films primés provenant de ${paysChoisi}`);
-
-
-            d3.select(".films-pays")
-                .selectAll(".annonce-film")
-                .data(paysSelectionne)
-                .enter()
-                .append("div")
-                .attr("id", "pays")
-                .html(d => `<h3 id="annee-cristal">Cristal du long métrage année ${d.AnnéeNomination}</h3><div class="pays-container"><div class="iframe"><iframe src="${d.BandeAnnonce}"  width="640" height="360" allowfullscreen="true" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation" title="Bande annonce du film ${d.Titre}"></iframe></div><div class="infos-container"><br><p><span>Titre : ${d.Titre}</span><br>Réalisateur(s) : ${d.Réalisateurs}<br>Technique(s) de production : ${d.Techniques}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank">Page IMDB du film ${d.Titre}</a></p></div></div>`);
 
             // Affichage des 34 premiers caractères du titre h2 #annee-cristal pour pouvoir afficher 2 fois l'année 2009
-            d3.selectAll("#annee-cristal").text(function(){
-                return d3.select(this).text().substring(0,34)
+            d3.selectAll("#annee-cristal").text(function () {
+                return d3.select(this).text().substring(0, 34)
             });
 
-
- 
-            // Suppression de l'affichage de ces différents elements 
             d3.select(".nomPays")
                 .append("h3")
                 .attr("id", "pays")
@@ -456,7 +439,7 @@ fetch('./FilmData.json')
 
         }
 
-      
+
         // Ajout d'event focus pour que les éléments détaillés puissent être accessibles via la navigation au clavier
         svg.selectAll(".barre, .image, .carre").on("focus", function () {
             // On récupère l'index de la barre focuser
