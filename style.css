@@ -1,3 +1,4 @@
+/* Importation des polices d'écritures */
 @font-face {
     font-family: 'Teko';
     src: url(./Fonts/Teko-VariableFont_wght.ttf) format('truetype');
@@ -32,11 +33,12 @@
     background: #ffffff;
 }
 
-
+/* Changement de la couleur par défaut des liens */
 a {
     color: #b2d3e7;
 }
 
+/* Changement du style par défaut du body */
 body {
     box-sizing: border-box;
     border: 0;
@@ -44,9 +46,13 @@ body {
     padding: 0;
     color: white;
     background-color: #263C5F;
+    /*Ajout d'une police pour mon site */
+    font-family: 'Teko';
+
 }
 
-#fullpage {
+/* Ajout d'une image en background sur ma div ayant l'id pageIntegrale */
+#pageIntegrale {
     position: relative;
     width: 100%;
     background-image: url('./images/background.jpg');
@@ -54,6 +60,7 @@ body {
     background-size: 100%;
 }
 
+/* Style de mon block header */
 header {
     position: relative;
     height: 100vh;
@@ -63,18 +70,18 @@ header {
     position: relative;
     left: 60%;
     top: 10%;
-    overflow: hidden;
     width: max-content;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.title-container {
+.container-titre {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title-container h1 {
+/* Style de mon titre h1 */
+.container-titre h1 {
     font-size: 4vw;
     display: flex;
     align-items: center;
@@ -86,7 +93,8 @@ header {
     text-transform: uppercase;
 }
 
-.title-1 {
+/* Style du premier span de mon titre h1 */
+.clip-path-container h1 .titre-1 {
     font-size: 3.5vw;
     font-family: 'Poppins';
     color: transparent;
@@ -94,12 +102,13 @@ header {
     letter-spacing: .2em;
 }
 
-.title-2 {
+/* Style du second span de mon titre h1 */
+.clip-path-container h1 .titre-2 {
     font-size: 5vw;
 }
 
-
-.scroll-down-arrow {
+/* Positionnement de mon indicateur de scroll */
+.fleche-defilement-bas {
     position: absolute;
     width: fit-content;
     cursor: pointer;
@@ -109,7 +118,8 @@ header {
     animation: arrowBounce 2s infinite ease-in-out;
 }
 
-.scroll-down-arrow span {
+/* Style de mon indicateur de scroll */
+.fleche-defilement-bas span {
     display: block;
     width: 36px;
     height: 36px;
@@ -121,6 +131,7 @@ header {
     transition: transform 0.2s ease-in-out;
 }
 
+/* Animation de mon indicateur de scroll */
 @keyframes arrowBounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -135,78 +146,36 @@ header {
     }
 }
 
-.main {
+/* Style de mon block main */
+main {
     padding: 80px 0;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    font-family: 'Teko';
-    height: 100vh;
-    border-top: 1px solid black;
-}
-
-footer h3 {
-    font-size: 3rem;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: center;
-    gap: 10vw;
-}
-
-.footer-container>* {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 500px;
-}
-
-.div-footer {
-    padding: 30px 0;
-}
-
-.div-footer h4 {
-    font-size: 2rem;
-    margin: 0;
-    font-weight: 800;
-}
-
-.div-footer p {
-    font-size: 1.5rem;
-}
-
-.svg-container {
-    width: 98vw;
+/* Style de mon svg */
+.container-svg {
+    width: 97vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff1e;
-    font-family: 'Teko';
-    padding: 25px 0;
+    background-color: #ffffff14;
+    padding: 20px 0;
     margin: auto;
     border-radius: 20px;
 }
 
-
-.svg-container>* {
-    padding: 10px 5px;
-}
-
-.svg-container h2 {
-    margin: 3px;
-    font-size: 1.8rem;
+/* Ajout d'un padding pour chaque élément enfant de premier étage de ma class .container-svg */
+.container-svg>* {
+    padding: 5px 5px;
     text-align: center;
 }
 
+.container-svg h2 {
+    margin: 3px;
+    font-size: 1.8rem;
+}
+
+/* Style de ma div ayant l'id legende */
 #legende {
     display: flex;
     flex-wrap: wrap;
@@ -214,34 +183,35 @@ footer h3 {
     max-width: 90%;
 }
 
+/* Style de mon svg */
 svg {
-    width: 75vw;
-    height: 80%;
+    width: 70vw;
 }
 
-
 /* Style de la légende */
-.legend-item {
+.legende-container {
     display: flex;
     align-items: center;
     margin-right: 10px;
     margin-bottom: 5px;
 }
 
-/* Style du cercle */
-.legend-circle {
+/* Style des cercles daans la légende */
+.legende-cercle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     margin-right: 5px;
 }
 
-.legend-label {
+/* Style des labels daans la légende */
+.legende-label {
     padding: 0;
     margin: 0;
 }
 
-.hoverMovie {
+/* Style de la div permettant d'afficher au hover sur une barre du graph les informations du film */
+.survoleFilm {
     display: none;
     visibility: hidden;
     background-color: #263C5F;
@@ -250,48 +220,28 @@ svg {
     border-radius: 15px;
 }
 
-.hoverMovie p span {
+.survoleFilm p span {
     margin-bottom: 100px;
 }
 
-.hoverMovie p :first-child {
+.survoleFilm p :first-child {
     font-weight: 800;
 }
 
-/* .bande-annonce1 {
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-  } */
-
-/* .pays-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-} */
-
-/* .infos-container {
-    gap: 3em;
-} */
-#detailMovie, #detailPays {
+/* Style de mes éléments ayant l'id detailFilm et detailPays */
+#detailFilm, #detailPays {
     visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Teko';
 }
 
-#detailMovie h2, #detailPays h2 {
+/* Changement de la taille de mes h3 situé dans les div ayant l'id detailFilm et detailPays */
+#detailFilm h3, #detailPays h3 {
     font-size: 2.775rem;
-    /* text-align: center; */
 }
 
-#pays.payschoisi {
-    margin-bottom: 0;
-}
-
-.film-prime, #annee-cristal {
+#detailFilm .film-prime, #detailPays #annee-cristal {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -307,25 +257,32 @@ svg {
     max-width: 1050px;
 }
 
-
+/* Ajout d'un espacement pour tout les enfants de la div ayant la class film-prime */
 .film-prime * {
     margin: 0;
     gap: 2.225rem;
 }
 
-.film-prime h3, .titre-nomines {
+/* Ajout d'une taille en largeur maximal pour le texte situé dans ma div info-filmPrime */
+.film-prime .info-filmPrime {
+    max-width: 500px;
+}
+
+.film-prime .info-filmPrime h4, .films-nomines .titre-nomines, #annee-cristal {
     font-size: 2rem;
 }
 
-.film-prime p :first-child {
+/* Ajout d'une graisse différente pour le premier enfant de p situé dans la div ayant la classe info-filmPrime */
+.film-prime .info-filmPrime p :first-child {
     font-weight: 700;
 }
 
-.film-prime p, #pays p {
-    font-family: 'Teko';
+/* Style de mes éléments p situé ma div info-filmPrime et ma div ayant l'id #pays */
+.film-prime .info-filmPrime p, #pays p {
     font-size: 1.5rem;
 }
 
+/* Style de ma div films-nomines */
 .films-nomines {
     display: flex;
     flex-wrap: wrap;
@@ -348,22 +305,76 @@ svg {
 
 .nominés {
     flex: 0 0 calc(33.33% - 20px);
-    /* 33.33% pour 3 éléments avec un petit espace au milieu */
     box-sizing: border-box;
     padding: 20px;
 }
+
 
 .nominés p :first-child {
     font-weight: 800;
 }
 
+/* Style de mon block footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    border-top: 1px solid black;
+}
+
+/* Style de mon titre h3 situé dans mon footer */
+footer h3 {
+    font-size: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 10vw;
+    padding: 0 15px;
+}
+
+/* Style des éléments enfant de premier étage de la div ayant la class .footer-container */
+.footer-container>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+}
+
+.div-footer {
+    padding: 30px 0;
+}
+
+.div-footer h4 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 800;
+}
+
+.div-footer h5 {
+    font-size: 1.7rem;
+}
+
+.div-footer p {
+    font-size: 1.5rem;
+}
+
+/* Changeement du style de certains éléments en fonction de la taille de l'écran */
+
+/* Style si l'écran à une taille inférieur à 950px */
 @media only screen and (max-width: 950px) {
 
-    .clip-path-container h1 {
+    gdhsghdqs h1 {
         font-size: 4vw;
     }
 
-    .title-2 {
+    .titre-2 {
         font-size: 5vw;
     }
 
@@ -380,7 +391,7 @@ svg {
         max-width: 100%;
     }
 
-    #detailMovie {
+    #detailFilm {
         margin: 0 15px;
     }
 
@@ -395,6 +406,7 @@ svg {
 
 }
 
+/* Style si l'écran à une taille inférieur à 750px */
 @media only screen and (max-width: 750px) {
     .clip-path-container {
         top: 15%;
@@ -403,11 +415,11 @@ svg {
         transform: translateX(-50%);
     }
 
-    .clip-path-container h1, .title-1 {
+    .clip-path-container h1, .clip-path-container h1 .titre-1 {
         font-size: 8vw;
     }
 
-    .title-2 {
+    .clip-path-container h1 .titre-2 {
         font-size: 10vw;
     }
 
@@ -416,7 +428,7 @@ svg {
         flex-direction: column;
     }
 
-    #fullpage {
+    #pageIntegrale {
         background-image: url(./images/Background-950px.jpg);
     }
 
