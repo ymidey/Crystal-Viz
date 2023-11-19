@@ -1,7 +1,6 @@
-
 document.addEventListener("DOMContentLoaded", function () {
 
-    const titleContainer = document.querySelector(".title-container");
+    const titleContainer = document.querySelector(".container-titre");
 
     gsap.from(titleContainer, {
         duration: 1.5,

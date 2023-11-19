@@ -6,33 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystal'viz - Annecy Festival</title>
     <script src="d3.js" defer></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favIcons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favIcons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favIcons/favicon-16x16.png">
-    <link rel="mask-icon" href="./images/favIcons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="./images/favIcons/favicon.ico" type="image/x-icon">
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="fullpage">
-
+    <div id="pageIntegrale">
         <header>
             <div class="clip-path-container">
-                <div class="title-container">
-                    <h1><span class="title-1">Crystal'Viz</span><span class="title-2">Annecy</span><span
-                            class="title-3">festival</span></h1>
+                <div class="container-titre">
+                    <h1><span class="titre-1">Crystal'Viz</span><span class="titre-2">Annecy</span><span
+                            class="titre-3">festival</span></h1>
                 </div>
             </div>
-
-            <div class="scroll-down-arrow">
-                <span id="scroll-down"></span>
+            <div class="fleche-defilement-bas">
+                <span id="defilement-bas"></span>
             </div>
         </header>
 
-        <section class="main">
-            <div class="svg-container" id="svg-container">
+        <main>
+            <div class="container-svg" id="container-svg">
                 <h2>Films d'animation qui ont reçu le cristal du long-métrage au festival d'Annecy au fur et à mesure
                     des années et leurs pays d'origines
                 </h2>
@@ -42,7 +35,7 @@
                 </svg>
             </div>
 
-            <div id="detailMovie">
+            <div id="detailFilm">
                 <div class="date">
                 </div>
                 <div class="film-prime">
@@ -70,52 +63,56 @@
                     <div class="filmspays"></div>
                 </div>
             </div>
-    </div>
-    </section>
+        </main>
+        </section>
 
 
-    <footer>
-        <h3>Mentions légales</h3>
-        <div class="footer-container">
-            <div>
-                <div class="div-footer">
-                    <h4>Raison Sociale de l’Hébergeur</h4>
-                    <p>
-                        Ce site internet est hébergé par la société GitHub sur le compte ymidey.
+        <footer>
+            <h3>Mentions légales</h3>
+            <div class="footer-container">
+                <div>
+                    <div class="div-footer">
+                        <h4>Raison Sociale de l’Hébergeur</h4>
+                        <p>
+                            Ce site internet est hébergé par la société GitHub sur le compte ymidey.
 
-                        Adresse postale de l'hébergeur : 88 Colin P. Kelly Jr Street, San Francisco, CA 94107 United
-                        States
-                    </p>
+                            Adresse postale de l'hébergeur : 88 Colin P. Kelly Jr Street, San Francisco, CA 94107 United
+                            States
+                        </p>
+                    </div>
+                    <div class="div-footer">
+                        <h4>À propos</h4>
+                        <p> Site édité par Yannick Midey, Caroline Doung, Antoine Attali </p>
+                        <p>Antoine ATTALI - graphique designer <br>
+                            Caroline Doung & Yannick Midey - développement web
+                        </p>
+                        <p>Projet universitaire réalisé dans le cadre d'une SAE de 2ème année de BUT MMI dans un but non
+                            commerciale.
+                        </p>
+                    </div>
                 </div>
-                <div class="div-footer">
-                    <h4>À propos</h4>
-                    <p> CristalViz - Yannick Midey, Caroline Doung, Antoine Attali </p>
-                    <p>Projet universitaire réalisé dans le cadre d'une SAE de 2ème année de BUT MMI dans un but non
-                        commerciale.
-                    </p>
+                <div>
+                    <div class="div-footer">
+                        <h4>Droits d'auteur</h4>
+                        <p>Les images, les bandes-sons et les vidéos liées aux différents films sont la propriété de
+                            leurs
+                            studios
+                            respectifs. Tous droits réservés. </p>
+                    </div>
+
+
+                    <div class="div-footer">
+                        <img src="./images/Logo.svg" alt="" srcset="">
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="div-footer">
-                    <h4>Droits d'auteur</h4>
-                    <p>Les images, les bandes-sons et les vidéos liées aux différents films sont la propriété de leurs
-                        studios
-                        respectifs. Tous droits réservés. </p>
-                </div>
-
-
-                <div class="div-footer">
-                    <img src="./images/Logo2.svg" alt="" srcset="">
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="animation.js"></script>
-    <script src="script.js" defer></script>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+            integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="animation.js"></script>
+        <script src="script.js" defer></script>
 
 </body>
 
