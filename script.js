@@ -366,14 +366,12 @@ fetch('./FilmData.json')
                 .filter(d => d.Primé == 1)
                 .append("div")
                 .attr("id", "prime")
-                .style("display", "flex")
-                .style("flex-direction", "row")
-                .html(d => `<div class="info-filmPrime"><h4>Film primé</h4><br><p><span>Titre : ${d.Titre}</span><br>Réalisateur(s) : ${d.Réalisateurs}<br>Technique(s) de production : ${d.Techniques}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" tabindex="${tabIndex}">Page IMDB du film ${d.Titre}</a></p></div><div><p>${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div>`);
+                .html(d => `<h4>Film primé</h4><div class="info-filmPrime"><div><p><span>Titre : ${d.Titre}</span><br>Réalisateur(s) : ${d.Réalisateurs}<br>Technique(s) de production : ${d.Techniques}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" tabindex="${tabIndex}">Page IMDB du film ${d.Titre}</a></p></div><div><p>Pays :  ${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div></div>`);
 
             d3.select(".titre-nomines")
                 .append("h4")
                 .attr("id", "nominés")
-                .html(`Film nominés`);
+                .html(`Film(s) nominés`);
 
             if (annee == 20092) {
                 annee = 2009;

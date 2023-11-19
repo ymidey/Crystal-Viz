@@ -82,7 +82,7 @@ header {
 
 /* Style de mon titre h1 */
 .container-titre h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -95,16 +95,15 @@ header {
 
 /* Style du premier span de mon titre h1 */
 .clip-path-container h1 .titre-1 {
-    font-size: 3.5vw;
     font-family: 'Poppins';
     color: transparent;
     -webkit-text-stroke: .5px #263C5F;
-    letter-spacing: .2em;
 }
 
 /* Style du second span de mon titre h1 */
 .clip-path-container h1 .titre-2 {
-    font-size: 5vw;
+    font-size: 5.4vw;
+    letter-spacing: .5em;
 }
 
 /* Positionnement de mon indicateur de scroll */
@@ -115,7 +114,7 @@ header {
     top: 85%;
     left: 50%;
     transform: translateX(-50%);
-    animation: arrowBounce 2s infinite ease-in-out;
+    animation: arrowBounce 2s infinite;
 }
 
 /* Style de mon indicateur de scroll */
@@ -185,7 +184,7 @@ main {
 
 /* Style de mon svg */
 svg {
-    width: 70vw;
+    width: 75vw;
 }
 
 /* Style de la légende */
@@ -220,12 +219,12 @@ svg {
     border-radius: 15px;
 }
 
-.survoleFilm p span {
-    margin-bottom: 100px;
+.survoleFilm p {
+    font-size: 1.225rem;
 }
 
-.survoleFilm p :first-child {
-    font-weight: 800;
+.survoleFilm p span {
+    margin-bottom: 100px;
 }
 
 /* Style de mes éléments ayant l'id detailFilm et detailPays */
@@ -234,6 +233,7 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 15px;
 }
 
 /* Changement de la taille de mes h3 situé dans les div ayant l'id detailFilm et detailPays */
@@ -257,24 +257,34 @@ svg {
     max-width: 1050px;
 }
 
-/* Ajout d'un espacement pour tout les enfants de la div ayant la class film-prime */
+.pays-container .infos-container p {
+    margin: 0;
+}
+
+/* Modification de la marge à 0 pour tout les enfants de la div ayant la class film-prime */
 .film-prime * {
     margin: 0;
-    gap: 2.225rem;
 }
 
 /* Ajout d'une taille en largeur maximal pour le texte situé dans ma div info-filmPrime */
 .film-prime .info-filmPrime {
-    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
-.film-prime .info-filmPrime h4, .films-nomines .titre-nomines, #annee-cristal {
-    font-size: 2rem;
+.film-prime .info-filmPrime div:first-child {
+    max-width: 450px;
+}
+
+.film-prime h4, .films-nomines .titre-nomines, #annee-cristal {
+    font-size: 2.225rem;
 }
 
 /* Ajout d'une graisse différente pour le premier enfant de p situé dans la div ayant la classe info-filmPrime */
-.film-prime .info-filmPrime p :first-child {
-    font-weight: 700;
+.film-prime .info-filmPrime p :first-child, .survoleFilm p :first-child, .nominés p :first-child, .pays-container .infos-container p span:first-child {
+    font-weight: 800;
 }
 
 /* Style de mes éléments p situé ma div info-filmPrime et ma div ayant l'id #pays */
@@ -291,11 +301,10 @@ svg {
 }
 
 .detailNomines {
-    width: 90vw;
+    max-width: 1200px;
     gap: 50px;
     display: flex;
-    max-width: 160vh;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -303,16 +312,10 @@ svg {
     font-size: 1.4rem;
 }
 
-.nominés {
-    flex: 0 0 calc(33.33% - 20px);
-    box-sizing: border-box;
-    padding: 20px;
+#nominés {
+    max-width: 300px;
 }
 
-
-.nominés p :first-child {
-    font-weight: 800;
-}
 
 /* Style de mon block footer */
 footer {
@@ -370,14 +373,15 @@ footer h3 {
 /* Style si l'écran à une taille inférieur à 950px */
 @media only screen and (max-width: 950px) {
 
-    gdhsghdqs h1 {
-        font-size: 4vw;
+    .container-titre h1 {
+        font-size: 3.5vw;
+
     }
 
-    .titre-2 {
-        font-size: 5vw;
+    /* Style du second span de mon titre h1 */
+    .clip-path-container h1 .titre-2 {
+        font-size: 5.9vw;
     }
-
 
     svg g {
         font-size: 1rem;
@@ -415,29 +419,26 @@ footer h3 {
         transform: translateX(-50%);
     }
 
-    .clip-path-container h1, .clip-path-container h1 .titre-1 {
+    .container-titre h1 {
         font-size: 8vw;
     }
 
+
+    /* Style du second span de mon titre h1 */
     .clip-path-container h1 .titre-2 {
-        font-size: 10vw;
-    }
-
-
-    .detailNomines {
-        flex-direction: column;
+        font-size: 10.4vw;
     }
 
     #pageIntegrale {
         background-image: url(./images/Background-950px.jpg);
     }
 
+}
+
+@media only screen and (max-width: 550px) {
+
     iframe {
         width: 320px;
         height: 180px;
-    }
-
-    .logo-container h1 {
-        font-size: 5vw;
     }
 }
