@@ -164,6 +164,7 @@ main {
     margin: auto;
     border-radius: 20px;
     margin-bottom: 50px;
+    margin-top: 50px;
     height: 88vh;
     flex-wrap: wrap;
 }
@@ -354,10 +355,6 @@ svg g {
 
 .detailNomines p {
     font-size: 1.4rem;
-}
-
-#nominés {
-    max-width: 300px;
 }
 
 /* Style de mon block footer */

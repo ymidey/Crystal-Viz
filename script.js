@@ -381,11 +381,10 @@ fetch('./FilmData.json')
                 .html(d => `<h4>Film primé</h4><div class="info-filmPrime"><div><p><span>Titre : ${d.Titre}</span><br>Réalisateur(s) : ${d.Réalisateurs}<br>Technique(s) de production : ${d.Techniques}<br>Note IMDB : ${d.NoteIMDB}/10<br><a href="https://www.imdb.com/title/${d.IdIMDB}/" target="_blank" tabindex="${tabIndex}">Page IMDB du film ${d.Titre}</a></p></div><div><p>Pays :  ${d.Pays}</p><img src="./images/flags/${d.Pays}.webp" witdh="80px" alt="" srcset=""></p></div></div>`);
 
             d3.select(".titre-nomines")
+                .data(anneeSelectionnee)
                 .append("h4")
                 .attr("id", "nominés")
-                .html(`Films nominés`);
-
-
+                .html(d => `Films nominés en ${d.AnnéeNomination}`);
 
             // Affichage de la liste de tout les films nominés ainsi que leurs informations 
             d3.select(".detailNomines")
