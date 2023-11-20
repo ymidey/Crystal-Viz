@@ -156,7 +156,7 @@ main {
 }
 
 .container-apropos, .container-constats {
-    width: 75vw;
+    width: 70vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -170,10 +170,7 @@ main {
 }
 
 .texte-constats, .texte-apropos {
-    font-family: 'Teko';
     font-size: 1.6em;
-    margin-left: 35px;
-    margin-right: 35px;
 }
 
 .titre-constats, .titre-apropos {
