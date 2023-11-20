@@ -68,7 +68,7 @@ header {
 
 .clip-path-container {
     position: relative;
-    left: 60%;
+    left: 58%;
     top: 10%;
     width: max-content;
     height: 30vw;
@@ -83,7 +83,7 @@ header {
 
 /* Style de mon titre h1 */
 .container-titre h1 {
-    font-size: 3vw;
+    font-size: 3.2vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -114,21 +114,26 @@ header {
     cursor: pointer;
     top: 85%;
     left: 50%;
-    transform: translateX(-50%);
     animation: arrowBounce 2s infinite;
+
+    transform: translateX(-50%);
 }
 
 /* Style de mon indicateur de scroll */
-.fleche-defilement-bas span {
+.fleche-defilement-bas * {
     display: block;
     width: 36px;
     height: 36px;
     border-left: 4px solid #fff;
     border-bottom: 4px solid #fff;
     transform: rotate(-45deg);
-    margin: 0 8px;
     box-sizing: border-box;
     transition: transform 0.2s ease-in-out;
+}
+
+.defilement-bas-2 {
+    position: absolute;
+    top: 50%;
 }
 
 /* Animation de mon indicateur de scroll */
@@ -220,13 +225,14 @@ svg g {
     visibility: hidden;
     background-color: #263C5F;
     position: absolute;
-    padding: 15px;
+    padding: 20px;
     border-radius: 15px;
 }
 
 .survoleFilm p {
     font-size: 1.225rem;
     max-width: 150px;
+    margin: 0;
 }
 
 .survoleFilm p span {
@@ -329,24 +335,20 @@ svg g {
 
 /* Style de mon block footer */
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    height: 100vh;
     border-top: 1px solid black;
 }
 
 /* Style de mon titre h3 situé dans mon footer */
-footer h3 {
+footer h3, footer .listeSources h4 {
     font-size: 3rem;
+    text-align: center;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: baseline;
     gap: 10vw;
     padding: 0 15px;
 }
@@ -356,12 +358,25 @@ footer h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     max-width: 500px;
+    align-items: center;
+}
+
+.footer-container div:first-child {
+    align-items: start;
 }
 
 .div-footer {
     padding: 30px 0;
+}
+
+.div-footer button {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 0px;
+    color: #c8d7e2;
+    cursor: pointer;
+    font-family: "Teko";
 }
 
 .div-footer h4 {
@@ -370,12 +385,30 @@ footer h3 {
     font-weight: 800;
 }
 
-.div-footer h5 {
+.listeSources h5 {
+    margin: 0;
     font-size: 1.7rem;
 }
 
-.div-footer p {
+.div-footer * {
     font-size: 1.5rem;
+}
+
+footer .listeSources {
+    display: none;
+}
+
+footer .listeSources>* {
+    margin-left: 10%;
+}
+
+footer .listeSources>*:first-child {
+    margin-left: 0%;
+}
+
+.listeSources p, .listeSources li {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 
 /* Changeement du style de certains éléments en fonction de la taille de l'écran */
@@ -385,12 +418,16 @@ footer h3 {
 
     .container-titre h1 {
         font-size: 3.5vw;
-
     }
 
     /* Style du second span de mon titre h1 */
     .clip-path-container h1 .titre-2 {
         font-size: 5.9vw;
+    }
+
+    svg {
+        width: 90vw;
+        height: 90vh;
     }
 
     svg g {

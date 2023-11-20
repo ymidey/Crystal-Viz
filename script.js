@@ -8,6 +8,15 @@ scrollDownSpan.addEventListener('click', function () {
     mainSection.scrollIntoView({ behavior: 'smooth' });
 });
 
+var voirSources = document.getElementById('sources');
+var listeSources = document.getElementById('listeSources')
+
+voirSources.addEventListener('click', function () {
+    console.log("tets")
+    listeSources.style.display = "block"
+    listeSources.scrollIntoView({ behavior: 'smooth' })
+})
+
 // Chargement du fichier JSON
 fetch('./FilmData.json')
     .then(response => response.json())
@@ -23,7 +32,7 @@ fetch('./FilmData.json')
 
         // Création d'un tableau de couleurs pour l'associé à nos pays
         const couleurs = [
-            "#B5E8E2", "#CEA4E4", "#C6D2FF", "#6490FF", "#FF7AA7",
+            "#B5E8E2", "#CEA4E4", "#C6D2FF", "#6490FF", "#FF6060",
             "#5EB1FF", "#FF97A0", "#FF9B7B",
             "#AC1DE3", "#8875FF", "#FFCE82", "#ABE3AB", "#FFA4A4"
         ];
@@ -251,8 +260,8 @@ fetch('./FilmData.json')
                     // On vérifie si l'utilisateur passe sa souris sur une barre, sur l'image, sur la barre, ou sur le carré qui entoure l'image
                     if (this.classList.contains("barre") || this.classList.contains("carre") || this.classList.contains("image")) {
 
-                        // Affichage de la div encadre uniquement si la taille de l'écran est supérieur à 750px
-                        if (window.innerWidth > 750) {
+                        // Affichage de la div encadre uniquement si la taille de l'écran est supérieur à 1000px
+                        if (window.innerWidth > 1000) {
                             encadre.transition()
                                 .style("display", "block")
                                 .style("visibility", "visible")
@@ -342,12 +351,6 @@ fetch('./FilmData.json')
                 return d3.select(this).text().substring(0, 34)
             });
 
-
-            // Affichage des 34 premiers caractères du titre de chaque cristal pour pouvoir afficher 2 fois l'année 2009
-            d3.selectAll(".titre-cristal").text(function () {
-                return d3.select(this).text().substring(0, 34)
-            });
-
             // Affichage de la bande annonce du film primé de l'année selectionnée
             d3.select(".bande-annonce")
                 .selectAll(".annonce-film")
@@ -393,7 +396,7 @@ fetch('./FilmData.json')
 
         // Fonction permettant d'afficher les informations sur les films primés appartenant au pays selectionné
         function voirPlusFilmPays(paysChoisi) {
-            d3.selectAll("#prime, #nominés, #pays, #primespays").remove();
+            d3.selectAll("#prime, #nominés, #pays").remove();
 
             // Change la visibilité de la div pour la rendre visible
             let detailPaysDiv = document.getElementById("detailPays");
@@ -401,19 +404,12 @@ fetch('./FilmData.json')
 
             detailPaysDiv.scrollIntoView({
                 behavior: "smooth",
-                block: "start"
             });
 
             // Sélectionne les films par pays 
             let paysSelectionne = filmPrime.filter(film =>
                 film.Pays == paysChoisi
             );
-
-
-            // Affichage des 34 premiers caractères du titre h2 #annee-cristal pour pouvoir afficher 2 fois l'année 2009
-            d3.selectAll("#annee-cristal").text(function () {
-                return d3.select(this).text().substring(0, 34)
-            });
 
             d3.select(".nomPays")
                 .append("h3")
