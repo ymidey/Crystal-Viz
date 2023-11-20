@@ -176,6 +176,7 @@ main {
 .titre-constats, .titre-apropos {
     font-family: 'Teko';
     font-size: 4em;
+    margin: 15px 0;
 }
 
 /* Style de mon svg */
