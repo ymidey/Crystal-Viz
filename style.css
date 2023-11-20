@@ -553,10 +553,10 @@ footer .listeSources {
 
     .container-apropos, .container-constats {
         font-size: .8rem;
-        height: 220vh;
+        height: 160vh;
     }
 
     footer .listeSources li {
-        font-size: .8rem;
+        font-size: .9rem;
     }
 }
