@@ -9,7 +9,7 @@ Ce projet à l'aide d'une **représentation visuelle interactive** permet de vis
 Le Cristal du Long-Métrage est le principal prix décerné au Festival d'Annecy. En effet, le festival n'a pas eu de sélection officielle de longs-métrages avant 1985 et n'a eu lieu que tous les deux ans jusqu'en 1997. C'est ce que nous avons expliqué dans notre à propos et nos constats. C'est ce qui explique les années manquantes.
 
 ## Membres du groupe
-- [@ymidey](https://github.com/y) - développement web
+- [@ymidey](https://github.com/ymidey) - développement web
 - [@protopex](https://github.com/protopex) - graphique designer
 - [@carolinedoung](https://github.com/carolinedoung) - développement web
 
