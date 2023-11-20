@@ -1,21 +1,30 @@
-// Selection du span ayant l'id defilement-bas
 var scrollDownSpan = document.getElementById('defilement-bas');
+var mainSection = document.getElementById('apropos');
 
-// span permettant au clic sur celui-ci de scroller la page de l'utilisateur vers la div ayant l'id container-svg
+// span permettant au clic sur celui-ci (addEventListener('click') de scroller la page de l'utilisateur vers la div ayant la section a propos de notre site
 scrollDownSpan.addEventListener('click', function () {
-    var mainSection = document.getElementById('titre-svg');
-
     mainSection.scrollIntoView({ behavior: 'smooth' });
 });
 
 var voirSources = document.getElementById('sources');
 var listeSources = document.getElementById('listeSources')
 
+// bouton permettant au clic sur celui-ci (addEventListener('click') de rendre visible la div ayant l'id listeSources et de scroller la page de l'utilisateur vers cette div
 voirSources.addEventListener('click', function () {
-    console.log("tets")
-    listeSources.style.display = "block"
+    listeSources.style.display = "flex"
     listeSources.scrollIntoView({ behavior: 'smooth' })
 })
+
+var cacheSources = document.querySelectorAll('.fermeSources');
+var footer = document.getElementById('titre-footer')
+
+// boutons permettant au clic sur celui-ci (addEventListener('click') de cacher la div ayant l'id listeSources et de scroller la page de l'utilisateur vers le haut de notre footer
+cacheSources.forEach(function (element) {
+    element.addEventListener('click', function () {
+        footer.scrollIntoView({ behavior: 'smooth' })
+        listeSources.style.display = "none";
+    });
+});
 
 // Chargement du fichier JSON
 fetch('./FilmData.json')
@@ -33,7 +42,7 @@ fetch('./FilmData.json')
         // Création d'un tableau de couleurs pour l'associé à nos pays
         const couleurs = [
             "#B5E8E2", "#CEA4E4", "#C6D2FF", "#6490FF", "#FF6060",
-            "#5EB1FF", "#FF97A0", "#FF9B7B",
+            "#5EB1FF", "#A80053", "#FF9B7B",
             "#AC1DE3", "#8875FF", "#FFCE82", "#ABE3AB", "#FFA4A4"
         ];
 
@@ -376,12 +385,7 @@ fetch('./FilmData.json')
                 .attr("id", "nominés")
                 .html(`Films nominés`);
 
-            if (annee == 20092) {
-                annee = 2009;
-                anneeSelectionnee = filmdata.filter(film =>
-                    film.AnnéeNomination == annee
-                );
-            }
+
 
             // Affichage de la liste de tout les films nominés ainsi que leurs informations 
             d3.select(".detailNomines")
@@ -411,11 +415,12 @@ fetch('./FilmData.json')
                 film.Pays == paysChoisi
             );
 
+            // Ajout du titre des films primés par pays
             d3.select(".nomPays")
                 .append("h3")
                 .attr("id", "pays")
                 .attr("class", "payschoisi")
-                .html(`Liste de tous les Films primés provenant de ${paysChoisi}`);
+                .html(`${paysChoisi} : Liste de tous les Films primés`);
 
 
             d3.select(".films-pays")

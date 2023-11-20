@@ -53,7 +53,6 @@ body {
 
 /* Ajout d'une image en background sur ma div ayant l'id pageIntegrale */
 #pageIntegrale {
-    position: relative;
     width: 100%;
     background-image: url('./images/background.jpg');
     background-repeat: no-repeat;
@@ -156,6 +155,31 @@ main {
     padding: 80px 0;
 }
 
+.container-apropos, .container-constats {
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    height: 88vh;
+    flex-wrap: wrap;
+}
+
+.texte-constats, .texte-apropos {
+    font-family: 'Teko';
+    font-size: 1.6em;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.titre-constats, .titre-apropos {
+    font-family: 'Teko';
+    font-size: 4em;
+}
+
 /* Style de mon svg */
 .container-svg {
     width: 97vw;
@@ -202,8 +226,8 @@ svg g {
 .legende-container {
     display: flex;
     align-items: center;
-    margin-right: 10px;
-    margin-bottom: 5px;
+    padding: 2px;
+    margin: 0 5px;
 }
 
 /* Style des cercles daans la légende */
@@ -277,6 +301,10 @@ svg g {
     margin: 0;
 }
 
+.nomPays {
+    text-align: center;
+}
+
 /* Modification de la marge à 0 pour tout les enfants de la div ayant la class film-prime */
 .film-prime * {
     margin: 0;
@@ -332,10 +360,10 @@ svg g {
     max-width: 300px;
 }
 
-
 /* Style de mon block footer */
 footer {
     border-top: 1px solid black;
+    margin: 0 15px;
 }
 
 /* Style de mon titre h3 situé dans mon footer */
@@ -370,7 +398,7 @@ footer h3, footer .listeSources h4 {
     padding: 30px 0;
 }
 
-.div-footer button {
+footer button {
     font-size: 1.5rem;
     background-color: transparent;
     border: 0px;
@@ -396,19 +424,27 @@ footer h3, footer .listeSources h4 {
 
 footer .listeSources {
     display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 15px;
+    margin: 0 10%;
 }
 
-footer .listeSources>* {
-    margin-left: 10%;
+.listeSources #fermeSource-top {
+    left: 70%;
+    position: absolute;
+    top: 70px;
 }
 
-footer .listeSources>*:first-child {
-    margin-left: 0%;
+.container-listeSources {
+    max-width: 800px;
 }
 
-.listeSources p, .listeSources li {
+.container-listeSources p, .container-listeSources li {
     font-size: 1.2rem;
     letter-spacing: 1px;
+    max-height: 500px;
 }
 
 /* Changeement du style de certains éléments en fonction de la taille de l'écran */
@@ -433,6 +469,11 @@ footer .listeSources>*:first-child {
     svg g {
         font-size: 1rem;
     }
+
+    .container-apropos, .container-constats {
+        height: 120vh;
+    }
+
 
     .film-prime p, .films-nomines p {
         font-size: 1.225rem;
@@ -477,6 +518,18 @@ footer .listeSources>*:first-child {
         font-size: 8vw;
     }
 
+    .titre-constats, .titre-apropos {
+        font-size: 3rem;
+    }
+
+    .titre-constats, .titre-apropos {
+        font-size: 3em;
+    }
+
+    .container-apropos, .container-constats {
+        height: 120vh;
+        font-size: .9rem;
+    }
 
     /* Style du second span de mon titre h1 */
     .clip-path-container h1 .titre-2 {
@@ -487,11 +540,28 @@ footer .listeSources>*:first-child {
         background-image: url(./images/Background-950px.jpg);
     }
 
+    .fermeSources {
+        display: none;
+    }
+
+    footer .listeSources {
+        margin: 0;
+
+    }
 }
 
 @media only screen and (max-width: 550px) {
     iframe {
         width: 320px;
         height: 180px;
+    }
+
+    .container-apropos, .container-constats {
+        font-size: .8rem;
+        height: 220vh;
+    }
+
+    footer .listeSources li {
+        font-size: .8rem;
     }
 }
