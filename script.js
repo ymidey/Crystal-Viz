@@ -3,7 +3,7 @@ var scrollDownSpan = document.getElementById('defilement-bas');
 
 // span permettant au clic sur celui-ci de scroller la page de l'utilisateur vers la div ayant l'id container-svg
 scrollDownSpan.addEventListener('click', function () {
-    var mainSection = document.getElementById('container-svg');
+    var mainSection = document.getElementById('titre-svg');
 
     mainSection.scrollIntoView({ behavior: 'smooth' });
 });

@@ -162,6 +162,7 @@ main {
     padding: 20px 0;
     margin: auto;
     border-radius: 20px;
+    height: 100vh;
 }
 
 /* Ajout d'un padding pour chaque élément enfant de premier étage de ma class .container-svg */
@@ -216,7 +217,6 @@ svg g {
 
 /* Style de la div permettant d'afficher au hover sur une barre du graph les informations du film */
 .survoleFilm {
-    display: none;
     visibility: hidden;
     background-color: #263C5F;
     position: absolute;
@@ -226,6 +226,7 @@ svg g {
 
 .survoleFilm p {
     font-size: 1.225rem;
+    max-width: 150px;
 }
 
 .survoleFilm p span {
@@ -292,7 +293,7 @@ svg g {
 }
 
 /* Ajout d'une graisse différente pour le premier enfant de p situé dans la div ayant la classe info-filmPrime */
-.film-prime .info-filmPrime p :first-child, .survoleFilm p :first-child, .nominés p :first-child, .pays-container .infos-container p span:first-child {
+.film-prime .info-filmPrime p :first-child, .survoleFilm p :first-child, #nominés p span:first-child, .pays-container .infos-container p span:first-child {
     font-weight: 800;
 }
 
@@ -311,9 +312,9 @@ svg g {
 
 .detailNomines {
     max-width: 1200px;
-    gap: 50px;
-    display: flex;
-    justify-content: space-between;
+    gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
 }
 
@@ -410,14 +411,14 @@ footer h3 {
     }
 
     .detailNomines {
-        justify-content: start;
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
     iframe {
         width: 480px;
         height: 270px;
     }
-
 
     footer>* {
         max-width: 100%;
