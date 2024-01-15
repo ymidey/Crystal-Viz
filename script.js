@@ -383,8 +383,13 @@ fetch('./FilmData.json')
             d3.select(".titre-nomines")
                 .data(anneeSelectionnee)
                 .append("h4")
-                .attr("id", "nominés")
+                .attr("class", "nominés")
                 .html(d => `Films nominés en ${d.AnnéeNomination}`);
+
+// Affichage des 34 premiers caractères du titre de chaque cristal pour pouvoir afficher 2 fois l'année 2009
+            d3.selectAll(".nominés").text(function () {
+                return d3.select(this).text().substring(0, 34)
+            });
 
             // Affichage de la liste de tout les films nominés ainsi que leurs informations 
             d3.select(".detailNomines")
