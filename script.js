@@ -401,6 +401,11 @@ fetch('./FilmData.json')
         function voirPlusFilmPays(paysChoisi) {
             d3.selectAll("#prime, #nominés, #pays").remove();
 
+            // Affichage des 4 premiers caractères de chaque année pour pouvoir afficher 2 fois l'année 2009
+            d3.selectAll("#nominés").text(function () {
+                return d3.select(this).text().substring(0, 4)
+            });
+
             // Change la visibilité de la div pour la rendre visible
             let detailPaysDiv = document.getElementById("detailPays");
             detailPaysDiv.style.visibility = "visible";
